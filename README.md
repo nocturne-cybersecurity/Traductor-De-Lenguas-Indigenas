@@ -11,8 +11,8 @@ Una aplicación web innovadora que traduce entre español y lenguas indígenas m
 ###  Traducción Inteligente
 - **Traducción bidireccional**: Español ↔ Lenguas indígenas
 - **Búsqueda inteligente**: Encuentra traducciones incluso con variantes
-- **Múltiples lenguas soportadas**: Náhuatl, Maya, Mixteco, Zapoteco, Totonaco entre muchos otros más.
-- **Sistema de normalización**: Maneja acentos, mayúsculas y variantes
+- **Múltiples lenguas soportadas**: Náhuatl, Maya, Mixteco, Zapoteco, Totonaco, entre muchos otros más.
+- **Sistema de normalización**: Maneja acentos, mayúsculas, comas y variantes
 
 ###  Síntesis de Voz
 - **Texto a voz**: Escucha las pronunciaciones
