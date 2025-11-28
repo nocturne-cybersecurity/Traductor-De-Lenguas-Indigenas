@@ -1,5 +1,4 @@
-{
-  "palabras": [
+[
     { "maya": "áak’", "español": "tortuga" },
     { "maya": "áanal", "español": "sembrado" },
     { "maya": "ábil", "español": "mañana (temprano)" },
@@ -120,10 +119,7 @@
     { "maya": "hun", "español": "uno" },
     { "maya": "hunab", "español": "único" },
     { "maya": "hunab ku", "español": "dios único" }
-  ]
-}
-{
-  "palabras": [
+
     { "maya": "ich", "español": "ojo" },
     { "maya": "ichil", "español": "adentro" },
     { "maya": "ichkaj", "español": "ver" },
@@ -266,10 +262,7 @@
     { "maya": "kaaytal", "español": "cantar" },
     { "maya": "kab", "español": "tierra" },
     { "maya": "k’ab", "español": "mano" }
-  ]
-}
-{
-  "palabras": [
+
     { "maya": "k'áaj", "español": "desear" },
     { "maya": "k'aaj", "español": "lluvia" },
     { "maya": "k'aajóol", "español": "conocido" },
@@ -379,10 +372,7 @@
     { "maya": "kankabnal", "español": "suelo rojo" },
     { "maya": "kankin", "español": "sol poniente" },
     { "maya": "kankúul", "español": "pueblo" }
-  ]
-}
-{
-  "palabras": [
+
     { "maya": "kano’ob", "español": "cuatros" },
     { "maya": "kanpek'", "español": "lagarto grande" },
     { "maya": "kansaj", "español": "arrastrar" },
@@ -492,10 +482,7 @@
     { "maya": "laat", "español": "ustedes" },
     { "maya": "laap", "español": "chicle" },
     { "maya": "laatun", "español": "piedra plana" }
-  ]
-}
-{
-  "palabras": [
+
     { "maya": "lab", "español": "resbalar" },
     { "maya": "labil", "español": "resbaloso" },
     { "maya": "laj", "español": "completo" },
@@ -616,10 +603,7 @@
     { "maya": "muk", "español": "enterrar" },
     { "maya": "mukbil", "español": "enterrado" },
     { "maya": "mukuy", "español": "paloma" }
-  ]
-}
-{
-  "palabras": [
+
     { "maya": "men", "español": "quien hace; artesano" },
     { "maya": "mena'an", "español": "artesano; fabricante" },
     { "maya": "menel", "español": "hecho por alguien" },
@@ -740,10 +724,7 @@
     { "maya": "néex", "español": "tórtola" },
     { "maya": "nich", "español": "flor" },
     { "maya": "niche'", "español": "aroma" }
-  ]
-}
-{
-  "palabras": [
+
     { "maya": "nichil", "español": "flores" },
     { "maya": "nichilal", "español": "jardín de flores" },
     { "maya": "nich'o'", "español": "flor pequeña" },
@@ -853,10 +834,7 @@
     { "maya": "p'inil", "español": "realeza" },
     { "maya": "p'ix", "español": "cortar" },
     { "maya": "p'ixik", "español": "cortado" }
-  ]
-}
-{
-  "palabras": [
+
     { "maya": "p'ixik'il", "español": "corte pequeño" },
     { "maya": "p'ixnal", "español": "cortadura" },
     { "maya": "p'ok", "español": "entrar" },
@@ -955,10 +933,7 @@
     { "maya": "somil", "español": "trampa" },
     { "maya": "sot", "español": "hundir" },
     { "maya": "sotbil", "español": "hundido" }
-  ]
-}
-{
-  "palabras": [
+
     { "maya": "sotil", "español": "hundimiento" },
     { "maya": "súuk", "español": "blanco" },
     { "maya": "súukil", "español": "blancura" },
@@ -1046,10 +1021,7 @@
     { "maya": "tz'anj", "español": "pequeño" },
     { "maya": "tz'ankil", "español": "pequeñez" },
     { "maya": "tz'ap", "español": "golpear" }
-  ]
-}
-{
-  "palabras": [
+
     { "maya": "tz'apil", "español": "golpeado" },
     { "maya": "tz'at", "español": "contar" },
     { "maya": "tz'atil", "español": "contado" },
@@ -1138,4 +1110,3 @@
     { "maya": "yuts'", "español": "cerrar" },
     { "maya": "yuts'il", "español": "cerrado" }
   ]
-}
