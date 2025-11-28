@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Traductor</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container"> <h1>Traductor Indigena</h1>
+
+    <p>Selecciona un idioma y una dirección para empezar.</p>
+
+    <form id="translator-form">
+      <div>
+        <label for="idioma_select">Idioma a traducir:</label>
+        <select id="idioma_select">
+          <option value="">-- Elige Idioma --</option>
+          </select>
+      </div>
+
+      <div>
+        <label for="texto_entrada">Texto a traducir:</label>
+        <input id="texto_entrada" type="text" placeholder="Escribe tu palabra u oración" autocomplete="off">
+      </div>
+
+      <div>
+        <label for="direccion_select">Dirección de la traducción:</label>
+        <select id="direccion_select">
+          <option value="espanol">Español → Idioma Indígena</option>
+          <option value="indigena">Idioma Indígena → Español</option>
+        </select>
+      </div>
+
+      <button id="traducir-btn" type="submit" disabled>Traducir</button>
+    </form>
+
+    <section class="resultado">
+      <strong>Traducción:</strong> 
+      <output id="traduccion-texto">---</output> </section>
+
+    <div class="status-info">
+      <span id="status"></span>
+    </div>
+
+  </div> <script src="javascript.js"></script>
+</body>
+</html>

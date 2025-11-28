@@ -1,0 +1,211 @@
+/* ------------------------------------------------ */
+/* 1. Variables CSS: Estilo Clásico (Amarilloso)    */
+/* ------------------------------------------------ */
+:root {
+    /* Colores Clásicos */
+    --color-accent: #ffd700; /* Oro/Amarillo (principal) */
+    --color-accent-dark: #ccaa00; /* Oro más oscuro para hover */
+    --color-text-primary: #4e342e; /* Marrón oscuro (Texto principal/Botón) */
+    --color-text-secondary: #795548; /* Marrón medio */
+    --color-background-body: #f8f4e9; /* Fondo crema (papel envejecido) */
+    --color-background-card: #ffffff;
+    --color-border-default: #d7ccc8; /* Borde marrón claro */
+    --color-resultado-bg: #fffbe6; /* Amarillo muy pálido para el resultado */
+
+    /* Espaciado y Bordes */
+    --spacing-unit: 8px;
+    --spacing-lg: 25px;
+    --border-radius-default: 3px;
+    --shadow-card: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------------------------ */
+/* 2. Estilos Globales y Layout                     */
+/* ------------------------------------------------ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: var(--color-background-body);
+    color: var(--color-text-primary); /* Texto principal en marrón oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: var(--color-background-card);
+    padding: 35px 40px;
+    border-radius: var(--border-radius-default);
+    box-shadow: var(--shadow-card);
+    max-width: 650px;
+    width: 90%;
+    margin-top: 50px;
+    border: 1px solid var(--color-border-default);
+}
+
+/* ------------------------------------------------ */
+/* 4. Tipografía y Encabezados                      */
+/* ------------------------------------------------ */
+h1 {
+    color: var(--color-accent); /* Título en AMARILLO/ORO */
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--color-border-default);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: var(--color-text-secondary); /* Texto secundario en marrón medio */
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* ------------------------------------------------ */
+/* 5. Formulario y Elementos de Interacción         */
+/* ------------------------------------------------ */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: var(--color-text-primary);
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    padding: 10px 12px;
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--border-radius-default);
+    font-size: 1em;
+    font-family: 'Georgia', serif;
+    background-color: white;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: var(--color-accent-dark);
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); /* Sombra de foco color dorado */
+}
+
+button {
+    background-color: var(--color-text-primary); /* **Cambiado a Marrón Oscuro** */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.05em;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--border-radius-default);
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación sutil al pasar el ratón */
+button:hover:not(:disabled) {
+    background-color: var(--color-text-secondary); /* Marrón medio */
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Animación al hacer clic */
+button:active:not(:disabled) {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    background-color: var(--color-border-default);
+    color: #888;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* ------------------------------------------------ */
+/* 6. Componentes de Información y Resultado        */
+/* ------------------------------------------------ */
+.resultado {
+    margin-top: 30px;
+    padding: 15px 20px;
+    background-color: var(--color-resultado-bg); /* Fondo amarillo pálido */
+    border: 1px solid var(--color-accent-dark);
+    border-radius: var(--border-radius-default);
+    font-size: 1.1em;
+    color: var(--color-text-primary);
+    line-height: 1.5;
+
+    /* Animación de entrada para el resultado */
+    animation: fadeIn 0.5s ease-out; 
+}
+
+/* Definición de la animación de aparición */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.resultado strong {
+    margin-right: 10px;
+    color: var(--color-accent-dark); /* Texto de etiqueta en dorado oscuro */
+    font-weight: bold;
+}
+
+.status-info {
+    font-size: 0.85em;
+    color: var(--color-text-secondary);
+    margin-top: 15px;
+}
+
+/* Agrega esto al final de tu archivo style.css */
+
+.btn-audio {
+    background: linear-gradient(135deg, #4e342e 0%, #795548 100%);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Georgia', serif;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+}
+
+.btn-audio:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, #5d4037 0%, #8d6e63 100%);
+}
+
+.btn-audio:active {
+    transform: translateY(0);
+}
+
+.btn-audio:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+}
