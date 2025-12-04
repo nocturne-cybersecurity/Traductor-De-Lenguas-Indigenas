@@ -1,4 +1,3 @@
-Por que cuando selecciono maya, se bloquea el boton?
 
 // =============================================
 // SISTEMA DE SÍNTESIS DE VOZ PARA LENGUAS INDÍGENAS
@@ -582,4 +581,81 @@ class TraductorInteligenteJS {
 // Función para inicializar el traductor inteligente  
 function inicializarTraductorInteligente(datos, languageKey) {  
     if (datos && Array.isArray(datos)) {  
-        window.traductorAI = new TraductorInteligenteJS(datos, languageKey
+        window.traductorAI = new TraductorInteligenteJS(datos, languageKey);  
+    }  
+}  
+
+// ==== MANEJADOR MEJORADO ====  
+
+const form = document.getElementById('translator-form');  
+form.removeEventListener('submit', traducir);  
+  
+form.addEventListener('submit', (e) => {  
+    e.preventDefault();  
+    const palabraRaw = textoEntrada.value;  
+    if (!palabraRaw) {  
+        resultado.textContent = 'Introduce una palabra o frase.';  
+        ocultarControlesAudio();  
+        return;  
+    }  
+    if (!loadedFilename) {  
+        resultado.textContent = 'Selecciona un diccionario primero.';  
+        ocultarControlesAudio();  
+        return;  
+    }  
+
+    const direccion = direccionSelect.value;  
+    const idiomaSeleccionado = loadedFilename.replace('.JSON', '').toLowerCase();  
+    const dirTraduccion = direccion === 'espanol' ? 'es_indigena' : 'indigena_es';  
+      
+    let resultadoHTML = '';  
+      
+    // Usar el traductor inteligente si está disponible  
+    if (window.traductorAI) {  
+        const traduccionesAI = window.traductorAI.buscarTraducciones(palabraRaw, dirTraduccion, 5);  
+          
+        if (traduccionesAI.length > 0) {  
+            resultadoHTML += '<strong>🔍 Traducciones inteligentes:</strong><br>';  
+            traduccionesAI.forEach((trad, index) => {  
+                resultadoHTML += `${index + 1}. <strong>${trad.traduccion}</strong> `;  
+                resultadoHTML += `<small>(similar a: "${trad.palabraOriginal}", confianza: ${trad.confianza})</small><br>`;  
+            });  
+        }  
+    }  
+      
+    // Mostrar traducción tradicional  
+    const salidaTradicional = translatePhrase(palabraRaw, direccion);  
+      
+    if (resultadoHTML) {  
+        resultadoHTML += `<br><strong>📖 Traducción tradicional:</strong><br>`;  
+    }  
+      
+    resultadoHTML += `${salidaTradicional}`;  
+      
+    resultado.innerHTML = resultadoHTML || 'Traducción no encontrada.';  
+    resultado.style.whiteSpace = 'pre-line';  
+
+    // Mostrar controles de audio si hay traducción válida  
+    if (salidaTradicional && !salidaTradicional.includes('Traducción no encontrada') &&   
+        !salidaTradicional.includes('Traducciones posibles')) {  
+        mostrarControlesAudio(palabraRaw, salidaTradicional, direccion, idiomaSeleccionado);  
+    } else {  
+        ocultarControlesAudio();  
+    }  
+});  
+
+// Permitir Enter en el campo  
+textoEntrada.addEventListener('keydown', (e) => {  
+    if (e.key === 'Enter') {  
+        e.preventDefault();  
+        form.dispatchEvent(new Event('submit', { cancelable: true }));  
+    }  
+});  
+
+// Estado inicial  
+resultado.textContent = '---';  
+resultado.style.whiteSpace = 'pre-line';  
+status.textContent = 'Selecciona un diccionario.';
+
+});
+
