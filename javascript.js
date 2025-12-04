@@ -208,23 +208,31 @@ async function cargarDiccionario(filename) {
         diccionarioEsIndigena = {};
         diccionarioIndigenaEs = {};
 
-        if (!Array.isArray(datos) || datos.length === 0)
-            throw new Error("El JSON está vacío o mal formateado.");
+        let idiomaIndigenaKey = '';
 
-        // Normalizador para detectar español/español/espaÑol/espanól/etc
-        const normalizar = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+        if (datos.length > 0) {
+            const claves = Object.keys(datos[0]);
 
-        const claves = Object.keys(datos[0]);
-        const claveEspanol = claves.find(k => normalizar(k) === "espanol");
-        const claveIndigena = claves.find(k => normalizar(k) !== "espanol");
+            // ✔️ Acepta español o español con ñ
+            idiomaIndigenaKey = claves.find(k => {
+                const key = k.toLowerCase();
+                return key !== 'espanol' && key !== 'español';
+            });
+        }
 
-        if (!claveEspanol || !claveIndigena) {
-            throw new Error("No se encontraron claves válidas en el JSON.");
+        if (!idiomaIndigenaKey) {
+            throw new Error("Estructura JSON inválida. No se encontró la clave del idioma indígena.");
         }
 
         datos.forEach(entrada => {
-            const espanol = entrada[claveEspanol] ? entrada[claveEspanol].toLowerCase().trim() : '';
-            const indigena = entrada[claveIndigena] ? entrada[claveIndigena].toLowerCase().trim() : '';
+            // ✔️ Línea corregida (antes estaba rota)
+            const espanol = entrada.espanol || entrada["español"]
+                ? (entrada.espanol || entrada["español"]).toLowerCase().trim()
+                : '';
+
+            const indigena = entrada[idiomaIndigenaKey]
+                ? entrada[idiomaIndigenaKey].toLowerCase().trim()
+                : '';
 
             if (espanol && indigena) {
                 diccionarioEsIndigena[espanol] = indigena;
@@ -233,12 +241,13 @@ async function cargarDiccionario(filename) {
         });
 
         traducirBtn.disabled = false;
-        diccionarioEstado.textContent = `Diccionario cargado: ${Object.keys(diccionarioEsIndigena).length} entradas`;
+        diccionarioEstado.textContent =
+            `Diccionario ${filename} cargado - ${Object.keys(diccionarioEsIndigena).length} palabras`;
 
     } catch (err) {
-        diccionarioEstado.textContent = `Error: ${err.message}`;
-        traducirBtn.disabled = true;
         console.error(err);
+        diccionarioEstado.textContent = `Error cargando ${filename}: ${err.message}`;
+        traducirBtn.disabled = true;
     }
 }
 
@@ -664,4 +673,5 @@ try {
     status.textContent = 'Selecciona un diccionario.';
 
 });
+
 
