@@ -193,52 +193,42 @@ function ocultarControlesAudio() {
  * Carga el archivo JSON del idioma seleccionado y construye los diccionarios.
  * @param {string} filename - Nombre del archivo JSON (e.g., 'nahuatl.json')
  */
-async function cargarDiccionario(filename) {
-    diccionarioEstado.textContent = `Estado: Cargando ${filename}...`;
-    traducirBtn.disabled = true;
-    ocultarControlesAudio();
 
-    try {
-        const response = await fetch(`/data/${filename}`);
-        if (!response.ok) {
-            throw new Error(`Error al cargar el archivo: ${response.statusText}`);
+try {
+    const response = await fetch(`./${filename}`);
+    if (!response.ok) {
+        throw new Error(`Error al cargar el archivo: ${response.statusText}`);
+    }
+    const datos = await response.json();
+    diccionarioEsIndigena = {};
+    diccionarioIndigenaEs = {};
+
+    let idiomaIndigenaKey = '';
+    if (datos.length > 0) {
+        const claves = Object.keys(datos[0]);
+        idiomaIndigenaKey = claves.find(k => k.toLowerCase() !== 'espanol' && k.toLowerCase() !== 'español');
+    }
+
+    if (!idiomaIndigenaKey) {
+        throw new Error("Estructura JSON inválida. No se encontró la clave del idioma indígena.");
+    }
+
+    datos.forEach(entrada => {
+        
+        const espanol = entrada.espanol || entrada["español"]
+            ? (entrada.espanol || entrada["español"]).toLowerCase().trim()
+            : '';
+
+        const indigena = entrada[idiomaIndigenaKey]
+            ? entrada[idiomaIndigenaKey].toLowerCase().trim()
+            : '';
+
+        if (espanol && indigena) {
+            diccionarioEsIndigena[espanol] = indigena;
+            diccionarioIndigenaEs[indigena] = espanol;
         }
+    });
 
-        const datos = await response.json();
-        diccionarioEsIndigena = {};
-        diccionarioIndigenaEs = {};
-
-        let idiomaIndigenaKey = '';
-
-        if (datos.length > 0) {
-            const claves = Object.keys(datos[0]);
-
-            // ✔️ Acepta español o español con ñ
-            idiomaIndigenaKey = claves.find(k => {
-                const key = k.toLowerCase();
-                return key !== 'espanol' && key !== 'español';
-            });
-        }
-
-        if (!idiomaIndigenaKey) {
-            throw new Error("Estructura JSON inválida. No se encontró la clave del idioma indígena.");
-        }
-
-        datos.forEach(entrada => {
-            // ✔️ Línea corregida (antes estaba rota)
-            const espanol = entrada.espanol || entrada["español"]
-                ? (entrada.espanol || entrada["español"]).toLowerCase().trim()
-                : '';
-
-            const indigena = entrada[idiomaIndigenaKey]
-                ? entrada[idiomaIndigenaKey].toLowerCase().trim()
-                : '';
-
-            if (espanol && indigena) {
-                diccionarioEsIndigena[espanol] = indigena;
-                diccionarioIndigenaEs[indigena] = espanol;
-            }
-        });
 
         traducirBtn.disabled = false;
         diccionarioEstado.textContent =
@@ -673,5 +663,6 @@ try {
     status.textContent = 'Selecciona un diccionario.';
 
 });
+
 
 
