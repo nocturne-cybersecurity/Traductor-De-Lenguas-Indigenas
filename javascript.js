@@ -203,31 +203,45 @@ async function cargarDiccionario(filename) {
         if (!response.ok) {
             throw new Error(`Error al cargar el archivo: ${response.statusText}`);
         }
+
         const datos = await response.json();
         diccionarioEsIndigena = {};
         diccionarioIndigenaEs = {};
 
-        let idiomaIndigenaKey = '';
-        if (datos.length > 0) {
-            const claves = Object.keys(datos[0]);
-            idiomaIndigenaKey = claves.find(k => k.toLowerCase() !== 'espanol');
-        }
+        if (!Array.isArray(datos) || datos.length === 0)
+            throw new Error("El JSON está vacío o mal formateado.");
 
-        if (!idiomaIndigenaKey) {
-            throw new Error("Estructura JSON inválida. No se encontró la clave del idioma indígena.");
+        // Normalizador para detectar español/español/espaÑol/espanól/etc
+        const normalizar = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+        const claves = Object.keys(datos[0]);
+        const claveEspanol = claves.find(k => normalizar(k) === "espanol");
+        const claveIndigena = claves.find(k => normalizar(k) !== "espanol");
+
+        if (!claveEspanol || !claveIndigena) {
+            throw new Error("No se encontraron claves válidas en el JSON.");
         }
 
         datos.forEach(entrada => {
-             = entrada.espanol ? entrada.espanol.toLowerCase().trim() : '';
-            const indigena = entrada[idiomaIndigenaKey] ? entrada[idiomaIndigenaKey].toLowerCase().trim() : '';
+            const espanol = entrada[claveEspanol] ? entrada[claveEspanol].toLowerCase().trim() : '';
+            const indigena = entrada[claveIndigena] ? entrada[claveIndigena].toLowerCase().trim() : '';
 
             if (espanol && indigena) {
-                // Dirección 1: Español -> Indígena
                 diccionarioEsIndigena[espanol] = indigena;
-                // Dirección 2: Indígena -> Español
                 diccionarioIndigenaEs[indigena] = espanol;
             }
         });
+
+        traducirBtn.disabled = false;
+        diccionarioEstado.textContent = `Diccionario cargado: ${Object.keys(diccionarioEsIndigena).length} entradas`;
+
+    } catch (err) {
+        diccionarioEstado.textContent = `Error: ${err.message}`;
+        traducirBtn.disabled = true;
+        console.error(err);
+    }
+}
+
 
         diccionarioEstado.textContent = `Estado: Diccionario ${idiomaIndigenaKey.toUpperCase()} cargado con éxito.`;
         contadorPalabras.textContent = `(${Object.keys(diccionarioEsIndigena).length} palabras)`;
