@@ -312,7 +312,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { filename: 'nahuatl.JSON', label: 'Náhuatl' },
         { filename: 'totonaco.JSON', label: 'Totonaco' },
         { filename: 'zapoteco.JSON', label: 'Zapoteco' },
-        { filename: 'maya.JSON', label: 'Maya' }
+        { filename: 'maya.JSON', label: 'Maya' },
+        { filename: 'otomi.JSON', label: 'Otomi' }
     ];
 
     languages.forEach(l => {
@@ -649,4 +650,5 @@ document.addEventListener('DOMContentLoaded', () => {
     resultado.textContent = '---';
     resultado.style.whiteSpace = 'pre-line';
     status.textContent = 'Selecciona un diccionario.';
+
 });
