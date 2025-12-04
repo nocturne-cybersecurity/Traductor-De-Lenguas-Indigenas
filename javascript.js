@@ -218,7 +218,7 @@ async function cargarDiccionario(filename) {
         }
 
         datos.forEach(entrada => {
-            const espanol = entrada.espanol ? entrada.espanol.toLowerCase().trim() : '';
+             = entrada.espanol ? entrada.espanol.toLowerCase().trim() : '';
             const indigena = entrada[idiomaIndigenaKey] ? entrada[idiomaIndigenaKey].toLowerCase().trim() : '';
 
             if (espanol && indigena) {
@@ -345,50 +345,48 @@ document.addEventListener('DOMContentLoaded', () => {
         status.textContent = `Cargando ${filename}...`;
         ocultarControlesAudio();
         
-        try {
-            const res = await fetch(`./${filename}`);
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
-            const data = await res.json();
-            if (!Array.isArray(data)) throw new Error('Formato JSON inesperado (se esperaba array).');
+try {
+    const res = await fetch(`./${filename}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    if (!Array.isArray(data)) throw new Error('Formato JSON inesperado (se esperaba array).');
 
-            const first = data.find(Boolean) || {};
-            const langKey = Object.keys(first).find(k => k.toLowerCase() !== 'espanol' && k.toLowerCase() !== 'español');
-            const espKey = Object.keys(first).find(k => k.toLowerCase() === 'espanol' || k.toLowerCase() === 'español');
+    // Normalizador para quitar acentos
+    const normalizeKey = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
-            if (!langKey || !espKey) throw new Error('No se encontró la clave de idioma o "espanol"/"español" en el JSON.');
+    const first = data.find(Boolean) || {};
 
-            currentLangKey = langKey;
+    // Detectar clave español(español / espanol / Español / ESpAñOL)
+    const espKey = Object.keys(first).find(k => normalizeKey(k) === "espanol");
 
-            data.forEach(entry => {
-                const esp = String(entry[espKey] || '');
-                const ind = String(entry[langKey] || '');
-                const nEsp = normalize(esp);
-                const nInd = normalize(ind);
-                if (nEsp) mapEsToInd[nEsp] = ind;
-                if (nInd) mapIndToEs[nInd] = esp;
-            });
+    // Detectar la otra clave (mixteco, maya, náhuatl, purépecha, etc.)
+    const langKey = Object.keys(first).find(k => normalizeKey(k) !== "espanol");
 
-            loadedFilename = filename;
-            traducirBtn.disabled = false;
-            status.textContent = `Diccionario ${filename} cargado - ${Object.keys(mapEsToInd).length} palabras`;
-            
-            // Inicializar traductor inteligente con los datos cargados
-            inicializarTraductorInteligente(data, langKey);
-            
-        } catch (err) {
-            console.error(err);
-            status.textContent = `Error cargando ${filename}: ${err.message}`;
-            traducirBtn.disabled = true;
-        }
-    }
+    if (!langKey || !espKey) throw new Error('No se encontró la clave de idioma o "español"/"espanol" en el JSON.');
 
-    idiomaSelect.addEventListener('change', () => {
-        resultado.textContent = '---';
-        traducirBtn.disabled = !idiomaSelect.value;
-        if (idiomaSelect.value) loadDictionary(idiomaSelect.value);
-        else status.textContent = '';
-        ocultarControlesAudio();
+    currentLangKey = langKey;
+
+    data.forEach(entry => {
+        const esp = String(entry[espKey] || '');
+        const ind = String(entry[langKey] || '');
+        const nEsp = normalize(esp);
+        const nInd = normalize(ind);
+        if (nEsp) mapEsToInd[nEsp] = ind;
+        if (nInd) mapIndToEs[nInd] = esp;
     });
+
+    loadedFilename = filename;
+    traducirBtn.disabled = false;
+    status.textContent = `Diccionario ${filename} cargado - ${Object.keys(mapEsToInd).length} palabras`;
+
+    // Inicializar traductor inteligente con los datos cargados
+    inicializarTraductorInteligente(data, langKey);
+
+} catch (err) {
+    console.error(err);
+    status.textContent = `Error cargando ${filename}: ${err.message}`;
+    traducirBtn.disabled = true;
+}
 
     // FUNCIÓN MEJORADA - BUSCA TRADUCCIONES MÁS PRECISAS
     function translatePhrase(text, direction) {
@@ -483,7 +481,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const expandidos = [];
             
             datos.forEach(entrada => {
-                const espanol = entrada.espanol?.toLowerCase().trim() || entrada.español?.toLowerCase().trim() || '';
+                 = entrada.espanol?.toLowerCase().trim() || entrada.español?.toLowerCase().trim() || '';
                 const indigena = entrada[this.languageKey]?.toLowerCase().trim() || '';
                 
                 if (espanol && indigena) {
@@ -652,3 +650,4 @@ document.addEventListener('DOMContentLoaded', () => {
     status.textContent = 'Selecciona un diccionario.';
 
 });
+
