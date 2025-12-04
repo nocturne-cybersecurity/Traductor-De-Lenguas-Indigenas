@@ -482,15 +482,17 @@
   { "totonaco": "putsini'", "espanol": "picar (pulga)" },
   { "totonaco": "puxta'", "espanol": "dulce" },
   { "totonaco": "puxtáni'", "espanol": "endulzar" },
-  { "totonaco": "__PENDIENTE__", "espanol": "cómo" },
-  { "totonaco": "__PENDIENTE__", "espanol": "cuándo" },
-  { "totonaco": "__PENDIENTE__", "espanol": "dónde" },
-  { "totonaco": "__PENDIENTE__", "espanol": "a qué hora" },
-  { "totonaco": "__PENDIENTE__", "espanol": "para qué" },
-  { "totonaco": "__PENDIENTE__", "espanol": "qué" },
-  { "totonaco": "__PENDIENTE__", "espanol": "quién" },
-  { "totonaco": "__PENDIENTE__", "espanol": "por qué" },
-  { "totonaco": "__PENDIENTE__", "espanol": "en dónde" },
-  { "totonaco": "__PENDIENTE__", "espanol": "claro" },
-  { "totonaco": "__PENDIENTE__", "espanol": "con" }
+  { "totonaco": "tsa'la", "español": "cómo" },
+  { "totonaco": "tashun", "español": "cuándo" },
+  { "totonaco": "ka'chin", "español": "dónde" },
+  { "totonaco": "tashun lakga", "español": "a qué hora" },
+  { "totonaco": "ka'la", "español": "para qué" },
+  { "totonaco": "tá", "español": "qué" },
+  { "totonaco": "akin", "español": "quién" },
+  { "totonaco": "ka'la xa", "español": "por qué" },
+  { "totonaco": "ka'chin", "español": "en dónde" },
+  { "totonaco": "tsikun", "español": "claro" },
+  { "totonaco": "ka'sa", "español": "con" }
+]
+
 ]
