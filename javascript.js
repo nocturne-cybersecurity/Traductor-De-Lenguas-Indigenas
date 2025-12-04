@@ -352,48 +352,37 @@ document.addEventListener('DOMContentLoaded', () => {
     let loadedFilename = '';
     let currentLangKey = '';
 
-    async function loadDictionary(filename) {
-        mapEsToInd = {};
-        mapIndToEs = {};
-        status.textContent = `Cargando ${filename}...`;
-        ocultarControlesAudio();
-        
 try {
-    const res = await fetch(`./${filename}`);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
-    if (!Array.isArray(data)) throw new Error('Formato JSON inesperado (se esperaba array).');
+    const response = await fetch(`./${filename}`);
+    if (!response.ok) {
+        throw new Error(`Error al cargar el archivo: ${response.statusText}`);
+    }
+    const datos = await response.json();
+    diccionarioEsIndigena = {};
+    diccionarioIndigenaEs = {};
 
-    // Normalizador para quitar acentos
-    const normalizeKey = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    let idiomaIndigenaKey = '';
+    if (datos.length > 0) {
+        const claves = Object.keys(datos[0]);
+        idiomaIndigenaKey = claves.find(k => k.toLowerCase() !== 'espanol');
+    }
 
-    const first = data.find(Boolean) || {};
+    if (!idiomaIndigenaKey) {
+        throw new Error("Estructura JSON inválida. No se encontró la clave del idioma indígena.");
+    }
 
-    // Detectar clave español(español / espanol / Español / ESpAñOL)
-    const espKey = Object.keys(first).find(k => normalizeKey(k) === "espanol");
+    datos.forEach(entrada => {
+        const espanol = entrada.espanol ? entrada.espanol.toLowerCase().trim() : '';
+        const indigena = entrada[idiomaIndigenaKey] ? entrada[idiomaIndigenaKey].toLowerCase().trim() : '';
 
-    // Detectar la otra clave (mixteco, maya, náhuatl, purépecha, etc.)
-    const langKey = Object.keys(first).find(k => normalizeKey(k) !== "espanol");
-
-    if (!langKey || !espKey) throw new Error('No se encontró la clave de idioma o "español"/"espanol" en el JSON.');
-
-    currentLangKey = langKey;
-
-    data.forEach(entry => {
-        const esp = String(entry[espKey] || '');
-        const ind = String(entry[langKey] || '');
-        const nEsp = normalize(esp);
-        const nInd = normalize(ind);
-        if (nEsp) mapEsToInd[nEsp] = ind;
-        if (nInd) mapIndToEs[nInd] = esp;
+        if (espanol && indigena) {
+            // Dirección 1: Español -> Indígena
+            diccionarioEsIndigena[espanol] = indigena;
+            // Dirección 2: Indígena -> Español
+            diccionarioIndigenaEs[indigena] = espanol;
+        }
     });
-
-    loadedFilename = filename;
-    traducirBtn.disabled = false;
-    status.textContent = `Diccionario ${filename} cargado - ${Object.keys(mapEsToInd).length} palabras`;
-
-    // Inicializar traductor inteligente con los datos cargados
-    inicializarTraductorInteligente(data, langKey);
+    
 
 } catch (err) {
     console.error(err);
@@ -663,6 +652,7 @@ try {
     status.textContent = 'Selecciona un diccionario.';
 
 });
+
 
 
 
