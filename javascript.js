@@ -1,14 +1,6 @@
-// =============================================
-// SISTEMA DE SÍNTESIS DE VOZ PARA LENGUAS INDÍGENAS
-// =============================================
 
 class SintesisVozIndigena {
-/*************  ✨ Windsurf Command ⭐  *************/
-    /**
-     * Constructor de la clase SintesisVozIndigena.
-     * Carga las voces disponibles en el navegador y las almacena en la propiedad this.vocesDisponibles.
-     */
-/*******  0813d4ea-0b54-4ef2-870f-49fc3eb27eaf  *******/
+
     constructor() {
         this.vocesDisponibles = [];
         this.cargarVoces();
@@ -717,3 +709,4 @@ async function loadDictionary(filename) {
     status.textContent = 'Selecciona un diccionario.';
 
 });
+
