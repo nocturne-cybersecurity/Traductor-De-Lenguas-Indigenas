@@ -3,6 +3,12 @@
 // =============================================
 
 class SintesisVozIndigena {
+/*************  ✨ Windsurf Command ⭐  *************/
+    /**
+     * Constructor de la clase SintesisVozIndigena.
+     * Carga las voces disponibles en el navegador y las almacena en la propiedad this.vocesDisponibles.
+     */
+/*******  0813d4ea-0b54-4ef2-870f-49fc3eb27eaf  *******/
     constructor() {
         this.vocesDisponibles = [];
         this.cargarVoces();
@@ -338,49 +344,109 @@ document.addEventListener('DOMContentLoaded', () => {
     let loadedFilename = '';
     let currentLangKey = '';
 
-    async function loadDictionary(filename) {
-        mapEsToInd = {};
-        mapIndToEs = {};
-        status.textContent = `Cargando ${filename}...`;
-        ocultarControlesAudio();
+async function loadDictionary(filename) {
+    mapEsToInd = {};
+    mapIndToEs = {};
+    status.textContent = `Cargando ${filename}...`;
+    ocultarControlesAudio();
+    
+    console.log('DEBUG: Intentando cargar archivo:', filename);
+    console.log('DEBUG: URL completa:', `./data/${filename}`);
+    
+    try {
+        // Asegúrate de que la ruta sea correcta
+        const res = await fetch(`./data/${filename}`);
         
-        try {
-            const res = await fetch(`./${filename}`);
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
-            const data = await res.json();
-            if (!Array.isArray(data)) throw new Error('Formato JSON inesperado (se esperaba array).');
+        if (!res.ok) {
+            console.error(`DEBUG: Error HTTP ${res.status} al cargar ${filename}`);
+            // Intenta también la ruta sin /data/
+            const resAlt = await fetch(`./${filename}`);
+            if (!resAlt.ok) {
+                throw new Error(`No se pudo cargar el archivo. HTTP ${res.status} y ${resAlt.status}`);
+            }
+            // Si la ruta alternativa funciona, úsala
+            const data = await resAlt.json();
+            procesarDatos(data, filename);
+            return;
+        }
+        
+        const data = await res.json();
+        procesarDatos(data, filename);
+        
+    } catch (err) {
+        console.error('Error detallado al cargar diccionario:', err);
+        status.textContent = `Error cargando ${filename}: ${err.message}`;
+        traducirBtn.disabled = true;
+    }
+    
+    function procesarDatos(data, filename) {
+        console.log('DEBUG: JSON cargado:', data);
+        
+        if (!Array.isArray(data)) {
+            throw new Error('Formato JSON inesperado (se esperaba array).');
+        }
 
-            const first = data.find(Boolean) || {};
-            const langKey = Object.keys(first).find(k => k.toLowerCase() !== 'espanol' && k.toLowerCase() !== 'español');
-            const espKey = Object.keys(first).find(k => k.toLowerCase() === 'espanol' || k.toLowerCase() === 'español');
+        if (data.length === 0) {
+            throw new Error('El archivo JSON está vacío.');
+        }
 
-            if (!langKey || !espKey) throw new Error('No se encontró la clave de idioma o "espanol"/"español" en el JSON.');
+        const first = data[0];
+        console.log('DEBUG: Primera entrada:', first);
+        console.log('DEBUG: Claves de primera entrada:', Object.keys(first));
 
-            currentLangKey = langKey;
+        const langKey = Object.keys(first).find(k => 
+            k.toLowerCase() !== 'espanol' && 
+            k.toLowerCase() !== 'español'
+        );
+        
+        const espKey = Object.keys(first).find(k => 
+            k.toLowerCase() === 'espanol' || 
+            k.toLowerCase() === 'español'
+        );
 
-            data.forEach(entry => {
-                const esp = String(entry[espKey] || '');
-                const ind = String(entry[langKey] || '');
+        console.log('DEBUG: Claves identificadas:', { 
+            langKey, 
+            espKey 
+        });
+
+        if (!langKey) {
+            throw new Error(`No se encontró clave para idioma indígena. Claves disponibles: ${Object.keys(first).join(', ')}`);
+        }
+        if (!espKey) {
+            throw new Error('No se encontró la clave "espanol" o "español".');
+        }
+
+        currentLangKey = langKey;
+
+        // Procesar cada entrada
+        data.forEach(entry => {
+            const esp = String(entry[espKey] || '');
+            const ind = String(entry[langKey] || '');
+            
+            if (esp && ind) {
                 const nEsp = normalize(esp);
                 const nInd = normalize(ind);
-                if (nEsp) mapEsToInd[nEsp] = ind;
-                if (nInd) mapIndToEs[nInd] = esp;
-            });
+                
+                if (nEsp && nInd) {
+                    mapEsToInd[nEsp] = ind;
+                    mapIndToEs[nInd] = esp;
+                }
+            }
+        });
 
-            loadedFilename = filename;
-            traducirBtn.disabled = false;
-            status.textContent = `Diccionario ${filename} cargado - ${Object.keys(mapEsToInd).length} palabras`;
-            
-            // Inicializar traductor inteligente con los datos cargados
-            inicializarTraductorInteligente(data, langKey);
-            
-        } catch (err) {
-            console.error(err);
-            status.textContent = `Error cargando ${filename}: ${err.message}`;
-            traducirBtn.disabled = true;
-        }
+        loadedFilename = filename;
+        traducirBtn.disabled = false;
+        status.textContent = `Diccionario ${filename} cargado - ${Object.keys(mapEsToInd).length} palabras`;
+        
+        console.log(`DEBUG: Diccionario cargado exitosamente. ${Object.keys(mapEsToInd).length} palabras.`);
+        console.log('DEBUG: Ejemplo de entradas:', {
+            español: Object.keys(mapEsToInd)[0],
+            indígena: mapEsToInd[Object.keys(mapEsToInd)[0]]
+        });
+        
+        inicializarTraductorInteligente(data, langKey);
     }
-
+}
     idiomaSelect.addEventListener('change', () => {
         resultado.textContent = '---';
         traducirBtn.disabled = !idiomaSelect.value;
@@ -649,4 +715,5 @@ document.addEventListener('DOMContentLoaded', () => {
     resultado.textContent = '---';
     resultado.style.whiteSpace = 'pre-line';
     status.textContent = 'Selecciona un diccionario.';
+
 });
