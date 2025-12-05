@@ -1,7 +1,7 @@
 [
     { "maya": "áak’", "espanol": "tortuga" },
     { "maya": "áanal", "espanol": "sembrado" },
-    { "maya": "ábil", "espanol": "mañana (temprano)" },
+    { "maya": "ábil", "espanol": "manana (temprano)" },
     { "maya": "áak’ab", "espanol": "oscuridad" },
     { "maya": "áalk’ab", "espanol": "amanecer" },
     { "maya": "áanalte'", "espanol": "libro" },
@@ -49,7 +49,7 @@
     { "maya": "ch’aam", "espanol": "flauta" },
     { "maya": "ch’a’och", "espanol": "gota" },
     { "maya": "cha’", "espanol": "dos" },
-    { "maya": "chaab", "espanol": "albañil" },
+    { "maya": "chaab", "espanol": "albanil" },
     { "maya": "chaah", "espanol": "pavo" },
     { "maya": "chaaj", "espanol": "pavo silvestre" },
     { "maya": "chaak", "espanol": "lluvia" },
@@ -66,8 +66,8 @@
     { "maya": "ch’áal", "espanol": "lluvia fuerte" },
 
     { "maya": "ch’am", "espanol": "tomar con la mano" },
-    { "maya": "ch’an", "espanol": "pequeño" },
-    { "maya": "ch’ane’en", "espanol": "niño" },
+    { "maya": "ch’an", "espanol": "pequeno" },
+    { "maya": "ch’ane’en", "espanol": "nino" },
     { "maya": "ch’áan", "espanol": "sentarse" },
     { "maya": "ch’ees", "espanol": "agrio" },
     { "maya": "ch’e’en", "espanol": "cueva" },
@@ -99,7 +99,7 @@
     { "maya": "enel", "espanol": "convertirse" },
 
     { "maya": "ha’", "espanol": "agua" },
-    { "maya": "haab", "espanol": "año" },
+    { "maya": "haab", "espanol": "ano" },
     { "maya": "haats'", "espanol": "golpe" },
     { "maya": "haj", "espanol": "romper" },
     { "maya": "halach", "espanol": "verdadero" },
@@ -118,7 +118,7 @@
     { "maya": "húun", "espanol": "papel corteza" },
     { "maya": "hun", "espanol": "uno" },
     { "maya": "hunab", "espanol": "único" },
-    { "maya": "hunab ku", "espanol": "dios único" }
+    { "maya": "hunab ku", "espanol": "dios único" },
 
     { "maya": "ich", "espanol": "ojo" },
     { "maya": "ichil", "espanol": "adentro" },
@@ -148,7 +148,7 @@
     { "maya": "inbilel", "espanol": "asiento" },
     { "maya": "inbin", "espanol": "oreja" },
     { "maya": "inche'", "espanol": "yo soy" },
-    { "maya": "inchoj", "espanol": "bañar" },
+    { "maya": "inchoj", "espanol": "banar" },
     { "maya": "ine'el", "espanol": "sabor" },
     { "maya": "inel", "espanol": "estar sentado" },
     { "maya": "inik", "espanol": "mujer" },
@@ -162,9 +162,9 @@
     { "maya": "ipil", "espanol": "relativo menor" },
     { "maya": "ipilal", "espanol": "descendiente" },
     { "maya": "ip'o'och", "espanol": "fragancia" },
-    { "maya": "is", "espanol": "uña" },
+    { "maya": "is", "espanol": "una" },
 
-    { "maya": "isaj", "espanol": "cortar uñas" },
+    { "maya": "isaj", "espanol": "cortar unas" },
     { "maya": "isbil", "espanol": "delgado" },
     { "maya": "isk'ab", "espanol": "dedo" },
     { "maya": "isnaj", "espanol": "raspar" },
@@ -187,7 +187,7 @@
     { "maya": "ja’ab", "espanol": "lágrima" },
 
     { "maya": "ja’ale'", "espanol": "pedazo" },
-    { "maya": "ja’ats'", "espanol": "puño" },
+    { "maya": "ja’ats'", "espanol": "puno" },
     { "maya": "jaay", "espanol": "cantar" },
     { "maya": "jaayal", "espanol": "canto" },
     { "maya": "jab", "espanol": "planicie" },
@@ -261,7 +261,7 @@
     { "maya": "kaay", "espanol": "canto" },
     { "maya": "kaaytal", "espanol": "cantar" },
     { "maya": "kab", "espanol": "tierra" },
-    { "maya": "k’ab", "espanol": "mano" }
+    { "maya": "k'ab", "espanol": "mano" },
 
     { "maya": "k'áaj", "espanol": "desear" },
     { "maya": "k'aaj", "espanol": "lluvia" },
@@ -371,7 +371,7 @@
     { "maya": "kankab", "espanol": "tierra roja" },
     { "maya": "kankabnal", "espanol": "suelo rojo" },
     { "maya": "kankin", "espanol": "sol poniente" },
-    { "maya": "kankúul", "espanol": "pueblo" }
+    { "maya": "kankúul", "espanol": "pueblo" },
 
     { "maya": "kano’ob", "espanol": "cuatros" },
     { "maya": "kanpek'", "espanol": "lagarto grande" },
@@ -481,7 +481,7 @@
     { "maya": "laaktsil", "espanol": "alianza" },
     { "maya": "laat", "espanol": "ustedes" },
     { "maya": "laap", "espanol": "chicle" },
-    { "maya": "laatun", "espanol": "piedra plana" }
+    { "maya": "laatun", "espanol": "piedra plana" },
 
     { "maya": "lab", "espanol": "resbalar" },
     { "maya": "labil", "espanol": "resbaloso" },
@@ -569,9 +569,9 @@
     { "maya": "máanen", "espanol": "pasado" },
     { "maya": "máantal", "espanol": "tránsito" },
     { "maya": "ma'axila'", "espanol": "casi" },
-    { "maya": "mejen", "espanol": "pequeño" },
+    { "maya": "mejen", "espanol": "pequeno" },
 
-    { "maya": "mejenpal", "espanol": "niño" },
+    { "maya": "mejenpal", "espanol": "nino" },
     { "maya": "mek'", "espanol": "abrazar" },
     { "maya": "mek'el", "espanol": "abrazo" },
     { "maya": "mel", "espanol": "hacer" },
@@ -602,7 +602,7 @@
     { "maya": "mu'", "espanol": "pájaro" },
     { "maya": "muk", "espanol": "enterrar" },
     { "maya": "mukbil", "espanol": "enterrado" },
-    { "maya": "mukuy", "espanol": "paloma" }
+    { "maya": "mukuy", "espanol": "paloma" },
 
     { "maya": "men", "espanol": "quien hace; artesano" },
     { "maya": "mena'an", "espanol": "artesano; fabricante" },
@@ -612,8 +612,8 @@
     { "maya": "menk'aj", "espanol": "encargado de hacer" },
     { "maya": "menk'íin", "espanol": "día de trabajo" },
     { "maya": "menkuuntal", "espanol": "fabricación" },
-    { "maya": "mejen", "espanol": "pequeño" },
-    { "maya": "mejenpal", "espanol": "niño" },
+    { "maya": "mejen", "espanol": "pequeno" },
+    { "maya": "mejenpal", "espanol": "nino" },
 
     { "maya": "mejen ts'o'ots", "espanol": "cachorro" },
     { "maya": "mel", "espanol": "hacer" },
@@ -648,7 +648,7 @@
     { "maya": "mol", "espanol": "juntar" },
     { "maya": "molaj", "espanol": "juntado" },
 
-    { "maya": "molik", "espanol": "juntar cosas pequeñas" },
+    { "maya": "molik", "espanol": "juntar cosas pequenas" },
     { "maya": "mo'ol", "espanol": "revuelto; huevo revuelto" },
     { "maya": "mool", "espanol": "montón" },
     { "maya": "mo'olche'", "espanol": "matorral espeso" },
@@ -671,15 +671,15 @@
     { "maya": "muuchil", "espanol": "charca" },
 
     { "maya": "muul", "espanol": "montículo arqueológico" },
-    { "maya": "mu'ul", "espanol": "ceiba pequeña" },
+    { "maya": "mu'ul", "espanol": "ceiba pequena" },
     { "maya": "múuts", "espanol": "nubes" },
     { "maya": "na'", "espanol": "casa" },
     { "maya": "naaj", "espanol": "cerca de" },
     { "maya": "naak", "espanol": "oreja" },
     { "maya": "naakal", "espanol": "orejado" },
     { "maya": "naaksaj", "espanol": "arrimar" },
-    { "maya": "naal", "espanol": "retoño" },
-    { "maya": "naalil", "espanol": "retoños" },
+    { "maya": "naal", "espanol": "retono" },
+    { "maya": "naalil", "espanol": "retonos" },
 
     { "maya": "naam", "espanol": "llamar" },
     { "maya": "na'an", "espanol": "madre" },
@@ -707,14 +707,14 @@
     { "maya": "nam", "espanol": "pez" },
     { "maya": "namak", "espanol": "hierba medicinal" },
     { "maya": "namsaj", "espanol": "pescar" },
-    { "maya": "namsakil", "espanol": "pez pequeño" },
+    { "maya": "namsakil", "espanol": "pez pequeno" },
     { "maya": "na'nik'", "espanol": "novia" },
     { "maya": "na'noj", "espanol": "abuela (respeto)" },
     { "maya": "nap", "espanol": "sobar" },
     { "maya": "napik", "espanol": "sobado" },
     { "maya": "nats", "espanol": "juntar, apilar" },
 
-    { "maya": "natsil", "espanol": "montón pequeño" },
+    { "maya": "natsil", "espanol": "montón pequeno" },
     { "maya": "na'utsh", "espanol": "tía" },
     { "maya": "néen", "espanol": "lengua" },
     { "maya": "néek'", "espanol": "hormiga" },
@@ -723,11 +723,11 @@
     { "maya": "néets", "espanol": "apretar" },
     { "maya": "néex", "espanol": "tórtola" },
     { "maya": "nich", "espanol": "flor" },
-    { "maya": "niche'", "espanol": "aroma" }
+    { "maya": "niche'", "espanol": "aroma" },
 
     { "maya": "nichil", "espanol": "flores" },
     { "maya": "nichilal", "espanol": "jardín de flores" },
-    { "maya": "nich'o'", "espanol": "flor pequeña" },
+    { "maya": "nich'o'", "espanol": "flor pequena" },
     { "maya": "nikté", "espanol": "flor blanca" },
     { "maya": "nikte'el", "espanol": "aroma floral" },
     { "maya": "nikte'ej", "espanol": "florecer" },
@@ -749,8 +749,8 @@
 
     { "maya": "no'oj", "espanol": "mirada" },
     { "maya": "no'ok'", "espanol": "ojito" },
-    { "maya": "no'okil", "espanol": "visión pequeña" },
-    { "maya": "no'okilil", "espanol": "pequeña visión" },
+    { "maya": "no'okil", "espanol": "visión pequena" },
+    { "maya": "no'okilil", "espanol": "pequena visión" },
     { "maya": "no'ots", "espanol": "ver" },
     { "maya": "nootsil", "espanol": "visto" },
     { "maya": "nok'", "espanol": "tocar" },
@@ -833,9 +833,9 @@
     { "maya": "p'inal", "espanol": "rey" },
     { "maya": "p'inil", "espanol": "realeza" },
     { "maya": "p'ix", "espanol": "cortar" },
-    { "maya": "p'ixik", "espanol": "cortado" }
+    { "maya": "p'ixik", "espanol": "cortado" },
 
-    { "maya": "p'ixik'il", "espanol": "corte pequeño" },
+    { "maya": "p'ixik'il", "espanol": "corte pequeno" },
     { "maya": "p'ixnal", "espanol": "cortadura" },
     { "maya": "p'ok", "espanol": "entrar" },
     { "maya": "p'okil", "espanol": "entrada" },
@@ -843,7 +843,7 @@
     { "maya": "p'otbil", "espanol": "cubierto" },
     { "maya": "p'uch", "espanol": "abrir" },
     { "maya": "p'uchbil", "espanol": "abierto" },
-    { "maya": "p'uuk", "espanol": "montículo pequeño" },
+    { "maya": "p'uuk", "espanol": "montículo pequeno" },
     { "maya": "p'uukul", "espanol": "montículo" },
 
     { "maya": "p'uuts", "espanol": "cerrar" },
@@ -861,7 +861,7 @@
     { "maya": "páatsil", "espanol": "mirada fija" },
     { "maya": "píik", "espanol": "dar puntada" },
     { "maya": "píikal", "espanol": "puntada" },
-    { "maya": "píisil", "espanol": "cosa pequeña" },
+    { "maya": "píisil", "espanol": "cosa pequena" },
     { "maya": "píits", "espanol": "romper" },
     { "maya": "píitsil", "espanol": "roto" },
     { "maya": "póok", "espanol": "asentar" },
@@ -869,7 +869,7 @@
     { "maya": "póots", "espanol": "quitar" },
 
     { "maya": "póotsil", "espanol": "quitado" },
-    { "maya": "púuk", "espanol": "montículo pequeño" },
+    { "maya": "púuk", "espanol": "montículo pequeno" },
     { "maya": "púuts", "espanol": "cerrar" },
     { "maya": "púutsil", "espanol": "cerrado" },
     { "maya": "sach", "espanol": "árbol" },
@@ -932,7 +932,7 @@
     { "maya": "somaj", "espanol": "enredado" },
     { "maya": "somil", "espanol": "trampa" },
     { "maya": "sot", "espanol": "hundir" },
-    { "maya": "sotbil", "espanol": "hundido" }
+    { "maya": "sotbil", "espanol": "hundido" },
 
     { "maya": "sotil", "espanol": "hundimiento" },
     { "maya": "súuk", "espanol": "blanco" },
@@ -946,7 +946,7 @@
     { "maya": "taab", "espanol": "raíz" },
 
     { "maya": "taabal", "espanol": "raíz grande" },
-    { "maya": "taabil", "espanol": "raíz pequeña" },
+    { "maya": "taabil", "espanol": "raíz pequena" },
     { "maya": "taaj", "espanol": "hacer calor" },
     { "maya": "taajil", "espanol": "calentado" },
     { "maya": "tak", "espanol": "atrapar" },
@@ -975,7 +975,7 @@
     { "maya": "tek'", "espanol": "golpear" },
     { "maya": "tek'il", "espanol": "golpe" },
     { "maya": "tek'aj", "espanol": "golpeado" },
-    { "maya": "tekil", "espanol": "golpe pequeño" },
+    { "maya": "tekil", "espanol": "golpe pequeno" },
     { "maya": "tel", "espanol": "enredar" },
 
     { "maya": "telaj", "espanol": "enredado" },
@@ -1003,7 +1003,7 @@
     { "maya": "toots", "espanol": "quitar" },
     { "maya": "tootsil", "espanol": "quitado" },
     { "maya": "t'uuk", "espanol": "montículo" },
-    { "maya": "t'uukul", "espanol": "montículo pequeño" },
+    { "maya": "t'uukul", "espanol": "montículo pequeno" },
     { "maya": "t'uut", "espanol": "cerrar" },
     { "maya": "t'uutsil", "espanol": "cerrado" },
     { "maya": "tzab", "espanol": "atar" },
@@ -1018,9 +1018,9 @@
     { "maya": "tzamaj", "espanol": "pescado cocido" },
     { "maya": "tzamil", "espanol": "pez" },
     { "maya": "tz'an", "espanol": "perro" },
-    { "maya": "tz'anj", "espanol": "pequeño" },
-    { "maya": "tz'ankil", "espanol": "pequeñez" },
-    { "maya": "tz'ap", "espanol": "golpear" }
+    { "maya": "tz'anj", "espanol": "pequeno" },
+    { "maya": "tz'ankil", "espanol": "pequenez" },
+    { "maya": "tz'ap", "espanol": "golpear" },
 
     { "maya": "tz'apil", "espanol": "golpeado" },
     { "maya": "tz'at", "espanol": "contar" },
@@ -1109,4 +1109,4 @@
     { "maya": "yutil", "espanol": "longitud" },
     { "maya": "yuts'", "espanol": "cerrar" },
     { "maya": "yuts'il", "espanol": "cerrado" }
-  ]
+]
