@@ -1,6 +1,5 @@
 
 class SintesisVozIndigena {
-
     constructor() {
         this.vocesDisponibles = [];
         this.cargarVoces();
@@ -709,4 +708,3 @@ async function loadDictionary(filename) {
     status.textContent = 'Selecciona un diccionario.';
 
 });
-
