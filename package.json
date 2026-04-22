@@ -1,0 +1,37 @@
+{
+  "name": "traductor-de-lenguas-indigenas",
+  "version": "2.0.0",
+  "description": "Traductor inteligente de lenguas indígenas mexicanas con IA",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "verify": "node verify-setup.js",
+    "dev": "npm run verify && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nocturne-cybersecurity/Traductor-De-Lenguas-Indigenas.git"
+  },
+  "keywords": [
+    "traducción",
+    "lenguas-indígenas",
+    "IA",
+    "inteligencia-artificial",
+    "nahuatl",
+    "maya",
+    "zapoteco",
+    "mixteco",
+    "totonaco"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nocturne-cybersecurity/Traductor-De-Lenguas-Indigenas/issues"
+  },
+  "homepage": "https://github.com/nocturne-cybersecurity/Traductor-De-Lenguas-Indigenas#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
