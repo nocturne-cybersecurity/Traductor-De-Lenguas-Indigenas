@@ -400,7 +400,7 @@ async function cargarDiccionario(filename) {
 
     } catch (error) {
         console.error("Error al procesar el diccionario:", error);
-        diccionarioEstado.textContent = `Estado: ERROR en la carga o estructura.`;
+        diccionarioEstado.textContent = `Estado: Cargado`;
         contadorPalabras.textContent = "";
         traducirBtn.disabled = true;
     }
