@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/nocturne-cybersecurity/Traductor-De-Lenguas-Indigenas#readme",
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "express": "^5.2.1"
   }
 }
