@@ -2,160 +2,183 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Conexión Indígena — Traductor de Lenguas</title>
+  <title>Conexión Indígena — Portal de Lenguas Vivas de México</title>
+  <meta name="description" content="Portal institucional de traducción y preservación de lenguas indígenas de México. Náhuatl, Maya, Zapoteco, Mixteco, Totonaco y Huichol.">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Libre+Franklin:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="static/style.css">
-  <link rel="shortcut icon" href="logo-traductor.png" type="images/logo-traductor.png">
 </head>
 <body>
 
-  <!-- Decorative background patterns -->
+  <!-- Fondos decorativos -->
   <div class="bg-texture"></div>
   <div class="bg-pattern"></div>
 
-  <!-- Hero Header -->
-  <header class="site-header">
-    <div class="header-ornament top-ornament">
-      <svg viewBox="0 0 400 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 20 Q50 5 100 20 Q150 35 200 20 Q250 5 300 20 Q350 35 400 20" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.6"/>
-        <path d="M0 25 Q50 10 100 25 Q150 40 200 25 Q250 10 300 25 Q350 40 400 25" stroke="currentColor" stroke-width="0.8" fill="none" opacity="0.3"/>
-        <circle cx="200" cy="20" r="4" fill="currentColor" opacity="0.7"/>
-        <circle cx="100" cy="20" r="2.5" fill="currentColor" opacity="0.5"/>
-        <circle cx="300" cy="20" r="2.5" fill="currentColor" opacity="0.5"/>
-      </svg>
+  <!-- ─── BARRA INSTITUCIONAL SUPERIOR ─── -->
+  <div class="institutional-bar">
+    <div class="institutional-bar-inner">
+      <div class="brand-gov">
+        <div class="gov-logo-mark"></div>
+        <span>Instituto Nacional de Lenguas Indígenas &nbsp;·&nbsp; INALI</span>
+      </div>
+      <ul class="bar-links">
+        <li><a href="#">Inicio</a></li>
+        <div class="bar-sep"></div>
+        <li><a href="#">Marco Legal</a></li>
+        <div class="bar-sep"></div>
+        <li><a href="#">Contacto</a></li>
+        <div class="bar-sep"></div>
+        <li><a href="#">Accesibilidad</a></li>
+      </ul>
     </div>
+  </div>
 
-    <div class="header-content">
-      <!-- Decorative glyphs -->
-      <div class="header-glyph left-glyph">
-        <svg viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="10" y="10" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none" transform="rotate(45 30 30)" opacity="0.4"/>
-          <circle cx="30" cy="30" r="8" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.6"/>
-          <line x1="30" y1="38" x2="30" y2="70" stroke="currentColor" stroke-width="1" opacity="0.3"/>
-          <circle cx="30" cy="72" r="2" fill="currentColor" opacity="0.4"/>
-        </svg>
+  <!-- ─── HEADER PRINCIPAL ─── -->
+  <header class="site-header">
+    <div class="header-main">
+
+      <!-- Emblema izquierdo -->
+      <div class="header-emblem">
+        <div class="emblem-seal">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M16 5 L16 27 M5 16 L27 16" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
+            <circle cx="16" cy="16" r="4" fill="currentColor" opacity="0.25"/>
+            <path d="M10 10 Q16 7 22 10 Q25 16 22 22 Q16 25 10 22 Q7 16 10 10Z"
+                  stroke="currentColor" stroke-width="0.8" fill="none" opacity="0.5"/>
+          </svg>
+        </div>
+        <span class="emblem-label">Portal<br>Oficial</span>
       </div>
 
+      <!-- Centro -->
       <div class="header-center">
-        <span class="header-eyebrow"> Portal de Lenguas Vivas </span>
-        <h1 class="site-title">Conexión<br><em>Indígena</em></h1>
+        <div class="header-eyebrow">Portal de Lenguas Vivas</div>
+        <h1 class="site-title">Conexión <em>Indígena</em></h1>
         <p class="site-subtitle">Preservando las voces ancestrales de México</p>
       </div>
 
-      <div class="header-glyph right-glyph">
-        <svg viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="10" y="10" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none" transform="rotate(45 30 30)" opacity="0.4"/>
-          <circle cx="30" cy="30" r="8" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.6"/>
-          <line x1="30" y1="38" x2="30" y2="70" stroke="currentColor" stroke-width="1" opacity="0.3"/>
-          <circle cx="30" cy="72" r="2" fill="currentColor" opacity="0.4"/>
+      <!-- Decoración derecha -->
+      <div class="header-decoration">
+        <span class="decoration-badge">v 2.0</span>
+        <div class="decoration-langs">
+          Náhuatl · Maya · Zapoteco<br>
+          Mixteco · Totonaco · Huichol
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Ornamento divisor -->
+    <div class="header-divider">
+      <div class="divider-line"></div>
+      <div class="divider-ornament">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M6 0L12 6L6 12L0 6Z" fill="currentColor" opacity="0.4"/>
+          <path d="M6 3L9 6L6 9L3 6Z" fill="currentColor"/>
+        </svg>
+        Lenguas Nacionales
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M6 0L12 6L6 12L0 6Z" fill="currentColor" opacity="0.4"/>
+          <path d="M6 3L9 6L6 9L3 6Z" fill="currentColor"/>
         </svg>
       </div>
-    </div>
-
-    <!-- Language illustrations row -->
-    <div class="language-badges">
-      <div class="lang-badge" data-lang="nahuatl">
-        <div class="lang-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="1.5" fill="none"/>
-            <path d="M24 6 L24 42 M6 24 L42 24" stroke="currentColor" stroke-width="1" opacity="0.5"/>
-            <circle cx="24" cy="24" r="6" fill="currentColor" opacity="0.3"/>
-            <path d="M14 14 Q24 8 34 14 Q40 24 34 34 Q24 40 14 34 Q8 24 14 14Z" stroke="currentColor" stroke-width="0.8" fill="none" opacity="0.4"/>
-          </svg>
-        </div>
-        <span>Náhuatl</span>
-      </div>
-      <div class="lang-badge" data-lang="maya">
-        <div class="lang-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none"/>
-            <rect x="16" y="16" width="16" height="16" stroke="currentColor" stroke-width="1" fill="none" opacity="0.6"/>
-            <circle cx="24" cy="24" r="4" fill="currentColor" opacity="0.4"/>
-            <line x1="8" y1="8" x2="40" y2="40" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
-            <line x1="40" y1="8" x2="8" y2="40" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
-          </svg>
-        </div>
-        <span>Maya</span>
-      </div>
-      <div class="lang-badge" data-lang="zapoteco">
-        <div class="lang-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="24,4 44,36 4,36" stroke="currentColor" stroke-width="1.5" fill="none"/>
-            <polygon points="24,14 36,34 12,34" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
-            <circle cx="24" cy="26" r="4" fill="currentColor" opacity="0.4"/>
-          </svg>
-        </div>
-        <span>Zapoteco</span>
-      </div>
-      <div class="lang-badge" data-lang="mixteco">
-        <div class="lang-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 4 L44 24 L24 44 L4 24 Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
-            <path d="M24 12 L36 24 L24 36 L12 24 Z" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
-            <circle cx="24" cy="24" r="4" fill="currentColor" opacity="0.4"/>
-          </svg>
-        </div>
-        <span>Mixteco</span>
-      </div>
-      <div class="lang-badge" data-lang="totonaco">
-        <div class="lang-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 40 Q24 4 40 40" stroke="currentColor" stroke-width="1.5" fill="none"/>
-            <path d="M14 40 Q24 12 34 40" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
-            <circle cx="24" cy="28" r="4" fill="currentColor" opacity="0.4"/>
-            <line x1="8" y1="40" x2="40" y2="40" stroke="currentColor" stroke-width="1" opacity="0.5"/>
-          </svg>
-        </div>
-        <span>Totonaco</span>
-      </div>
-      <div class="lang-badge" data-lang="huichol">
-        <div class="lang-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24" cy="12" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
-            <path d="M24 20 L24 36" stroke="currentColor" stroke-width="1.5"/>
-            <line x1="16" y1="28" x2="32" y2="28" stroke="currentColor" stroke-width="1.5"/>
-            <circle cx="24" cy="24" r="3" fill="currentColor" opacity="0.4"/>
-            <circle cx="18" cy="12" r="2" fill="currentColor" opacity="0.3"/>
-            <circle cx="30" cy="12" r="2" fill="currentColor" opacity="0.3"/>
-          </svg>
-        </div>
-        <span>Huichol</span>
-      </div>
-    </div>
-
-    <div class="header-ornament bottom-ornament">
-      <svg viewBox="0 0 400 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line x1="0" y1="15" x2="160" y2="15" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
-        <path d="M170 15 L180 5 L190 15 L200 25 L210 15 L220 5 L230 15" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.6"/>
-        <line x1="240" y1="15" x2="400" y2="15" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
-      </svg>
+      <div class="divider-line"></div>
     </div>
   </header>
 
-  <!-- Main Translator -->
+  <!-- ─── NAVEGACIÓN DE LENGUAS ─── -->
+  <nav class="language-nav" aria-label="Lenguas disponibles">
+    <div class="language-nav-inner">
+      <span class="language-nav-label">Lenguas</span>
+
+      <a class="lang-badge" data-lang="nahuatl" href="#">
+        <div class="lang-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M24 6L24 42M6 24L42 24" stroke="currentColor" stroke-width="1" opacity="0.4"/><circle cx="24" cy="24" r="6" fill="currentColor" opacity="0.3"/></svg>
+        </div>
+        Náhuatl
+      </a>
+
+      <a class="lang-badge" data-lang="maya" href="#">
+        <div class="lang-icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" stroke="currentColor" stroke-width="1.5"/><rect x="16" y="16" width="16" height="16" stroke="currentColor" stroke-width="1" opacity="0.6"/><circle cx="24" cy="24" r="4" fill="currentColor" opacity="0.4"/></svg>
+        </div>
+        Maya
+      </a>
+
+      <a class="lang-badge" data-lang="zapoteco" href="#">
+        <div class="lang-icon">
+          <svg viewBox="0 0 48 48" fill="none"><polygon points="24,4 44,36 4,36" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="24" cy="26" r="4" fill="currentColor" opacity="0.4"/></svg>
+        </div>
+        Zapoteco
+      </a>
+
+      <a class="lang-badge" data-lang="mixteco" href="#">
+        <div class="lang-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L44 24L24 44L4 24Z" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="24" cy="24" r="4" fill="currentColor" opacity="0.4"/></svg>
+        </div>
+        Mixteco
+      </a>
+
+      <a class="lang-badge" data-lang="totonaco" href="#">
+        <div class="lang-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M8 40Q24 4 40 40" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="24" cy="28" r="4" fill="currentColor" opacity="0.4"/></svg>
+        </div>
+        Totonaco
+      </a>
+
+      <a class="lang-badge" data-lang="huichol" href="#">
+        <div class="lang-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="12" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M24 20L24 36" stroke="currentColor" stroke-width="1.5"/><line x1="16" y1="28" x2="32" y2="28" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        Huichol
+      </a>
+    </div>
+  </nav>
+
+  <!-- ─── FRANJA DE ESTADÍSTICAS ─── -->
+  <div class="stats-strip">
+    <div class="stats-strip-inner">
+      <div class="stat-item">
+        <span class="stat-value">68</span>
+        <span class="stat-label">Lenguas Nacionales</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-value">6</span>
+        <span class="stat-label">Idiomas Activos</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-value" id="stat-palabras">—</span>
+        <span class="stat-label">Palabras en Diccionario</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-value">7.4M</span>
+        <span class="stat-label">Hablantes en México</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── CONTENIDO PRINCIPAL ─── -->
   <main class="main-content">
-    <div class="translator-card">
 
-      <!-- Card inner decoration -->
-      <div class="card-corner top-left"></div>
-      <div class="card-corner top-right"></div>
-      <div class="card-corner bottom-left"></div>
-      <div class="card-corner bottom-right"></div>
+    <!-- COLUMNA IZQUIERDA: Panel de Control -->
+    <div class="control-panel">
 
-      <form id="translator-form" novalidate>
-
-        <!-- Step 1: Language -->
-        <div class="form-step">
-          <div class="step-label">
-            <span class="step-num">①</span>
-            <label for="idioma_select">Elige una lengua</label>
-          </div>
+      <!-- Sección 1: Selección de lengua -->
+      <div class="panel-section">
+        <div class="panel-section-header">
+          <span class="section-num">1</span>
+          <label class="section-label" for="idioma_select">Selecciona una lengua</label>
+        </div>
+        <div class="panel-section-body">
           <div class="select-wrapper">
             <select id="idioma_select">
-              <option value="">— Selecciona una lengua indígena —</option>
+              <option value="">— Elige una lengua indígena —</option>
             </select>
             <span class="select-arrow">▾</span>
           </div>
@@ -166,21 +189,23 @@
             <span id="contador-palabras" class="word-count"></span>
           </div>
         </div>
+      </div>
 
-        <!-- Step 2: Direction -->
-        <div class="form-step">
-          <div class="step-label">
-            <span class="step-num">②</span>
-            <label for="direccion_select">Dirección de traducción</label>
-          </div>
+      <!-- Sección 2: Dirección -->
+      <div class="panel-section">
+        <div class="panel-section-header">
+          <span class="section-num">2</span>
+          <span class="section-label">Dirección de traducción</span>
+        </div>
+        <div class="panel-section-body">
           <div class="direction-toggle">
             <button type="button" class="dir-btn active" data-value="espanol" id="dir-es">
               <span class="dir-flag">🇲🇽</span>
               <span class="dir-text">Español → Lengua Indígena</span>
             </button>
             <div class="dir-divider">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M4 10 H16 M12 6 L16 10 L12 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </div>
             <button type="button" class="dir-btn" data-value="indigena" id="dir-ind">
@@ -188,64 +213,83 @@
               <span class="dir-text">Lengua Indígena → Español</span>
             </button>
           </div>
+          <!-- Select oculto para compatibilidad con JS -->
           <select id="direccion_select" style="display:none">
             <option value="espanol">Español → Lengua Indígena</option>
             <option value="indigena">Lengua Indígena → Español</option>
           </select>
         </div>
+      </div>
 
-        <!-- Step 3: Input -->
-        <div class="form-step">
-          <div class="step-label">
-            <span class="step-num">③</span>
-            <label for="texto_entrada">Escribe una palabra o frase</label>
-          </div>
-          <div class="input-wrapper">
-            <input id="texto_entrada" type="text"
-              placeholder="Ej: agua, casa, buenos días…"
-              autocomplete="off" autocorrect="off" spellcheck="false">
-            <button type="submit" id="traducir-btn" disabled>
-              <span class="btn-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12H19M14 7L19 12L14 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
-              <span>Traducir</span>
-            </button>
-          </div>
+      <!-- Sección 3: Entrada de texto -->
+      <div class="panel-section">
+        <div class="panel-section-header">
+          <span class="section-num">3</span>
+          <label class="section-label" for="texto_entrada">Palabra o frase</label>
         </div>
+        <div class="panel-section-body">
+          <form id="translator-form" novalidate>
+            <div class="input-wrapper">
+              <input id="texto_entrada" type="text"
+                placeholder="Ej: agua, casa, buenos días…"
+                autocomplete="off" autocorrect="off" spellcheck="false">
+              <button type="submit" id="traducir-btn" disabled>
+                <span class="btn-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M14 7L19 12L14 17" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                Traducir
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
 
-      </form>
+    </div>
 
-      <!-- Result -->
+    <!-- COLUMNA DERECHA: Resultados -->
+    <div class="results-panel">
+
+      <!-- Resultado principal -->
       <section class="resultado" id="resultado-section">
         <div class="resultado-header">
-          <span class="resultado-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <circle cx="9" cy="10" r="1.2" fill="currentColor"/>
-              <circle cx="15" cy="10" r="1.2" fill="currentColor"/>
-            </svg>
-          </span>
-          <strong>Traducción</strong>
+          <div class="resultado-header-left">
+            <span class="resultado-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                      stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8 9c0-2.2 1.8-4 4-4s4 1.8 4 4c0 2.5-2.5 4.5-4 6-1.5-1.5-4-3.5-4-6z"
+                      stroke="currentColor" stroke-width="1" fill="none" opacity="0.6"/>
+              </svg>
+            </span>
+            <strong>Traducción</strong>
+          </div>
         </div>
-        <output id="traduccion-texto" class="resultado-output">Selecciona un idioma para comenzar…</output>
+        <output id="traduccion-texto" class="resultado-output">
+          <em>Selecciona un idioma y escribe una palabra para comenzar…</em>
+        </output>
       </section>
 
-      <!-- Audio controls -->
+      <!-- Controles de Audio -->
       <div id="controles-audio" style="display:none" class="audio-controls">
-        <div class="audio-title">🔊 Escuchar pronunciación</div>
+        <div class="audio-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <path d="M11 5L6 9H2v6h4l5 4V5z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          Pronunciación
+        </div>
         <div class="audio-btns">
           <button id="btn-audio-original" class="btn-audio">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5,3 19,12 5,21"/>
             </svg>
             Texto original
           </button>
           <button id="btn-audio-traducido" class="btn-audio">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5,3 19,12 5,21"/>
             </svg>
             Traducción
           </button>
@@ -253,85 +297,71 @@
       </div>
 
     </div>
+
   </main>
 
-  <!-- Info section -->
-  <section class="info-section">
-    <div class="info-grid">
-      <div class="info-card">
-        <div class="info-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4z" stroke="currentColor" stroke-width="2" fill="none"/>
-            <path d="M24 4C18 4 13 12.95 13 24s5 20 11 20 11-8.95 11-20S30 4 24 4z" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.5"/>
-            <line x1="4" y1="24" x2="44" y2="24" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
-          </svg>
-        </div>
-        <h3>6 Lenguas</h3>
-        <p>Náhuatl, Maya, Zapoteco, Mixteco, Totonaco y Huchol</p>
-      </div>
-      <div class="info-card">
-        <div class="info-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="32" height="36" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
-            <line x1="14" y1="18" x2="34" y2="18" stroke="currentColor" stroke-width="1.5"/>
-            <line x1="14" y1="24" x2="34" y2="24" stroke="currentColor" stroke-width="1.5"/>
-            <line x1="14" y1="30" x2="26" y2="30" stroke="currentColor" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <h3>Diccionarios</h3>
-        <p>Miles de palabras y expresiones recopiladas</p>
-      </div>
-      <div class="info-card">
-        <div class="info-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 8 C16 8 10 16 12 24 C14 32 20 38 24 40 C28 38 34 32 36 24 C38 16 32 8 24 8Z" stroke="currentColor" stroke-width="2" fill="none"/>
-            <path d="M24 14 L24 34 M16 22 L32 22" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
-          </svg>
-        </div>
-        <h3>Bilingüe</h3>
-        <p>Traduce en ambas direcciones con un solo clic</p>
-      </div>
-      <div class="info-card">
-        <div class="info-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 36 Q16 12 24 20 Q32 28 40 8" stroke="currentColor" stroke-width="2" fill="none"/>
-            <circle cx="24" cy="20" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
-            <path d="M8 40 L40 40" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
-          </svg>
-        </div>
-        <h3>Voz</h3>
-        <p>Escucha la pronunciación de las palabras</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
+  <!-- ─── FOOTER ─── -->
   <footer class="site-footer">
-    <div class="footer-ornament">
-      <svg viewBox="0 0 300 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line x1="0" y1="10" x2="120" y2="10" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
-        <circle cx="130" cy="10" r="3" fill="currentColor" opacity="0.5"/>
-        <circle cx="150" cy="10" r="5" fill="currentColor" opacity="0.4"/>
-        <circle cx="170" cy="10" r="3" fill="currentColor" opacity="0.5"/>
-        <line x1="180" y1="10" x2="300" y2="10" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
-      </svg>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Conexión Indígena</div>
+        <p class="footer-desc">
+          Portal institucional dedicado a la preservación, difusión y estudio de las
+          lenguas indígenas nacionales de México. Patrimonio vivo de la humanidad.
+        </p>
+      </div>
+      <div class="footer-legal">
+        <div>© 2025 Conexión Indígena</div>
+        <div>Aviso de privacidad</div>
+        <div>Términos de uso</div>
+        <div>INALI · SEP</div>
+      </div>
     </div>
-    <p>Las lenguas indígenas son patrimonio vivo de México.</p>
-    <p class="footer-sub">Preserva · Comparte · Honra</p>
   </footer>
 
-  <script src="static/traductor-inteligente.js"></script>
-  <script src="static/javascript.js"></script>
-  <script src="static/status-patch.js"></script>
+  <script src="static/app.js"></script>
   <script>
-    // Direction toggle UI
-    const dirBtns = document.querySelectorAll('.dir-btn');
-    const dirSelect = document.getElementById('direccion_select');
-    dirBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        dirBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        dirSelect.value = btn.dataset.value;
+    // Sincronizar estadística de palabras con el motor
+    document.addEventListener('DOMContentLoaded', () => {
+      // Actualizar el contador de palabras en la franja de estadísticas
+      const statPalabras = document.getElementById('stat-palabras');
+      const contadorOrig = document.getElementById('contador-palabras');
+
+      const observer = new MutationObserver(() => {
+        if (contadorOrig && statPalabras) {
+          const text = contadorOrig.textContent.replace(/[()]/g, '').trim();
+          if (text) statPalabras.textContent = text;
+        }
+      });
+
+      if (contadorOrig) {
+        observer.observe(contadorOrig, { childList: true, subtree: true, characterData: true });
+      }
+
+      // Marcar lengua activa en nav al seleccionar idioma
+      const idiomaSelect = document.getElementById('idioma_select');
+      const langBadges = document.querySelectorAll('.lang-badge[data-lang]');
+
+      idiomaSelect?.addEventListener('change', () => {
+        const val = idiomaSelect.value.replace(/\.json$/i, '').toLowerCase();
+        langBadges.forEach(b => {
+          b.classList.toggle('active', b.dataset.lang === val);
+        });
+      });
+
+      // Click en nav lengua → seleccionar en el dropdown
+      langBadges.forEach(b => {
+        b.addEventListener('click', e => {
+          e.preventDefault();
+          const lang = b.dataset.lang;
+          const opt = [...idiomaSelect.options].find(o =>
+            o.value.toLowerCase().includes(lang)
+          );
+          if (opt) {
+            idiomaSelect.value = opt.value;
+            idiomaSelect.dispatchEvent(new Event('change'));
+          }
+        });
       });
     });
   </script>
