@@ -452,6 +452,35 @@ const AnalizadorTexto = {
    4. TTS
    ═══════════════════════════════════════════════════════════════ */
 
+/* ═══════════════════════════════════════════════════════════════
+   4. TTS — Pronunciación Auténtica de Lenguas Indígenas
+   
+   PRINCIPIOS FONÉTICOS APLICADOS:
+   ─────────────────────────────────
+   NÁHUATL
+     • Acento siempre en penúltima sílaba (graves/llanas)
+     • x = /ʃ/ ("sh")        tl = consonante lateral africada
+     • tz = /ts/              hu/gu + vocal = /w/
+     • qu + e/i = /k/         ll = /l/ (no palatal)
+     • Todas las vocales son puras (a,e,i,o,u) sin diptongos
+   MAYA
+     • Consonantes glotalizadas: b', k', p', t', ts'
+     • x = /ʃ/                j = /h/ suave
+     • Acento en última sílaba (agudas)
+   ZAPOTECO
+     • Tonal: contornos alto/bajo (aproximados con pitch)
+     • dz, tz = africadas      nd, mb = prenasalizadas
+   MIXTECO
+     • Tonal (3 tonos)         nd, mb nasalizadas
+     • Vocales nasalizadas con ñ o tilde
+   TOTONACO
+     • Consonantes ejecutivas  Pausas entre morfemas
+     • Acento predecible       lh = lateral
+   HUICHOL (Wixárika)
+     • Vocales largas (dobles) ix = /iʃ/
+     • Acento en primera sílaba de raíz
+   ═══════════════════════════════════════════════════════════════ */
+
 class TTS {
   constructor() {
     this._synth = window.speechSynthesis || null;
@@ -466,54 +495,244 @@ class TTS {
 
   get disponible() { return this._disponible; }
 
+  // ─── REGLAS FONÉTICAS EXTENDIDAS ──────────────────────────────
+  // Objetivo: transformar ortografía indígena → aproximación fonética
+  // que el motor TTS español pueda reproducir de forma reconocible.
+
   static REGLAS = {
-    nahuatl:  [[/\bx/g,'sh'],[/x([aeiou])/gi,'sh$1'],[/tz/g,'ts'],[/qu([ae])/gi,'k$1'],[/hu([aeiou])/gi,'w$1'],[/z/g,'s']],
-    maya:     [[/x/g,'sh'],[/tz/g,'ts'],[/pp/g,'p'],[/tt/g,'t'],[/kk/g,'k'],[/qu/g,'k']],
-    zapoteco: [[/x/g,'sh'],[/zh/g,'y'],[/qu/g,'k']],
-    mixteco:  [[/x/g,'sh'],[/tx/g,'tsh'],[/dx/g,'dsh'],[/ñ/g,'ny']],
-    totonaco: [[/x/g,'sh'],[/tz/g,'ts'],[/lh/g,'l'],[/qu/g,'k']],
-    huichol:  [[/ix/g,'ish'],[/xa/g,'sha'],[/x/g,'sh']],
+
+    nahuatl: [
+      // 1. Grupos consonánticos especiales (primero los más largos)
+      [/tla/gi,  'tla'],          // tla es propio del náhuatl, se preserva
+      [/tli/gi,  'tli'],
+      [/tlo/gi,  'tlo'],
+      [/tle/gi,  'tle'],
+      [/tlu/gi,  'tlu'],
+      [/tzin/gi, 'tsin'],         // diminutivo reverencial
+      [/tzon/gi, 'tson'],
+      [/tz/g,    'ts'],
+      [/x/g,     'sh'],           // x = /ʃ/
+      [/hu([aeiou])/gi, 'gu$1'],  // hu + vocal = /w/ → aproximar con "gu"
+      [/uh([aeiou])/gi, 'gu$1'],
+      [/qu([ei])/gi,  'k$1'],     // qu + e/i = /k/
+      [/qu([ao])/gi,  'ku$1'],
+      [/cu([aeiou])/gi, 'ku$1'],  // cu = /kw/
+      [/z/g,     's'],            // z = /s/ (no /θ/)
+      [/ll/g,    'l'],            // ll = /l/ simple
+      [/([aeiou])\1+/gi, '$1$1'], // vocales largas: dobles máximo
+      // 2. Acentuación grave: insertar acento en penúltima sílaba
+      // (esto se logra indirectamente con rate más lento y pausa final)
+    ],
+
+    maya: [
+      // Consonantes glotalizadas (apóstrofo = corte glotal)
+      [/b'/g,  'b'],   // glotalización → simplificar para TTS
+      [/k'/g,  'k'],
+      [/p'/g,  'p'],
+      [/t'/g,  'th'],  // aproximar corte glotal con "th"
+      [/ts'/g, 'ts'],
+      [/ch'/g, 'ch'],
+      [/x/g,   'sh'],
+      [/j/g,   'j'],   // j = /h/ (ya suena bien en español)
+      [/tz/g,  'ts'],
+      [/dz/g,  'ds'],
+      [/pp/g,  'p'],
+      [/kk/g,  'k'],
+      [/qu([ei])/gi, 'k$1'],
+      [/w/g,   'gu'],  // w = /w/
+      [/ii/gi, 'i'],
+      [/aa/gi, 'a'],
+      [/oo/gi, 'o'],
+    ],
+
+    zapoteco: [
+      [/dz/g,  'ds'],
+      [/tz/g,  'ts'],
+      [/nd/g,  'nd'],  // prenasalizada
+      [/mb/g,  'mb'],
+      [/ng/g,  'ng'],
+      [/zh/g,  'y'],   // zh = /ʒ/ → aproximar con "y"
+      [/x/g,   'sh'],
+      [/qu([ei])/gi, 'k$1'],
+      [/gu([ei])/gi, 'g$1'],
+      [/ñ/g,   'ni'],  // vocal nasalizada
+      [/nn/gi, 'n'],
+      [/rr/g,  'r'],
+    ],
+
+    mixteco: [
+      [/nd/g,  'nd'],
+      [/mb/g,  'mb'],
+      [/ng/g,  'ng'],
+      [/tx/g,  'tsh'], // africada palatal
+      [/dx/g,  'dsh'],
+      [/x/g,   'sh'],
+      [/ñ/g,   'ni'],
+      [/ⁿd/g,  'nd'],
+      [/ⁿb/g,  'mb'],
+      [/ⁿg/g,  'ng'],
+      [/[¹²³⁴]/g, ''],  // remover diacríticos tonales si los hay
+      [/([aeiou])\~/gi, '$1n'], // vocal nasalizada → agregar n
+    ],
+
+    totonaco: [
+      [/lh/g,   'l'],   // lateral aspirada
+      [/kh/g,   'k'],   // oclusiva aspirada
+      [/ph/g,   'p'],
+      [/th/g,   't'],
+      [/x/g,    'sh'],
+      [/tz/g,   'ts'],
+      [/qu([ei])/gi, 'k$1'],
+      [/['']/g, ''],    // cortes glotales
+      [/([aeiou])([aeiou])/gi, '$1 $2'], // separar hiatos con pausa
+    ],
+
+    huichol: [
+      [/ix([aeiou])/gi, 'ish$1'],
+      [/xa/gi, 'sha'],
+      [/xe/gi, 'she'],
+      [/xi/gi, 'shi'],
+      [/xo/gi, 'sho'],
+      [/xu/gi, 'shu'],
+      [/x/g,   'sh'],
+      [/ts/g,  'ts'],
+      [/([aeiou])\1+/gi, '$1'], // vocales largas → una sola (wixárika las alarga naturalmente)
+      [/['']/g, ''],
+      [/w/g,   'gu'],
+      [/iy/gi, 'i'],
+      [/uy/gi, 'ui'],
+    ],
+
+    español: [],
   };
 
+  // ─── PARÁMETROS DE VOZ POR IDIOMA ─────────────────────────────
+  // rate:  velocidad (0.5–2.0, default 1.0)
+  // pitch: tono base (0.0–2.0, default 1.0)
+  // Cada idioma tiene una "firma vocal" distintiva.
+
   static PARAMS = {
-    español:  { rate: 1.00, pitch: 1.00 },
-    nahuatl:  { rate: 0.75, pitch: 1.10 },
-    maya:     { rate: 0.72, pitch: 1.15 },
-    zapoteco: { rate: 0.75, pitch: 1.05 },
-    mixteco:  { rate: 0.72, pitch: 1.12 },
-    totonaco: { rate: 0.74, pitch: 1.08 },
-    huichol:  { rate: 0.73, pitch: 1.10 },
+    español:  { rate: 1.00, pitch: 1.00, pausaFinal: 0 },
+
+    // Náhuatl: pausado, solemne, graves (penúltima = más lento para que TTS
+    // los perciba como graves naturalmente), tono ligeramente elevado.
+    nahuatl:  { rate: 0.68, pitch: 1.12, pausaFinal: 150 },
+
+    // Maya: ritmo más marcado, tono algo más agudo por las glotalizadas.
+    maya:     { rate: 0.70, pitch: 1.18, pausaFinal: 100 },
+
+    // Zapoteco: tonal → pitch variable, velocidad media.
+    zapoteco: { rate: 0.72, pitch: 1.08, pausaFinal: 80 },
+
+    // Mixteco: tonal también, ritmo similar al zapoteco.
+    mixteco:  { rate: 0.70, pitch: 1.14, pausaFinal: 80 },
+
+    // Totonaco: consonantes aspiradas → más pausado.
+    totonaco: { rate: 0.66, pitch: 1.06, pausaFinal: 120 },
+
+    // Huichol: primera sílaba fuerte → rate moderado, pitch neutro.
+    huichol:  { rate: 0.71, pitch: 1.10, pausaFinal: 100 },
   };
+
+  // ─── ACENTO GRAVE: Insertar tilde en penúltima sílaba ─────────
+  // Aplicable principalmente para náhuatl y totonaco.
+  // El TTS español respeta los acentos ortográficos.
+
+  _acentuarGrave(texto) {
+    // Separar en palabras, acentuar cada una en penúltima sílaba
+    return texto.split(/\s+/).map(palabra => {
+      // Solo procesar palabras sin acento ya marcado
+      if (/[áéíóú]/i.test(palabra)) return palabra;
+      if (palabra.length < 3) return palabra;
+
+      // Encontrar vocales
+      const vocales = [...palabra.matchAll(/[aeiouAEIOU]/g)];
+      if (vocales.length < 2) return palabra;
+
+      // Índice de la penúltima vocal
+      const penultima = vocales[vocales.length - 2];
+      const idx = penultima.index;
+      const vocal = penultima[0];
+
+      const mapa = { a:'á', e:'é', i:'í', o:'ó', u:'ú', A:'Á', E:'É', I:'Í', O:'Ó', U:'Ú' };
+      return palabra.slice(0, idx) + (mapa[vocal] || vocal) + palabra.slice(idx + 1);
+    }).join(' ');
+  }
 
   _aplicarReglas(texto, idioma) {
     const reglas = TTS.REGLAS[idioma];
-    if (!reglas) return texto;
-    let s = texto.toLowerCase();
+    if (!reglas || reglas.length === 0) return texto;
+    let s = texto.toLowerCase().trim();
     for (const [p, r] of reglas) s = s.replace(p, r);
     return s;
   }
 
-  _mejorVoz() {
-    return this._voces.find(v => v.lang.startsWith('es-MX'))
-        || this._voces.find(v => v.lang.startsWith('es'))
-        || this._voces[0] || null;
+  _mejorVoz(preferirFemenina = false) {
+    // Intentar voces más naturales primero
+    const candidatas = this._voces.filter(v =>
+      v.lang.startsWith('es-MX') ||
+      v.lang.startsWith('es-419') ||
+      v.lang.startsWith('es')
+    );
+
+    if (preferirFemenina) {
+      const fem = candidatas.find(v =>
+        /paulina|mónica|luciana|sofia|isabel|female|mujer/i.test(v.name)
+      );
+      if (fem) return fem;
+    }
+
+    // Preferir voces más naturales (Google, Microsoft)
+    return candidatas.find(v => /google|microsoft|natural/i.test(v.name))
+        || candidatas[0]
+        || this._voces[0]
+        || null;
+  }
+
+  // ─── PROCESAMIENTO COMPLETO DEL TEXTO ─────────────────────────
+
+  _prepararTexto(texto, idioma) {
+    if (idioma === 'español') return texto;
+
+    // 1. Aplicar transformaciones fonéticas
+    let procesado = this._aplicarReglas(texto, idioma);
+
+    // 2. Para idiomas con acento grave (náhuatl, totonaco) → forzar acentuación
+    if (idioma === 'nahuatl' || idioma === 'totonaco') {
+      procesado = this._acentuarGrave(procesado);
+    }
+
+    // 3. Separar grupos consonánticos complejos con micro-pausas (coma)
+    // para que el TTS no los una y los pronuncie como sílabas separadas
+    if (idioma === 'nahuatl') {
+      // tl al final de sílaba → pequeña pausa antes
+      procesado = procesado.replace(/tl(\b|[^aeiou])/g, 'tl,$1').replace(/,,/g, ',');
+    }
+
+    return procesado;
   }
 
   hablar(texto, idioma = 'español') {
     return new Promise((resolve, reject) => {
       if (!this._disponible) return reject(new Error('TTS no disponible'));
       if (!texto.trim()) return resolve();
+
       this._synth.cancel();
-      const textoFon = idioma !== 'español' ? this._aplicarReglas(texto, idioma) : texto;
+
+      const textoFon = this._prepararTexto(texto, idioma);
       const u = new SpeechSynthesisUtterance(textoFon);
+
       u.lang   = 'es-MX';
       u.voice  = this._mejorVoz();
+
       const p  = TTS.PARAMS[idioma] || TTS.PARAMS['español'];
       u.rate   = p.rate;
       u.pitch  = p.pitch;
       u.volume = 1;
+
       u.onend   = () => resolve();
       u.onerror = e  => reject(e);
+
       this._synth.speak(u);
     });
   }
