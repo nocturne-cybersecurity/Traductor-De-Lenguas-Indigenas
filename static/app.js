@@ -328,10 +328,6 @@ class Motor {
 
   traducirFrase(frase, dir = 'es_ind') {
     // PASO 0: Aplicar reglas lingüísticas del náhuatl
-    // FIX: Si las reglas devuelven una traducción directa (ej. "cualli tonalli"
-    // para "buen día"), se retorna inmediatamente SIN buscarla en el diccionario.
-    // El bug original la buscaba en _esAInd donde no existe porque "cualli tonalli"
-    // es la clave indígena, no la española — dando ~0% y "sin traducción".
     if (dir === 'es_ind') {
       const reglasAplicadas = ReglasNahuatl.procesarFrase(frase, dir);
       if (reglasAplicadas && reglasAplicadas !== frase) {
@@ -365,33 +361,107 @@ class Motor {
       };
     }
 
-    // PASO 2: Dividir en tokens y traducir palabra por palabra
-    const tokens = frase.match(/[\wÀ-ÿ'']+|[^\w\s]/g) || [];
-    let confianzaAcum = 0, traducidas = 0;
-    const detalle = [];
+    // PASO 1b: Buscar sub-frases (bi-gramas, tri-gramas, etc.)
+    // Esto evita que "a veces tengo hambre" se divida mal cuando "a veces" existe
+    const palabras = frase.split(/\s+/).filter(Boolean);
+    
+    // Extraer palabras limpias (sin puntuación) para búsqueda de sub-frases
+    const palabrasLimpias = palabras.map(p => {
+      const match = p.match(/^([^\wÀ-ÿ]*)(\w[\wÀ-ÿ]*?)([^\wÀ-ÿ]*)$/);
+      return match ? match[2] : p;
+    });
+    
+    const subfrases = [];
+    
+    // Generar sub-frases de mayor a menor longitud (usando palabras limpias)
+    for (let len = palabrasLimpias.length - 1; len >= 2; len--) {
+      for (let i = 0; i <= palabrasLimpias.length - len; i++) {
+        const subfrase = palabrasLimpias.slice(i, i + len).join(' ');
+        subfrases.push({ subfrase, idxStart: i, idxEnd: i + len });
+      }
+    }
 
-    const partes = tokens.map(token => {
-      if (/^[^\wÀ-ÿ]$/.test(token)) {
+    // Buscar cada sub-frase
+    for (const { subfrase, idxStart, idxEnd } of subfrases) {
+      const resSubfrase = this.buscar(subfrase, dir);
+      if (resSubfrase.length > 0 && resSubfrase[0].tipo === 'exacta') {
+        // Encontramos una sub-frase exacta, usarla
+        const partesAntes = palabras.slice(0, idxStart);
+        const partesDespues = palabras.slice(idxEnd);
+        
+        const traducAntes = this._traducirTokens(partesAntes, dir);
+        const traducDespues = this._traducirTokens(partesDespues, dir);
+        const traducSubfrase = resSubfrase[0].traduccion;
+        
+        const fraseResultado = [...traducAntes.partes, traducSubfrase, ...traducDespues.partes]
+          .join(' ')
+          .replace(/ ([,;:.!?])/g, '$1');
+        
+        const detalleCompleto = [
+          ...traducAntes.detalle,
+          { token: subfrase, traduccion: traducSubfrase, confianza: 1.00, tipo: 'exacta', original: resSubfrase[0].original },
+          ...traducDespues.detalle,
+        ];
+        
+        const confianza = detalleCompleto.filter(d => d.confianza !== null).length > 0
+          ? Math.round((detalleCompleto.filter(d => d.confianza !== null).reduce((s, d) => s + d.confianza, 0) / 
+                        detalleCompleto.filter(d => d.confianza !== null).length) * 100) / 100
+          : 0;
+        
+        return { frase: fraseResultado, confianza, detalle: detalleCompleto };
+      }
+    }
+
+    // PASO 2: Dividir en tokens y traducir palabra por palabra
+    const resultado = this._traducirTokens(palabras, dir);
+    return {
+      frase: resultado.partes.join(' ').replace(/ ([,;:.!?])/g, '$1'),
+      confianza: resultado.confianza,
+      detalle: resultado.detalle,
+    };
+  }
+
+  _traducirTokens(palabras, dir) {
+    const tokens = [];
+    const detalle = [];
+    let confianzaAcum = 0, traducidas = 0;
+
+    for (const palabra of palabras) {
+      const token = palabra;
+      
+      // Extraer puntuación del inicio y final
+      const matchPunct = token.match(/^([^\wÀ-ÿ]*)(\w[\wÀ-ÿ]*?)([^\wÀ-ÿ]*)$/);
+      
+      if (!matchPunct || !matchPunct[2]) {
+        // Si es solo puntuación o no hay palabra
+        tokens.push(token);
         detalle.push({ token, traduccion: token, confianza: null });
-        return token;
+        continue;
       }
 
-      const res = this.buscar(token, dir);
+      const puntAntes = matchPunct[1];  // puntuación al inicio: "¿"
+      const palabraLimpia = matchPunct[2]; // palabra sin puntuación: "dia"
+      const puntDespues = matchPunct[3];   // puntuación al final: "," "." "?" "!"
+      
+      const res = this.buscar(palabraLimpia, dir);
       if (res.length > 0) {
         const mejor = res[0];
         confianzaAcum += mejor.confianza;
         traducidas++;
         detalle.push({ token, ...mejor, alternativas: res.slice(1, 3) });
         const t = mejor.traduccion;
-        return /^[A-ZÁÉÍÓÚÑÜ]/.test(token) ? t[0].toUpperCase() + t.slice(1) : t;
+        const traducida = /^[A-ZÁÉÍÓÚÑÜ]/.test(palabraLimpia) ? t[0].toUpperCase() + t.slice(1) : t;
+        // Reattach puntuación
+        tokens.push(puntAntes + traducida + puntDespues);
+      } else {
+        detalle.push({ token, traduccion: palabraLimpia, confianza: 0, tipo: 'no_encontrada' });
+        // Si no se encuentra, mantener la palabra limpia pero sin la puntuación incorrecta
+        tokens.push(puntAntes + palabraLimpia + puntDespues);
       }
-
-      detalle.push({ token, traduccion: token, confianza: 0, tipo: 'no_encontrada' });
-      return token;
-    });
+    }
 
     return {
-      frase: partes.join(' ').replace(/ ([,;:.!?])/g, '$1'),
+      partes: tokens,
       confianza: traducidas > 0 ? Math.round((confianzaAcum / traducidas) * 100) / 100 : 0,
       detalle,
     };
@@ -486,6 +556,8 @@ class TTS {
     this._synth = window.speechSynthesis || null;
     this._voces = [];
     this._disponible = !!this._synth;
+    this._esAndroid = /Android/i.test(navigator.userAgent);
+    this._esIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
     if (this._disponible) {
       const cargar = () => { this._voces = this._synth.getVoices(); };
       cargar();
@@ -606,32 +678,16 @@ class TTS {
     español: [],
   };
 
-  // ─── PARÁMETROS DE VOZ POR IDIOMA ─────────────────────────────
-  // rate:  velocidad (0.5–2.0, default 1.0)
-  // pitch: tono base (0.0–2.0, default 1.0)
-  // Cada idioma tiene una "firma vocal" distintiva.
-
-  static PARAMS = {
+  // ─── PARÁMETROS DE VOZ POR IDIOMA Y DISPOSITIVO ─────────────────────────────
+  // Android tiene limitaciones, así que usamos parámetros más compatibles
+  static PARAMS_ANDROID = {
     español:  { rate: 1.00, pitch: 1.00, pausaFinal: 0 },
-
-    // Náhuatl: pausado, solemne, graves (penúltima = más lento para que TTS
-    // los perciba como graves naturalmente), tono ligeramente elevado.
-    nahuatl:  { rate: 0.68, pitch: 1.12, pausaFinal: 150 },
-
-    // Maya: ritmo más marcado, tono algo más agudo por las glotalizadas.
-    maya:     { rate: 0.70, pitch: 1.18, pausaFinal: 100 },
-
-    // Zapoteco: tonal → pitch variable, velocidad media.
-    zapoteco: { rate: 0.72, pitch: 1.08, pausaFinal: 80 },
-
-    // Mixteco: tonal también, ritmo similar al zapoteco.
-    mixteco:  { rate: 0.70, pitch: 1.14, pausaFinal: 80 },
-
-    // Totonaco: consonantes aspiradas → más pausado.
-    totonaco: { rate: 0.66, pitch: 1.06, pausaFinal: 120 },
-
-    // Huichol: primera sílaba fuerte → rate moderado, pitch neutro.
-    huichol:  { rate: 0.71, pitch: 1.10, pausaFinal: 100 },
+    nahuatl:  { rate: 0.85, pitch: 1.05, pausaFinal: 100 },
+    maya:     { rate: 0.85, pitch: 1.08, pausaFinal: 50 },
+    zapoteco: { rate: 0.85, pitch: 1.02, pausaFinal: 50 },
+    mixteco:  { rate: 0.85, pitch: 1.06, pausaFinal: 50 },
+    totonaco: { rate: 0.85, pitch: 1.00, pausaFinal: 80 },
+    huichol:  { rate: 0.85, pitch: 1.04, pausaFinal: 50 },
   };
 
   // ─── ACENTO GRAVE: Insertar tilde en penúltima sílaba ─────────
@@ -668,12 +724,24 @@ class TTS {
   }
 
   _mejorVoz(preferirFemenina = false) {
-    // Intentar voces más naturales primero
-    const candidatas = this._voces.filter(v =>
-      v.lang.startsWith('es-MX') ||
-      v.lang.startsWith('es-419') ||
-      v.lang.startsWith('es')
-    );
+    // En Android, preferir voces nativas de Google
+    const candidatas = this._voces.filter(v => {
+      const lang = v.lang || '';
+      return lang.startsWith('es-MX') ||
+             lang.startsWith('es-419') ||
+             lang.startsWith('es');
+    });
+
+    if (this._esAndroid) {
+      // Android: Google TTS es más confiable
+      const googleVoice = candidatas.find(v =>
+        /google|espana|españa/i.test(v.name) || v.name.includes('Spanish')
+      );
+      if (googleVoice) return googleVoice;
+      
+      // Fallback a cualquier voz disponible en Android
+      return candidatas[0] || this._voces[0] || null;
+    }
 
     if (preferirFemenina) {
       const fem = candidatas.find(v =>
@@ -725,7 +793,10 @@ class TTS {
       u.lang   = 'es-MX';
       u.voice  = this._mejorVoz();
 
-      const p  = TTS.PARAMS[idioma] || TTS.PARAMS['español'];
+      // Usar parámetros compatibles con el dispositivo
+      const params = this._esAndroid ? TTS.PARAMS_ANDROID : TTS.PARAMS;
+      const p  = params[idioma] || params['español'];
+      
       u.rate   = p.rate;
       u.pitch  = p.pitch;
       u.volume = 1;
@@ -845,6 +916,7 @@ class UI {
     this.idiomaActual      = '';
     this.ultimaTraduccion  = '';
     this.ultimoTextoOrigen = '';
+    this._debounceTimer    = null;
 
     this._bindDOM();
     this._poblarIdiomas();
@@ -911,6 +983,12 @@ class UI {
 
     this.textoEntrada?.addEventListener('keydown', e => {
       if (e.key === 'Enter') { e.preventDefault(); this._traducir(); }
+    });
+
+    // Traducción en tiempo real mientras se escribe
+    this.textoEntrada?.addEventListener('input', () => {
+      if (this._debounceTimer) clearTimeout(this._debounceTimer);
+      this._debounceTimer = setTimeout(() => this._traducir(), 300);
     });
 
     this.btnAudioOrig?.addEventListener('click',  () => this._reproducir('original'));
