@@ -1,189 +1,3585 @@
 [
-  { "nahuatl": "nicnequi", "espanol": "quiero / lo quiero" },
-  { "nahuatl": "ni mitzneki", "espanol": "te quiero" },
-  { "nahuatl": "ni mitztlazohtla", "espanol": "te amo" },
-  { "nahuatl": "ninamechneki", "espanol": "los quiero (a ustedes)" },
-  { "nahuatl": "nicnequi tlacualli", "espanol": "quiero comida" },
-  { "nahuatl": "amo nicnequi", "espanol": "no quiero" },
-  { "nahuatl": "miztemoa noyollo", "espanol": "te quiero (te busca mi corazón)" },
-  { "nahuatl": "mochokitla nikneki", "espanol": "ya no quiero nada" },
-  { "nahuatl": "amoxtli", "espanol": "libro" },
-  { "nahuatl": "atl", "espanol": "agua" },
-  { "nahuatl": "atlacatl", "espanol": "hombre del agua" },
-  { "nahuatl": "atlachinolli", "espanol": "agua quemada (guerra)" },
-  { "nahuatl": "atlapalteotl", "espanol": "dios del agua azul" },
-  { "nahuatl": "atlapalli", "espanol": "ala" },
-  { "nahuatl": "amoxtli", "espanol": "libro" },
-  { "nahuatl": "atl", "espanol": "agua" },
-  { "nahuatl": "atlacatl", "espanol": "hombre del agua" },
-  { "nahuatl": "atlachinolli", "espanol": "agua quemada (guerra)" },
-  { "nahuatl": "atlapalteotl", "espanol": "dios del agua azul" },
-  { "nahuatl": "atlapalli", "espanol": "ala" },
-  { "nahuatl": "amoxtli", "espanol": "libro" },
-  { "nahuatl": "atl", "espanol": "agua" },
-  { "nahuatl": "atlacatl", "espanol": "hombre del agua" },
-  { "nahuatl": "atlachinolli", "espanol": "agua quemada (guerra)" },
-  { "nahuatl": "atlapalteotl", "espanol": "dios del agua azul" },
-  { "nahuatl": "atlapalli", "espanol": "ala" },
-  { "nahuatl": "atlayoh", "espanol": "lleno de agua" },
-  { "nahuatl": "atocpan", "espanol": "tierra aluvial" },
-  { "nahuatl": "atotonilco", "espanol": "lugar de aguas calientes" },
-  { "nahuatl": "axayacatl", "espanol": "cara de agua" },
-  { "nahuatl": "pialli", "espanol": "hola" },
-  { "nahuatl": "cualli tonalli", "espanol": "buen día" },
-  { "nahuatl": "ayotl", "espanol": "tortuga" },
-  { "nahuatl": "ayotzin", "espanol": "tortuga pequeña" },
-  { "nahuatl": "aztlan", "espanol": "lugar de garzas" },
-  { "nahuatl": "achtli", "espanol": "semilla" },
-  { "nahuatl": "achto", "espanol": "primero" },
-  { "nahuatl": "achcauhtli", "espanol": "hermano mayor" },
-  { "nahuatl": "acatl", "espanol": "caña; carrizo" },
-  { "nahuatl": "acamapichtli", "espanol": "puño de cañas" },
-  { "nahuatl": "acocotli", "espanol": "tubo de agua" },
-  { "nahuatl": "ce", "espanol": "uno" },
-  { "nahuatl": "ome", "espanol": "dos" },
-  { "nahuatl": "yei", "espanol": "tres" },
-  { "nahuatl": "nahui", "espanol": "cuatro" },
-  { "nahuatl": "macuilli", "espanol": "cinco" },
-  { "nahuatl": "chicuace", "espanol": "seis" },
-  { "nahuatl": "chicome", "espanol": "siete" },
-  { "nahuatl": "chicuei", "espanol": "ocho" },
-  { "nahuatl": "chicnahui", "espanol": "nueve" },
-  { "nahuatl": "matlactli", "espanol": "diez" },
-  { "nahuatl": "caxtolli", "espanol": "quince" },
-  { "nahuatl": "cempoalli", "espanol": "veinte" },
-  { "nahuatl": "tzontli", "espanol": "cuatrocientos" },
-  { "nahuatl": "xiquipilli", "espanol": "ocho mil" },
-  { "nahuatl": "tletl", "espanol": "fuego" },
-  { "nahuatl": "mixtli", "espanol": "nube" },
-  { "nahuatl": "ehecatl", "espanol": "viento" },
-  { "nahuatl": "tlalli", "espanol": "tierra" },
-  { "nahuatl": "cuitlatl", "espanol": "excremento" },
-  { "nahuatl": "chichiltic", "espanol": "rojo" },
-  { "nahuatl": "coztic", "espanol": "amarillo" },
-  { "nahuatl": "xoxoctic", "espanol": "verde" },
-  { "nahuatl": "texoctic", "espanol": "azul" },
-  { "nahuatl": "tliltic", "espanol": "negro" },
-  { "nahuatl": "iztac", "espanol": "blanco" },
-  { "nahuatl": "chichihualtzintli", "espanol": "seno" },
-  { "nahuatl": "tecuani", "espanol": "fiera" },
-  { "nahuatl": "cozamalotl", "espanol": "arcoíris" },
-  { "nahuatl": "cihuatl", "espanol": "mujer" },
-  { "nahuatl": "oquichtli", "espanol": "hombre" },
-  { "nahuatl": "conetl", "espanol": "niño" },
-  { "nahuatl": "ichpochtli", "espanol": "muchacha" },
-  { "nahuatl": "telpochtli", "espanol": "joven" },
-  { "nahuatl": "tahtli", "espanol": "padre" },
-  { "nahuatl": "nantli", "espanol": "madre" },
-  { "nahuatl": "icniuhtli", "espanol": "amigo" },
-  { "nahuatl": "nahuatlahtolli", "espanol": "lengua náhuatl" },
-  { "nahuatl": "ca", "espanol": "ser/estar (presente)" },
-  { "nahuatl": "cah", "espanol": "él/ella es/está" },
-  { "nahuatl": "nitemo", "espanol": "busco algo" },
-  { "nahuatl": "niquitta", "espanol": "lo veo" },
-  { "nahuatl": "nimi", "espanol": "voy" },
-  { "nahuatl": "tihui", "espanol": "vienes" },
-  { "nahuatl": "yauh", "espanol": "él/ella va" },
-  { "nahuatl": "nihtoa", "espanol": "hablo" },
-  { "nahuatl": "tlahtoa", "espanol": "él/ella habla" },
-  { "nahuatl": "nicchihua", "espanol": "lo hago" },
-  { "nahuatl": "nimitzittaz", "espanol": "te veré" },
-  { "nahuatl": "xinechitta", "espanol": "mírame" },
-  { "nahuatl": "ma timotlapaloh", "espanol": "saludémonos" },
-  { "nahuatl": "canin timitztlasohcamati", "espanol": "dónde te doy las gracias" },
-  { "nahuatl": "tonatiuh", "espanol": "sol" },
-  { "nahuatl": "metztli", "espanol": "luna" },
-  { "nahuatl": "citlalin", "espanol": "estrella" },
-  { "nahuatl": "cuicatl", "espanol": "canción" },
-  { "nahuatl": "tlahtolli", "espanol": "palabra" },
-  { "nahuatl": "cocoxqui", "espanol": "enfermo" },
-  { "nahuatl": "pahtli", "espanol": "medicina" },
-  { "nahuatl": "tlachia", "espanol": "él/ella mira" },
-  { "nahuatl": "miqui", "espanol": "él/ella muere" },
-  { "nahuatl": "cahuia", "espanol": "dejar" },
-  { "nahuatl": "tleino", "espanol": "nada" },
-  { "nahuatl": "tlein", "espanol": "qué" },
-  { "nahuatl": "te", "espanol": "alguien" },
-  { "nahuatl": "tla", "espanol": "algo" },
-  { "nahuatl": "nel", "espanol": "entonces" },
-  { "nahuatl": "ma", "espanol": "que (optativo)" },
-  { "nahuatl": "xihuitl", "espanol": "año, turquesa" },
-  { "nahuatl": "ilhuitl", "espanol": "día" },
-  { "nahuatl": "yohualli", "espanol": "noche" },
-  { "nahuatl": "chalchiuitl", "espanol": "jade" },
-  { "nahuatl": "quetzalli", "espanol": "pluma preciosa" },
-  { "nahuatl": "cueitl", "espanol": "falda" },
-  { "nahuatl": "huipilli", "espanol": "huipil" },
-  { "nahuatl": "maxtlatl", "espanol": "máxtlatl (pañete)" },
-  { "nahuatl": "cactli", "espanol": "sandalia" },
-  { "nahuatl": "tecpan", "espanol": "palacio" },
-  { "nahuatl": "calmecac", "espanol": "escuela sacerdotal" },
-  { "nahuatl": "telpochcalli", "espanol": "escuela para jóvenes" },
-  { "nahuatl": "temazcalli", "espanol": "temascal" },
-  { "nahuatl": "tianquiztli", "espanol": "mercado" },
-  { "nahuatl": "tanamacac", "espanol": "vendedor" },
-  { "nahuatl": "cochitl", "espanol": "sueño (dormir)" },
-  { "nahuatl": "temictli", "espanol": "sueño (soñar)" },
-  { "nahuatl": "tzoctli", "espanol": "hilo" },
-  { "nahuatl": "ihmitl", "espanol": "flecha" },
-  { "nahuatl": "chimali", "espanol": "escudo" },
-  { "nahuatl": "yaotl", "espanol": "enemigo" },
-  { "nahuatl": "macehualli", "espanol": "macehual" },
-  { "nahuatl": "pilli", "espanol": "noble" },
-  { "nahuatl": "tlacatecolotl", "espanol": "demonio" },
-  { "nahuatl": "nahualli", "espanol": "brujo" },
-  { "nahuatl": "tlamacazqui", "espanol": "sacerdote" },
-  { "nahuatl": "cihuatlamacazqui", "espanol": "sacerdotisa" },
-  { "nahuatl": "chichi", "espanol": "perro" },
-  { "nahuatl": "mizton", "espanol": "gato" },
-  { "nahuatl": "coyotl", "espanol": "coyote" },
-  { "nahuatl": "ocelotl", "espanol": "jaguar" },
-  { "nahuatl": "cuauhtli", "espanol": "águila" },
-  { "nahuatl": "coatl", "espanol": "serpiente" },
-  { "nahuatl": "cueyatl", "espanol": "rana" },
-  { "nahuatl": "papalotl", "espanol": "mariposa" },
-  { "nahuatl": "azcatl", "espanol": "hormiga" },
-  { "nahuatl": "tonacayotl", "espanol": "alimento" },
-  { "nahuatl": "tamalli", "espanol": "tamal" },
-  { "nahuatl": "tlaxcalli", "espanol": "tortilla" },
-  { "nahuatl": "atolli", "espanol": "atole" },
-  { "nahuatl": "chocolatl", "espanol": "chocolate" },
-  { "nahuatl": "etl", "espanol": "frijol" },
-  { "nahuatl": "centli", "espanol": "maíz" },
-  { "nahuatl": "chilli", "espanol": "chile" },
-  { "nahuatl": "tomatl", "espanol": "tomate" },
-  { "nahuatl": "tzictli", "espanol": "chicle" },
-  { "nahuatl": "ocotl", "espanol": "ocote" },
-  { "nahuatl": "quetzalcoatl", "espanol": "serpiente emplumada" },
-  { "nahuatl": "tlaloc", "espanol": "dios de la lluvia" },
-  { "nahuatl": "huitzilopochtli", "espanol": "colibrí zurdo" },
-  { "nahuatl": "tezcatlipoca", "espanol": "espejo humeante" },
-  { "nahuatl": "xochiquetzal", "espanol": "flor de quetzal" },
-  { "nahuatl": "mictlantecuhtli", "espanol": "señor de los muertos" },
+  { "nahuatl": "no-", "espanol": "mi" },
+  { "nahuatl": "mo-", "espanol": "tu" },
+  { "nahuatl": "i-", "espanol": "su" },
+  { "nahuatl": "i-", "espanol": "de" },
+  { "nahuatl": "to-", "espanol": "nuestro; nuestra" },
+  { "nahuatl": "amo-", "espanol": "sus" },
+  { "nahuatl": "in-", "espanol": "sus" },
+
+  { "nahuatl": "nocal", "espanol": "mi casa" },
+  { "nahuatl": "mocal", "espanol": "tu casa" },
+  { "nahuatl": "ical", "espanol": "su casa (de él o de ella)" },
+  { "nahuatl": "tocal", "espanol": "nuestra casa" },
+  { "nahuatl": "amocal", "espanol": "su casa (de ustedes)" },
+  { "nahuatl": "incal", "espanol": "su casa (de ellos o de ellas)" },
+
+  { "nahuatl": "notoca", "espanol": "mi nombre" },
+  { "nahuatl": "motoca", "espanol": "tu nombre" },
+  { "nahuatl": "itoca", "espanol": "su nombre (de él o de ella)" },
+  { "nahuatl": "totoca", "espanol": "nuestro nombre" },
+  { "nahuatl": "amotoca", "espanol": "su nombre (de ustedes)" },
+  { "nahuatl": "intoca", "espanol": "su nombre (de ellos o de ellas)" },
+
+  { "nahuatl": "noyollo", "espanol": "mi corazón" },
+  { "nahuatl": "moyollo", "espanol": "tu corazón" },
+  { "nahuatl": "iyollo", "espanol": "su corazón (de él o de ella)" },
+  { "nahuatl": "toyollo", "espanol": "nuestro corazón" },
+  { "nahuatl": "amoyollo", "espanol": "su corazón (de ustedes)" },
+  { "nahuatl": "inyollo", "espanol": "su corazón (de ellos o de ellas)" },
+
+  { "nahuatl": "notatzin", "espanol": "mi padre" },
+  { "nahuatl": "motatzin", "espanol": "tu padre" },
+  { "nahuatl": "itatzin", "espanol": "su padre (de él o de ella)" },
+  { "nahuatl": "totatzin", "espanol": "nuestro padre" },
+  { "nahuatl": "amotatzin", "espanol": "su padre (de ustedes)" },
+  { "nahuatl": "intatzin", "espanol": "su padre (de ellos o de ellas)" },
+
+  { "nahuatl": "nonantzin", "espanol": "mi madre" },
+  { "nahuatl": "monantzin", "espanol": "tu madre" },
+  { "nahuatl": "inantzin", "espanol": "su madre (de él o de ella)" },
   { "nahuatl": "tonantzin", "espanol": "nuestra madre" },
-  { "nahuatl": "xinantzin", "espanol": "señora de las flores" },
-  { "nahuatl": "cualli tonalli", "espanol": "buenos días" },
-  { "nahuatl": "cualli teotlac", "espanol": "buenas tardes" },
-  { "nahuatl": "cualli yohualli", "espanol": "buenas noches" },
-  { "nahuatl": "huelic xochitl", "espanol": "flor hermosa" },
-  { "nahuatl": "tlazohcamati", "espanol": "gracias" },
-  { "nahuatl": "ma cualli monequi", "espanol": "por favor" },
-  { "nahuatl": "quen tica", "espanol": "¿cómo estás?" },
-  { "nahuatl": "cualli", "espanol": "bien" },
-  { "nahuatl": "ahmo cualli", "espanol": "mal" },
-  { "nahuatl": "tlen moteca", "espanol": "¿qué te pasa?" },
-  { "nahuatl": "nice", "espanol": "sí" },
-  { "nahuatl": "ahmo", "espanol": "no" },
-  { "nahuatl": "ixmatini", "espanol": "sabio" },
-  { "nahuatl": "tlacuilo", "espanol": "pintor-escriba" },
-  { "nahuatl": "pochtecatl", "espanol": "comerciante" },
-  { "nahuatl": "tlamatini", "espanol": "hombre sabio" },
+  { "nahuatl": "amonantzin", "espanol": "su madre (de ustedes)" },
+  { "nahuatl": "innantzin", "espanol": "su madre (de ellos o de ellas)" },
+
+  { "nahuatl": "nomac", "espanol": "mi mano" },
+  { "nahuatl": "momac", "espanol": "tu mano" },
+  { "nahuatl": "imac", "espanol": "su mano (de él o de ella)" },
+  { "nahuatl": "tomac", "espanol": "nuestra mano" },
+  { "nahuatl": "amomac", "espanol": "su mano (de ustedes)" },
+  { "nahuatl": "inmac", "espanol": "su mano (de ellos o de ellas)" },
+
+  { "nahuatl": "noicxi", "espanol": "mi pie" },
+  { "nahuatl": "moicxi", "espanol": "tu pie" },
+  { "nahuatl": "iicxi", "espanol": "su pie (de él o de ella)" },
+  { "nahuatl": "toicxi", "espanol": "nuestro pie" },
+  { "nahuatl": "amoicxi", "espanol": "su pie (de ustedes)" },
+  { "nahuatl": "inicxi", "espanol": "su pie (de ellos o de ellas)" },
+
+  { "nahuatl": "notlatol", "espanol": "mi palabra; mi idioma" },
+  { "nahuatl": "motlatol", "espanol": "tu palabra; tu idioma" },
+  { "nahuatl": "itlatol", "espanol": "su palabra; su idioma (de él o de ella)" },
+  { "nahuatl": "totlatol", "espanol": "nuestra palabra; nuestro idioma" },
+  { "nahuatl": "amotlatol", "espanol": "su palabra (de ustedes)" },
+  { "nahuatl": "intlatol", "espanol": "su palabra (de ellos o de ellas)" },
+
+  { "nahuatl": "notequiuh", "espanol": "mi trabajo; mi deber" },
+  { "nahuatl": "motequiuh", "espanol": "tu trabajo; tu deber" },
+  { "nahuatl": "itequiuh", "espanol": "su trabajo; su deber (de él o de ella)" },
+  { "nahuatl": "totequiuh", "espanol": "nuestro trabajo; nuestro deber" },
+  { "nahuatl": "amotequiuh", "espanol": "su trabajo (de ustedes)" },
+  { "nahuatl": "intequiuh", "espanol": "su trabajo (de ellos o de ellas)" },
+
+  { "nahuatl": "notlatqui", "espanol": "mis cosas; mis pertenencias" },
+  { "nahuatl": "motlatqui", "espanol": "tus cosas; tus pertenencias" },
+  { "nahuatl": "itlatqui", "espanol": "sus cosas (de él o de ella)" },
+  { "nahuatl": "totlatqui", "espanol": "nuestras cosas" },
+  { "nahuatl": "amotlatqui", "espanol": "sus cosas (de ustedes)" },
+  { "nahuatl": "intlatqui", "espanol": "sus cosas (de ellos o de ellas)" },
+
+  { "nahuatl": "nochan", "espanol": "mi hogar; mi lugar" },
+  { "nahuatl": "mochan", "espanol": "tu hogar; tu lugar" },
+  { "nahuatl": "ichan", "espanol": "su hogar; su lugar (de él o de ella)" },
+  { "nahuatl": "tochan", "espanol": "nuestro hogar; nuestro lugar" },
+  { "nahuatl": "amochan", "espanol": "su hogar (de ustedes)" },
+  { "nahuatl": "inchan", "espanol": "su hogar (de ellos o de ellas)" },
+
+  { "nahuatl": "noamoxtli", "espanol": "mi libro" },
+  { "nahuatl": "moamoxtli", "espanol": "tu libro" },
+  { "nahuatl": "iamoxtli", "espanol": "su libro (de él o de ella)" },
+  { "nahuatl": "toamoxtli", "espanol": "nuestro libro" },
+  { "nahuatl": "amoamoxtli", "espanol": "su libro (de ustedes)" },
+  { "nahuatl": "inamoxtli", "espanol": "su libro (de ellos o de ellas)" },
+
+  { "nahuatl": "nopiltzin", "espanol": "mi hijo querido" },
+  { "nahuatl": "mopiltzin", "espanol": "tu hijo querido" },
+  { "nahuatl": "ipiltzin", "espanol": "su hijo querido (de él o de ella)" },
+  { "nahuatl": "topiltzin", "espanol": "nuestro hijo querido" },
+  { "nahuatl": "amopiltzin", "espanol": "su hijo querido (de ustedes)" },
+  { "nahuatl": "inpiltzin", "espanol": "su hijo querido (de ellos o de ellas)" },
+
+  { "nahuatl": "noicniuh", "espanol": "mi amigo; mi amiga" },
+  { "nahuatl": "moicniuh", "espanol": "tu amigo; tu amiga" },
+  { "nahuatl": "iicniuh", "espanol": "su amigo; su amiga (de él o de ella)" },
+  { "nahuatl": "toicniuh", "espanol": "nuestro amigo; nuestra amiga" },
+  { "nahuatl": "amoicniuh", "espanol": "su amigo (de ustedes)" },
+  { "nahuatl": "inicniuh", "espanol": "su amigo (de ellos o de ellas)" },
+
+  { "nahuatl": "nonamic", "espanol": "mi esposo; mi esposa" },
+  { "nahuatl": "monamic", "espanol": "tu esposo; tu esposa" },
+  { "nahuatl": "inamic", "espanol": "su esposo; su esposa (de él o de ella)" },
+  { "nahuatl": "tonamic", "espanol": "nuestro esposo; nuestra esposa" },
+  { "nahuatl": "amonamic", "espanol": "su esposo; su esposa (de ustedes)" },
+  { "nahuatl": "innamic", "espanol": "su esposo; su esposa (de ellos o de ellas)" },
+
+  { "nahuatl": "notlazoh", "espanol": "mi amado; mi amada; mi querido" },
+  { "nahuatl": "motlazoh", "espanol": "tu amado; tu amada; tu querido" },
+  { "nahuatl": "itlazoh", "espanol": "su amado; su amada (de él o de ella)" },
+  { "nahuatl": "totlazoh", "espanol": "nuestro amado; nuestra amada" },
+  { "nahuatl": "amotlazoh", "espanol": "su amado (de ustedes)" },
+  { "nahuatl": "intlazoh", "espanol": "su amado (de ellos o de ellas)" },
+
+  { "nahuatl": "nonemiliztli", "espanol": "mi vida; mi modo de vivir" },
+  { "nahuatl": "monemiliztli", "espanol": "tu vida; tu modo de vivir" },
+  { "nahuatl": "inemiliztli", "espanol": "su vida (de él o de ella)" },
+  { "nahuatl": "tonemiliztli", "espanol": "nuestra vida" },
+  { "nahuatl": "amonemiliztli", "espanol": "su vida (de ustedes)" },
+  { "nahuatl": "innemiliztli", "espanol": "su vida (de ellos o de ellas)" },
+
+  { "nahuatl": "notlal", "espanol": "mi tierra; mi lugar de origen" },
+  { "nahuatl": "motlal", "espanol": "tu tierra; tu lugar de origen" },
+  { "nahuatl": "itlal", "espanol": "su tierra (de él o de ella)" },
+  { "nahuatl": "totlal", "espanol": "nuestra tierra" },
+  { "nahuatl": "amotlal", "espanol": "su tierra (de ustedes)" },
+  { "nahuatl": "intlal", "espanol": "su tierra (de ellos o de ellas)" },
+
+  { "nahuatl": "inin", "espanol": "este; esta; esto (singular cerca)" },
+  { "nahuatl": "inon", "espanol": "ese; esa; eso (singular lejos)" },
+  { "nahuatl": "inin tlein", "espanol": "esto que; este que" },
+  { "nahuatl": "inon tlein", "espanol": "aquello que; ese que" },
+
+  { "nahuatl": "ininin", "espanol": "estos; estas (plural cerca)" },
+  { "nahuatl": "inonon", "espanol": "esos; esas (plural lejos)" },
+
+  { "nahuatl": "inin calli", "espanol": "esta casa" },
+  { "nahuatl": "inon calli", "espanol": "esa casa; aquella casa" },
+  { "nahuatl": "ininin calli", "espanol": "estas casas" },
+  { "nahuatl": "inonon calli", "espanol": "esas casas; aquellas casas" },
+
+  { "nahuatl": "inin tlacatl", "espanol": "este hombre; esta persona" },
+  { "nahuatl": "inon tlacatl", "espanol": "ese hombre; esa persona" },
+  { "nahuatl": "ininin tlacah", "espanol": "estas personas; estos hombres" },
+  { "nahuatl": "inonon tlacah", "espanol": "esas personas; esos hombres" },
+
+  { "nahuatl": "inin cihuatl", "espanol": "esta mujer" },
+  { "nahuatl": "inon cihuatl", "espanol": "esa mujer; aquella mujer" },
+  { "nahuatl": "ininin cihuah", "espanol": "estas mujeres" },
+  { "nahuatl": "inonon cihuah", "espanol": "esas mujeres; aquellas mujeres" },
+
+  { "nahuatl": "inin pilli", "espanol": "este niño; este noble" },
+  { "nahuatl": "inon pilli", "espanol": "ese niño; ese noble" },
+  { "nahuatl": "ininin pipiltin", "espanol": "estos niños; estos nobles" },
+  { "nahuatl": "inonon pipiltin", "espanol": "esos niños; esos nobles" },
+
+  { "nahuatl": "inin amoxtli", "espanol": "este libro" },
+  { "nahuatl": "inon amoxtli", "espanol": "ese libro; aquel libro" },
+  { "nahuatl": "ininin amoxtin", "espanol": "estos libros" },
+  { "nahuatl": "inonon amoxtin", "espanol": "esos libros; aquellos libros" },
+
+  { "nahuatl": "inin atl", "espanol": "esta agua" },
+  { "nahuatl": "inon atl", "espanol": "esa agua; aquella agua" },
+
+  { "nahuatl": "inin tlamantli", "espanol": "esta cosa" },
+  { "nahuatl": "inon tlamantli", "espanol": "esa cosa; aquella cosa" },
+  { "nahuatl": "ininin tlamantli", "espanol": "estas cosas" },
+  { "nahuatl": "inonon tlamantli", "espanol": "esas cosas; aquellas cosas" },
+
+  { "nahuatl": "inin cahuitl", "espanol": "este tiempo; este momento" },
+  { "nahuatl": "inon cahuitl", "espanol": "ese tiempo; aquel momento" },
+
+  { "nahuatl": "inin ohtli", "espanol": "este camino" },
+  { "nahuatl": "inon ohtli", "espanol": "ese camino; aquel camino" },
+
+  { "nahuatl": "inin tonalli", "espanol": "este día; este destino" },
+  { "nahuatl": "inon tonalli", "espanol": "ese día; aquel destino" },
+
+  { "nahuatl": "inin tlahtol", "espanol": "esta palabra; este discurso" },
+  { "nahuatl": "inon tlahtol", "espanol": "esa palabra; aquel discurso" },
+
+  { "nahuatl": "neh", "espanol": "yo mismo; yo en persona" },
+  { "nahuatl": "teh", "espanol": "tú mismo; tú en persona" },
+  { "nahuatl": "yeh", "espanol": "él mismo; ella misma; eso mismo" },
+  { "nahuatl": "tehhuantin", "espanol": "nosotros mismos" },
+  { "nahuatl": "amehhuantin", "espanol": "ustedes mismos" },
+  { "nahuatl": "yehhuantin", "espanol": "ellos mismos; ellas mismas" },
+
+  { "nahuatl": "nohmatca nehhuatl", "espanol": "yo mismo; por mí mismo" },
+  { "nahuatl": "mohmatca tehhuatl", "espanol": "tú mismo; por ti mismo" },
+  { "nahuatl": "yehmatca yehuatl", "espanol": "él mismo; por sí mismo" },
+
+  { "nahuatl": "aquin", "espanol": "quién; el que; quien" },
+  { "nahuatl": "aquique", "espanol": "quiénes; los que; quienes" },
+  { "nahuatl": "tlein", "espanol": "qué; qué cosa; lo que" },
+  { "nahuatl": "canin", "espanol": "dónde; en qué lugar" },
+  { "nahuatl": "quenin", "espanol": "cómo; de qué manera" },
+  { "nahuatl": "quemmanian", "espanol": "cuándo; en qué momento" },
+  { "nahuatl": "quezqui", "espanol": "cuánto; cuántos" },
+  { "nahuatl": "quezquipa", "espanol": "cuántas veces" },
+  { "nahuatl": "ipampa tlein", "espanol": "por qué; por qué razón" },
+
+  { "nahuatl": "in aquin", "espanol": "el que; quien; aquel que" },
+  { "nahuatl": "in aquique", "espanol": "los que; quienes; aquellos que" },
+  { "nahuatl": "in tlein", "espanol": "lo que; aquello que; que" },
+  { "nahuatl": "in canin", "espanol": "donde; en el lugar donde" },
+
+  { "nahuatl": "occe", "espanol": "otro; otra" },
+  { "nahuatl": "occentetl", "espanol": "otro; otra cosa" },
+  { "nahuatl": "occequi", "espanol": "otros; otras; los demás" },
+  { "nahuatl": "occequintin", "espanol": "otros más; otras personas" },
+
+  { "nahuatl": "ceme", "espanol": "alguno; alguna; uno de ellos" },
+  { "nahuatl": "cequi", "espanol": "algunos; algunas; ciertos" },
+  { "nahuatl": "cequintin", "espanol": "algunas personas; cierta gente" },
+
+  { "nahuatl": "mochi", "espanol": "todo; toda; todo ello" },
+  { "nahuatl": "mochtin", "espanol": "todos; todas; toda la gente" },
+  { "nahuatl": "ixquich", "espanol": "todo; cuanto; tanto" },
+  { "nahuatl": "ixquichtin", "espanol": "todos ellos; todas ellas" },
+  { "nahuatl": "cenquizqui", "espanol": "todo completo; íntegro; perfecto" },
+
+  { "nahuatl": "ayac", "espanol": "nadie; ninguno" },
+  { "nahuatl": "atle", "espanol": "nada; ninguna cosa" },
+  { "nahuatl": "ahtlein", "espanol": "nada; no hay nada" },
+  { "nahuatl": "ayacata", "espanol": "en ningún lugar; en ninguna parte" },
+
+  { "nahuatl": "no", "espanol": "también; de igual modo; mi (posesivo)" },
+  { "nahuatl": "no ihqui", "espanol": "también así; igualmente" },
+  { "nahuatl": "zan no ihqui", "espanol": "también de igual manera; lo mismo" },
+  { "nahuatl": "nohuian", "espanol": "en todas partes; por todos lados" },
+  { "nahuatl": "nohuiampa", "espanol": "hacia todas partes; en todas direcciones" },
+
+  { "nahuatl": "iuh", "espanol": "así; de ese modo; como" },
+  { "nahuatl": "yuhqui", "espanol": "como; igual que; así como" },
+  { "nahuatl": "iuhquin", "espanol": "como si; a manera de; semejante a" },
+  { "nahuatl": "yuh mochihua", "espanol": "así se hace; así sucede" },
+  { "nahuatl": "yuh ticchihuaz", "espanol": "así lo harás; de este modo hazlo" },
+  {
+    "nahuatl": "ce",
+    "espanol": "uno"
+  },
+  {
+    "nahuatl": "ome",
+    "espanol": "dos"
+  },
+  {
+    "nahuatl": "yei",
+    "espanol": "tres"
+  },
+  {
+    "nahuatl": "nahui",
+    "espanol": "cuatro"
+  },
+  {
+    "nahuatl": "macuilli",
+    "espanol": "cinco"
+  },
+  {
+    "nahuatl": "chicuace",
+    "espanol": "seis"
+  },
+  {
+    "nahuatl": "chicome",
+    "espanol": "siete"
+  },
+  {
+    "nahuatl": "chicuei",
+    "espanol": "ocho"
+  },
+  {
+    "nahuatl": "chicnahui",
+    "espanol": "nueve"
+  },
+  {
+    "nahuatl": "matlactli",
+    "espanol": "diez"
+  },
+  {
+    "nahuatl": "matlactli once",
+    "espanol": "once"
+  },
+  {
+    "nahuatl": "matlactli omome",
+    "espanol": "doce"
+  },
+  {
+    "nahuatl": "matlactli omyei",
+    "espanol": "trece"
+  },
+  {
+    "nahuatl": "matlactli omnahui",
+    "espanol": "catorce"
+  },
+  {
+    "nahuatl": "caxtolli",
+    "espanol": "quince"
+  },
+  {
+    "nahuatl": "caxtolli once",
+    "espanol": "dieciséis"
+  },
+  {
+    "nahuatl": "caxtolli omome",
+    "espanol": "diecisiete"
+  },
+  {
+    "nahuatl": "caxtolli omyei",
+    "espanol": "dieciocho"
+  },
+  {
+    "nahuatl": "caxtolli omnahui",
+    "espanol": "diecinueve"
+  },
+  {
+    "nahuatl": "cempoalli",
+    "espanol": "veinte"
+  },
+  {
+    "nahuatl": "cempoalli once",
+    "espanol": "veintiuno"
+  },
+  {
+    "nahuatl": "ompoalli",
+    "espanol": "cuarenta"
+  },
+  {
+    "nahuatl": "yeipoalli",
+    "espanol": "sesenta"
+  },
+  {
+    "nahuatl": "naupoalli",
+    "espanol": "ochenta"
+  },
+  {
+    "nahuatl": "macuilpoalli",
+    "espanol": "cien"
+  },
+  {
+    "nahuatl": "matlacpoalli",
+    "espanol": "doscientos"
+  },
+  {
+    "nahuatl": "centzontli",
+    "espanol": "cuatrocientos"
+  },
+  {
+    "nahuatl": "matlactzontli",
+    "espanol": "cuatro mil"
+  },
+  {
+    "nahuatl": "cenxiquipilli",
+    "espanol": "ocho mil"
+  },
+  {
+    "nahuatl": "ce tlamantli",
+    "espanol": "primero"
+  },
+  {
+    "nahuatl": "ome tlamantli",
+    "espanol": "segundo"
+  },
+  {
+    "nahuatl": "yei tlamantli",
+    "espanol": "tercero"
+  },
+  {
+    "nahuatl": "nahui tlamantli",
+    "espanol": "cuarto"
+  },
+  {
+    "nahuatl": "macuilli tlamantli",
+    "espanol": "quinto"
+  },
+  {
+    "nahuatl": "miec",
+    "espanol": "muchos; mucho"
+  },
+  {
+    "nahuatl": "achi",
+    "espanol": "poco; un poco"
+  },
+  {
+    "nahuatl": "cenca miec",
+    "espanol": "muchísimo; demasiado"
+  },
+  {
+    "nahuatl": "zan achitzin",
+    "espanol": "muy poco; poquito"
+  },
+  {
+    "nahuatl": "miec tlapoalli",
+    "espanol": "número grande"
+  },
+  {
+    "nahuatl": "tlapoalli",
+    "espanol": "número; cuenta"
+  },
+  {
+    "nahuatl": "nohuian tlapoalli",
+    "espanol": "infinito; sin número"
+  },
+  {
+    "nahuatl": "tlatlauhqui",
+    "espanol": "rojo"
+  },
+  {
+    "nahuatl": "iztac",
+    "espanol": "blanco"
+  },
+  {
+    "nahuatl": "tiltic",
+    "espanol": "negro"
+  },
+  {
+    "nahuatl": "coztic",
+    "espanol": "amarillo"
+  },
+  {
+    "nahuatl": "quiltic",
+    "espanol": "verde"
+  },
+  {
+    "nahuatl": "texotli",
+    "espanol": "azul; añil"
+  },
+  {
+    "nahuatl": "xoxoctic",
+    "espanol": "verde azulado; azul verdoso"
+  },
+  {
+    "nahuatl": "chichiltic",
+    "espanol": "rojo vivo; bermejo"
+  },
+  {
+    "nahuatl": "nextli",
+    "espanol": "gris; ceniciento"
+  },
+  {
+    "nahuatl": "camopalli",
+    "espanol": "morado; violeta"
+  },
+  {
+    "nahuatl": "tlapaltic",
+    "espanol": "de color fuerte; colorido"
+  },
+  {
+    "nahuatl": "matlaltic",
+    "espanol": "azul oscuro; azul marino"
+  },
+  {
+    "nahuatl": "xiuhtic",
+    "espanol": "azul turquesa; color turquesa"
+  },
+  {
+    "nahuatl": "tomahuac tlatlauhqui",
+    "espanol": "rojo oscuro"
+  },
+  {
+    "nahuatl": "iztaczaltic",
+    "espanol": "blanco brillante"
+  },
+  {
+    "nahuatl": "cosahuic",
+    "espanol": "amarillento; pálido"
+  },
+  {
+    "nahuatl": "xiuhtlapalli",
+    "espanol": "color turquesa; azul brillante"
+  },
+  {
+    "nahuatl": "cuappachtli",
+    "espanol": "color ocre; marrón"
+  },
+  {
+    "nahuatl": "nacaztlapalli",
+    "espanol": "color sangre; rojo sangre"
+  },
+  {
+    "nahuatl": "ayopaltic",
+    "espanol": "gris verdoso; color aguacate"
+  },
+  {
+    "nahuatl": "axcan",
+    "espanol": "hoy; ahora"
+  },
+  {
+    "nahuatl": "moztla",
+    "espanol": "mañana"
+  },
+  {
+    "nahuatl": "yalhua",
+    "espanol": "ayer"
+  },
+  {
+    "nahuatl": "huiptla",
+    "espanol": "pasado mañana"
+  },
+  {
+    "nahuatl": "yalhuan",
+    "espanol": "anteayer"
+  },
+  {
+    "nahuatl": "nochipa",
+    "espanol": "siempre; para siempre"
+  },
+  {
+    "nahuatl": "ayamo",
+    "espanol": "todavía no; aún no"
+  },
+  {
+    "nahuatl": "ye",
+    "espanol": "ya"
+  },
+  {
+    "nahuatl": "niman",
+    "espanol": "ahora mismo; enseguida"
+  },
+  {
+    "nahuatl": "aocmo",
+    "espanol": "ya no; nunca más"
+  },
+  {
+    "nahuatl": "ihcuac",
+    "espanol": "cuando; en el momento que"
+  },
+  {
+    "nahuatl": "quemmanian",
+    "espanol": "alguna vez; a veces"
+  },
+  {
+    "nahuatl": "oc",
+    "espanol": "todavía; aún"
+  },
+  {
+    "nahuatl": "cahuitl",
+    "espanol": "tiempo; hora; momento"
+  },
+  {
+    "nahuatl": "ilhuitl",
+    "espanol": "día; fiesta"
+  },
+  {
+    "nahuatl": "yohualli",
+    "espanol": "noche"
+  },
+  {
+    "nahuatl": "tlaneci",
+    "espanol": "amanecer"
+  },
+  {
+    "nahuatl": "nextia",
+    "espanol": "atardecer; ponerse el sol"
+  },
+  {
+    "nahuatl": "nepantla tonatiuh",
+    "espanol": "mediodía"
+  },
+  {
+    "nahuatl": "yohualnepantla",
+    "espanol": "medianoche"
+  },
+  {
+    "nahuatl": "teutlac",
+    "espanol": "tarde; por la tarde"
+  },
+  {
+    "nahuatl": "xihuitl",
+    "espanol": "año"
+  },
+  {
+    "nahuatl": "metztli",
+    "espanol": "mes; luna"
+  },
+  {
+    "nahuatl": "cemilhuitl",
+    "espanol": "todo el día; un día entero"
+  },
+  {
+    "nahuatl": "cenyohualli",
+    "espanol": "toda la noche"
+  },
+  {
+    "nahuatl": "matlacxihuitl",
+    "espanol": "diez años; una década"
+  },
+  {
+    "nahuatl": "ihuippa",
+    "espanol": "pronto; en breve"
+  },
+  {
+    "nahuatl": "huecauh",
+    "espanol": "hace tiempo; hace mucho"
+  },
+  {
+    "nahuatl": "huecauhtica",
+    "espanol": "desde hace mucho tiempo"
+  },
+  {
+    "nahuatl": "zan achitzin cahuitl",
+    "espanol": "en un momento; ahorita"
+  },
+  {
+    "nahuatl": "ipan in cahuitl",
+    "espanol": "en este tiempo; en esta época"
+  },
+  {
+    "nahuatl": "tonalco",
+    "espanol": "en verano; en temporada de calor"
+  },
+  {
+    "nahuatl": "xopan",
+    "espanol": "en temporada de lluvias; en verano"
+  },
+  {
+    "nahuatl": "totonac cahuitl",
+    "espanol": "época de calor; verano"
+  },
+  {
+    "nahuatl": "cecec cahuitl",
+    "espanol": "época de frío; invierno"
+  },
+  {
+    "nahuatl": "in tlacuali cahuitl",
+    "espanol": "hora de comer"
+  },
+  {
+    "nahuatl": "pehua cahuitl",
+    "espanol": "es tiempo de empezar"
+  },
+  {
+    "nahuatl": "ce tonalli",
+    "espanol": "primer día; lunes"
+  },
+  {
+    "nahuatl": "ome tonalli",
+    "espanol": "segundo día; martes"
+  },
+  {
+    "nahuatl": "yei tonalli",
+    "espanol": "tercer día; miércoles"
+  },
+  {
+    "nahuatl": "nahui tonalli",
+    "espanol": "cuarto día; jueves"
+  },
+  {
+    "nahuatl": "macuilli tonalli",
+    "espanol": "quinto día; viernes"
+  },
+  {
+    "nahuatl": "chicuace tonalli",
+    "espanol": "sexto día; sábado"
+  },
+  {
+    "nahuatl": "chicome tonalli",
+    "espanol": "séptimo día; domingo"
+  },
+  {
+    "nahuatl": "tzontecomitl",
+    "espanol": "cabeza; cráneo"
+  },
+  {
+    "nahuatl": "ixtelolotl",
+    "espanol": "ojo; globo ocular"
+  },
+  {
+    "nahuatl": "nacaztli",
+    "espanol": "oreja"
+  },
+  {
+    "nahuatl": "yacatl",
+    "espanol": "nariz"
+  },
+  {
+    "nahuatl": "tentli",
+    "espanol": "labio; boca"
+  },
+  {
+    "nahuatl": "camatl",
+    "espanol": "boca"
+  },
+  {
+    "nahuatl": "tlantli",
+    "espanol": "diente"
+  },
+  {
+    "nahuatl": "nenepilli",
+    "espanol": "lengua"
+  },
+  {
+    "nahuatl": "quechtli",
+    "espanol": "cuello; nuca"
+  },
+  {
+    "nahuatl": "elpantli",
+    "espanol": "pecho; torso"
+  },
+  {
+    "nahuatl": "uitztli",
+    "espanol": "espina dorsal; columna"
+  },
+  {
+    "nahuatl": "xictli",
+    "espanol": "ombligo"
+  },
+  {
+    "nahuatl": "maitl",
+    "espanol": "mano; brazo"
+  },
+  {
+    "nahuatl": "mapilli",
+    "espanol": "dedo de la mano"
+  },
+  {
+    "nahuatl": "icxitl",
+    "espanol": "pie"
+  },
+  {
+    "nahuatl": "xopilli",
+    "espanol": "dedo del pie"
+  },
+  {
+    "nahuatl": "cuitlapantli",
+    "espanol": "espalda"
+  },
+  {
+    "nahuatl": "maxactli",
+    "espanol": "entrepierna; muslo"
+  },
+  {
+    "nahuatl": "metztli",
+    "espanol": "pierna; pantorrilla"
+  },
+  {
+    "nahuatl": "tzintetl",
+    "espanol": "nalgas; trasero"
+  },
+  {
+    "nahuatl": "yollotl",
+    "espanol": "corazón"
+  },
+  {
+    "nahuatl": "elli",
+    "espanol": "hígado"
+  },
+  {
+    "nahuatl": "eztli",
+    "espanol": "sangre"
+  },
+  {
+    "nahuatl": "omitl",
+    "espanol": "hueso"
+  },
+  {
+    "nahuatl": "nacatl",
+    "espanol": "carne; músculo"
+  },
+  {
+    "nahuatl": "euatl",
+    "espanol": "piel"
+  },
+  {
+    "nahuatl": "tzontli",
+    "espanol": "cabello; pelo"
+  },
+  {
+    "nahuatl": "ihuatl",
+    "espanol": "vello; plumón"
+  },
+  {
+    "nahuatl": "ihiyotl",
+    "espanol": "aliento; respiración"
+  },
+  {
+    "nahuatl": "teyollohco",
+    "espanol": "estómago; vientre"
+  },
+  {
+    "nahuatl": "cuitlaxcolli",
+    "espanol": "intestino; tripa"
+  },
+  {
+    "nahuatl": "tlalhuatl",
+    "espanol": "tendón; nervio"
+  },
+  {
+    "nahuatl": "ixtelolotl tlatlauhqui",
+    "espanol": "ojo rojo; ojo irritado"
+  },
+  {
+    "nahuatl": "meyi",
+    "espanol": "manar sangre; sangrar"
+  },
+  {
+    "nahuatl": "cuitlaxcolxictli",
+    "espanol": "panza; barriga"
+  },
+  {
+    "nahuatl": "tahtli",
+    "espanol": "padre"
+  },
+  {
+    "nahuatl": "nantli",
+    "espanol": "madre"
+  },
+  {
+    "nahuatl": "ichpocatl",
+    "espanol": "hija; doncella"
+  },
+  {
+    "nahuatl": "telpochtli",
+    "espanol": "hijo; joven varón"
+  },
+  {
+    "nahuatl": "hueltiuh",
+    "espanol": "hermana mayor (de hermano)"
+  },
+  {
+    "nahuatl": "ueltiuh",
+    "espanol": "hermana mayor"
+  },
+  {
+    "nahuatl": "teicuh",
+    "espanol": "hermano menor; hermana menor"
+  },
+  {
+    "nahuatl": "achcauhtli",
+    "espanol": "hermano mayor"
+  },
+  {
+    "nahuatl": "ahuiltli",
+    "espanol": "tía (hermana del padre)"
+  },
+  {
+    "nahuatl": "tlahtli",
+    "espanol": "tío (hermano de la madre)"
+  },
+  {
+    "nahuatl": "colli",
+    "espanol": "abuelo"
+  },
+  {
+    "nahuatl": "cihtli",
+    "espanol": "abuela"
+  },
+  {
+    "nahuatl": "ixhuiuh",
+    "espanol": "nieto; nieta"
+  },
+  {
+    "nahuatl": "namic",
+    "espanol": "esposo; esposa; cónyuge"
+  },
+  {
+    "nahuatl": "cihuanamic",
+    "espanol": "esposa"
+  },
+  {
+    "nahuatl": "oquichnamic",
+    "espanol": "esposo; marido"
+  },
+  {
+    "nahuatl": "piltzintli",
+    "espanol": "niño; niña; hijo pequeño"
+  },
+  {
+    "nahuatl": "coconetl",
+    "espanol": "bebé; infante"
+  },
+  {
+    "nahuatl": "icniuhtli",
+    "espanol": "amigo; amiga"
+  },
+  {
+    "nahuatl": "teiccauh",
+    "espanol": "cuñado; cuñada"
+  },
+  {
+    "nahuatl": "montli",
+    "espanol": "yerno; nuera"
+  },
+  {
+    "nahuatl": "huepulli",
+    "espanol": "concuño; concuña"
+  },
+  {
+    "nahuatl": "mopilli",
+    "espanol": "tu hijo"
+  },
+  {
+    "nahuatl": "notelpoch",
+    "espanol": "mi hijo varón"
+  },
+  {
+    "nahuatl": "nopiltzin",
+    "espanol": "mi hijo querido"
+  },
+  {
+    "nahuatl": "noconeuh",
+    "espanol": "mi bebé; mi niño"
+  },
+  {
+    "nahuatl": "nohueltiu",
+    "espanol": "mi hermana mayor"
+  },
+  {
+    "nahuatl": "noteicauh",
+    "espanol": "mi hermano menor"
+  },
+  {
+    "nahuatl": "nocol",
+    "espanol": "mi abuelo"
+  },
+  {
+    "nahuatl": "nocihtzi",
+    "espanol": "mi abuela"
+  },
+  {
+    "nahuatl": "nemi",
+    "espanol": "vivir; caminar; andar"
+  },
+  {
+    "nahuatl": "miqui",
+    "espanol": "morir"
+  },
+  {
+    "nahuatl": "naci",
+    "espanol": "nacer; aparecer"
+  },
+  {
+    "nahuatl": "cochi",
+    "espanol": "dormir"
+  },
+  {
+    "nahuatl": "itta",
+    "espanol": "ver; mirar"
+  },
+  {
+    "nahuatl": "caqui",
+    "espanol": "escuchar; oír"
+  },
+  {
+    "nahuatl": "tlahtoa",
+    "espanol": "hablar"
+  },
+  {
+    "nahuatl": "cua",
+    "espanol": "comer"
+  },
+  {
+    "nahuatl": "i",
+    "espanol": "beber"
+  },
+  {
+    "nahuatl": "yauh",
+    "espanol": "ir"
+  },
+  {
+    "nahuatl": "huallah",
+    "espanol": "venir"
+  },
+  {
+    "nahuatl": "mati",
+    "espanol": "saber; conocer"
+  },
+  {
+    "nahuatl": "chihua",
+    "espanol": "hacer"
+  },
+  {
+    "nahuatl": "maca",
+    "espanol": "dar"
+  },
+  {
+    "nahuatl": "cui",
+    "espanol": "tomar; coger"
+  },
+  {
+    "nahuatl": "cua",
+    "espanol": "morder; comer"
+  },
+  {
+    "nahuatl": "toca",
+    "espanol": "sembrar; seguir"
+  },
+  {
+    "nahuatl": "piya",
+    "espanol": "tener; guardar; cuidar"
+  },
+  {
+    "nahuatl": "celia",
+    "espanol": "recibir; brotar"
+  },
+  {
+    "nahuatl": "poloa",
+    "espanol": "perder; destruir"
+  },
+  {
+    "nahuatl": "temoa",
+    "espanol": "buscar; descender"
+  },
+  {
+    "nahuatl": "pia",
+    "espanol": "guardar; tener"
+  },
+  {
+    "nahuatl": "panohua",
+    "espanol": "pasar; cruzar"
+  },
+  {
+    "nahuatl": "quetza",
+    "espanol": "levantar; pararse"
+  },
+  {
+    "nahuatl": "tlalia",
+    "espanol": "poner; sentar; colocar"
+  },
+  {
+    "nahuatl": "mana",
+    "espanol": "ofrecer; extender"
+  },
+  {
+    "nahuatl": "piya",
+    "espanol": "poseer; tener algo"
+  },
+  {
+    "nahuatl": "namiqui",
+    "espanol": "encontrarse; casarse"
+  },
+  {
+    "nahuatl": "ittoa",
+    "espanol": "decir; hablar de"
+  },
+  {
+    "nahuatl": "iloa",
+    "espanol": "mencionar; decir"
+  },
+  {
+    "nahuatl": "notza",
+    "espanol": "llamar; convocar"
+  },
+  {
+    "nahuatl": "paqui",
+    "espanol": "alegrarse; estar feliz"
+  },
+  {
+    "nahuatl": "tlaocoya",
+    "espanol": "entristecerse; afligirse"
+  },
+  {
+    "nahuatl": "mauhtia",
+    "espanol": "asustarse; temer"
+  },
+  {
+    "nahuatl": "cualani",
+    "espanol": "enojarse"
+  },
+  {
+    "nahuatl": "ihiyotia",
+    "espanol": "respirar; suspirar"
+  },
+  {
+    "nahuatl": "netotia",
+    "espanol": "bailar; danzar"
+  },
+  {
+    "nahuatl": "cuica",
+    "espanol": "cantar"
+  },
+  {
+    "nahuatl": "tlapoa",
+    "espanol": "leer; contar; abrir"
+  },
+  {
+    "nahuatl": "cuiloa",
+    "espanol": "escribir; pintar"
+  },
+  {
+    "nahuatl": "momachtia",
+    "espanol": "aprender; estudiar"
+  },
+  {
+    "nahuatl": "machtia",
+    "espanol": "enseñar"
+  },
+  {
+    "nahuatl": "tlahtlania",
+    "espanol": "preguntar"
+  },
+  {
+    "nahuatl": "nanquilia",
+    "espanol": "responder; contestar"
+  },
+  {
+    "nahuatl": "teca",
+    "espanol": "acostarse; recostarse"
+  },
+  {
+    "nahuatl": "huetzi",
+    "espanol": "caer; reír"
+  },
+  {
+    "nahuatl": "tzahtzi",
+    "espanol": "gritar; clamar"
+  },
+  {
+    "nahuatl": "choca",
+    "espanol": "llorar"
+  },
+  {
+    "nahuatl": "huetzcah",
+    "espanol": "reírse"
+  },
+  {
+    "nahuatl": "patlani",
+    "espanol": "volar"
+  },
+  {
+    "nahuatl": "pallani",
+    "espanol": "nadar; flotar"
+  },
+  {
+    "nahuatl": "temo",
+    "espanol": "bajar; descender"
+  },
+  {
+    "nahuatl": "tleco",
+    "espanol": "subir; ascender"
+  },
+  {
+    "nahuatl": "maltia",
+    "espanol": "bañarse"
+  },
+  {
+    "nahuatl": "pahtia",
+    "espanol": "curar; sanar"
+  },
+  {
+    "nahuatl": "cocoa",
+    "espanol": "doler; enfermar"
+  },
+  {
+    "nahuatl": "tlehua",
+    "espanol": "levantarse; encender"
+  },
+  {
+    "nahuatl": "huica",
+    "espanol": "llevar; conducir"
+  },
+  {
+    "nahuatl": "quixtia",
+    "espanol": "sacar; rescatar"
+  },
+  {
+    "nahuatl": "calaqui",
+    "espanol": "entrar"
+  },
+  {
+    "nahuatl": "quiza",
+    "espanol": "salir"
+  },
+  {
+    "nahuatl": "maxiltia",
+    "espanol": "llegar a destino; alcanzar"
+  },
+  {
+    "nahuatl": "cuepoa",
+    "espanol": "regresar; volver"
+  },
+  {
+    "nahuatl": "tlazo",
+    "espanol": "lanzar; tirar"
+  },
+  {
+    "nahuatl": "ixehua",
+    "espanol": "despertar; abrir los ojos"
+  },
+  {
+    "nahuatl": "teca",
+    "espanol": "acostarse"
+  },
+  {
+    "nahuatl": "nenemi",
+    "espanol": "caminar; andar"
+  },
+  {
+    "nahuatl": "paini",
+    "espanol": "correr"
+  },
+  {
+    "nahuatl": "tlaloa",
+    "espanol": "correr; huir"
+  },
+  {
+    "nahuatl": "nequi",
+    "espanol": "querer; desear; necesitar"
+  },
+  {
+    "nahuatl": "monequi",
+    "espanol": "ser necesario; hacerse falta"
+  },
+  {
+    "nahuatl": "hueliti",
+    "espanol": "poder; ser capaz"
+  },
+  {
+    "nahuatl": "pehua",
+    "espanol": "empezar; comenzar"
+  },
+  {
+    "nahuatl": "tlamia",
+    "espanol": "terminar; acabar"
+  },
+  {
+    "nahuatl": "ilcahua",
+    "espanol": "olvidar"
+  },
+  {
+    "nahuatl": "ilnamiqui",
+    "espanol": "recordar"
+  },
+  {
+    "nahuatl": "tlazohtla",
+    "espanol": "amar; querer"
+  },
+  {
+    "nahuatl": "cocolia",
+    "espanol": "odiar; aborrecer"
+  },
+  {
+    "nahuatl": "tlaocolia",
+    "espanol": "tener compasión; apiadarse"
+  },
+  {
+    "nahuatl": "palehua",
+    "espanol": "ayudar"
+  },
+  {
+    "nahuatl": "maquixtia",
+    "espanol": "salvar; liberar; rescatar"
+  },
+  {
+    "nahuatl": "tlatlauhtia",
+    "espanol": "rezar; suplicar; rogar"
+  },
+  {
+    "nahuatl": "toca",
+    "espanol": "sembrar"
+  },
+  {
+    "nahuatl": "xima",
+    "espanol": "cortar; tallar; afeitarse"
+  },
+  {
+    "nahuatl": "teci",
+    "espanol": "moler"
+  },
+  {
+    "nahuatl": "ihzoa",
+    "espanol": "coser"
+  },
+  {
+    "nahuatl": "pahtla",
+    "espanol": "cambiar; transformar"
+  },
+  {
+    "nahuatl": "mana",
+    "espanol": "ofrecer"
+  },
+  {
+    "nahuatl": "tlazocamati",
+    "espanol": "agradecer"
+  },
+  {
+    "nahuatl": "tlaneltoca",
+    "espanol": "creer; confiar"
+  },
+  {
+    "nahuatl": "neltia",
+    "espanol": "confirmar; verificar; hacer verdad"
+  },
+  {
+    "nahuatl": "yocoya",
+    "espanol": "crear; inventar"
+  },
+  {
+    "nahuatl": "tlayecoa",
+    "espanol": "probar; experimentar"
+  },
+  {
+    "nahuatl": "iximati",
+    "espanol": "conocer a alguien"
+  },
+  {
+    "nahuatl": "xolochoa",
+    "espanol": "arrugar"
+  },
+  {
+    "nahuatl": "cahua",
+    "espanol": "dejar; abandonar"
+  },
+  {
+    "nahuatl": "ahci",
+    "espanol": "llegar; alcanzar"
+  },
+  {
+    "nahuatl": "nenquixtia",
+    "espanol": "desperdiciar; malgastar"
+  },
+  {
+    "nahuatl": "tlapaloa",
+    "espanol": "saludar; reverenciar"
+  },
+  {
+    "nahuatl": "mahzohua",
+    "espanol": "avergonzarse; deshonrarse"
+  },
+  {
+    "nahuatl": "yolnonotza",
+    "espanol": "reflexionar; meditar"
+  },
+  {
+    "nahuatl": "cualli",
+    "espanol": "bueno; bello; sano"
+  },
+  {
+    "nahuatl": "ahmocualli",
+    "espanol": "malo; feo; enfermo"
+  },
+  {
+    "nahuatl": "huei",
+    "espanol": "grande"
+  },
+  {
+    "nahuatl": "tepitzin",
+    "espanol": "pequeño; chico"
+  },
+  {
+    "nahuatl": "tomahuac",
+    "espanol": "gordo; grueso"
+  },
+  {
+    "nahuatl": "pitzahuac",
+    "espanol": "delgado; flaco"
+  },
+  {
+    "nahuatl": "hueyac",
+    "espanol": "largo; extenso"
+  },
+  {
+    "nahuatl": "cotoctic",
+    "espanol": "corto; pequeño"
+  },
+  {
+    "nahuatl": "patlahuac",
+    "espanol": "ancho; amplio"
+  },
+  {
+    "nahuatl": "piaztic",
+    "espanol": "angosto; estrecho"
+  },
+  {
+    "nahuatl": "totonqui",
+    "espanol": "caliente; tibio"
+  },
+  {
+    "nahuatl": "cecec",
+    "espanol": "frío; helado"
+  },
+  {
+    "nahuatl": "huelic",
+    "espanol": "sabroso; delicioso; aromático"
+  },
+  {
+    "nahuatl": "chichic",
+    "espanol": "amargo"
+  },
+  {
+    "nahuatl": "xococ",
+    "espanol": "ácido; agrio"
+  },
+  {
+    "nahuatl": "tzopelic",
+    "espanol": "dulce; agradable"
+  },
+  {
+    "nahuatl": "iztac",
+    "espanol": "blanco; puro"
+  },
+  {
+    "nahuatl": "tiltic",
+    "espanol": "negro; oscuro"
+  },
+  {
+    "nahuatl": "tlapaltic",
+    "espanol": "fuerte; robusto; colorido"
+  },
+  {
+    "nahuatl": "yecnemi",
+    "espanol": "honrado; recto; virtuoso"
+  },
+  {
+    "nahuatl": "melahuac",
+    "espanol": "recto; directo; verdadero"
+  },
+  {
+    "nahuatl": "chicahuac",
+    "espanol": "fuerte; resistente; duro"
+  },
+  {
+    "nahuatl": "yohualli",
+    "espanol": "oscuro; nocturno"
+  },
+  {
+    "nahuatl": "tona",
+    "espanol": "luminoso; soleado"
+  },
+  {
+    "nahuatl": "nelli",
+    "espanol": "verdadero; cierto; real"
+  },
+  {
+    "nahuatl": "yectli",
+    "espanol": "recto; bueno; virtuoso"
+  },
+  {
+    "nahuatl": "mauiztic",
+    "espanol": "admirable; glorioso; maravilloso"
+  },
+  {
+    "nahuatl": "teyo",
+    "espanol": "famoso; renombrado; ilustre"
+  },
+  {
+    "nahuatl": "paqui",
+    "espanol": "feliz; contento; alegre"
+  },
+  {
+    "nahuatl": "tlaocoyani",
+    "espanol": "triste; afligido"
+  },
+  {
+    "nahuatl": "cocoxqui",
+    "espanol": "enfermo"
+  },
+  {
+    "nahuatl": "pahtic",
+    "espanol": "sano; curado; saludable"
+  },
+  {
+    "nahuatl": "ihuinti",
+    "espanol": "borracho; ebrio"
+  },
+  {
+    "nahuatl": "yancuic",
+    "espanol": "nuevo; fresco; reciente"
+  },
+  {
+    "nahuatl": "huehcauh",
+    "espanol": "viejo; antiguo; de mucho tiempo"
+  },
+  {
+    "nahuatl": "zoltic",
+    "espanol": "viejo; deteriorado; marchito"
+  },
+  {
+    "nahuatl": "celtic",
+    "espanol": "tierno; fresco; verde"
+  },
+  {
+    "nahuatl": "tlapaltic",
+    "espanol": "valiente; animoso"
+  },
+  {
+    "nahuatl": "icnotl",
+    "espanol": "pobre; huérfano; necesitado"
+  },
+  {
+    "nahuatl": "miecyotl",
+    "espanol": "abundante; numeroso"
+  },
+  {
+    "nahuatl": "achi",
+    "espanol": "poco; escaso; pequeño"
+  },
+  {
+    "nahuatl": "cenquizqui",
+    "espanol": "perfecto; completo; íntegro"
+  },
+  {
+    "nahuatl": "ilihuiz",
+    "espanol": "imprudente; apresurado; impulsivo"
+  },
+  {
+    "nahuatl": "locoltic",
+    "espanol": "loco; perturbado; insensato"
+  },
+  {
+    "nahuatl": "tlapalihuic",
+    "espanol": "valiente; atrevido"
+  },
+  {
+    "nahuatl": "huaptic",
+    "espanol": "seco; enjuto"
+  },
+  {
+    "nahuatl": "tlatlauhqui",
+    "espanol": "rojo; colorado"
+  },
+  {
+    "nahuatl": "xoxoctic",
+    "espanol": "azul verdoso; verde claro"
+  },
+  {
+    "nahuatl": "huiyac",
+    "espanol": "ancho; extenso; grande"
+  },
+  {
+    "nahuatl": "nican",
+    "espanol": "aquí; acá"
+  },
+  {
+    "nahuatl": "ompa",
+    "espanol": "allá; allí"
+  },
+  {
+    "nahuatl": "oncan",
+    "espanol": "ahí; en ese lugar"
+  },
+  {
+    "nahuatl": "nepa",
+    "espanol": "allá; en aquella parte"
+  },
+  {
+    "nahuatl": "huecpa",
+    "espanol": "lejos; a lo lejos"
+  },
+  {
+    "nahuatl": "ihuicpa",
+    "espanol": "hacia arriba; hacia el cielo"
+  },
+  {
+    "nahuatl": "tlalticpac",
+    "espanol": "abajo; en la tierra"
+  },
+  {
+    "nahuatl": "ipan",
+    "espanol": "sobre; encima; en"
+  },
+  {
+    "nahuatl": "itic",
+    "espanol": "dentro; adentro"
+  },
+  {
+    "nahuatl": "ixtlan",
+    "espanol": "delante; enfrente"
+  },
+  {
+    "nahuatl": "iteputzco",
+    "espanol": "detrás; atrás"
+  },
+  {
+    "nahuatl": "itlan",
+    "espanol": "junto a; al lado de"
+  },
+  {
+    "nahuatl": "icpac",
+    "espanol": "encima de; sobre"
+  },
+  {
+    "nahuatl": "tzintlan",
+    "espanol": "debajo de; abajo"
+  },
+  {
+    "nahuatl": "nepantla",
+    "espanol": "en medio; entre"
+  },
+  {
+    "nahuatl": "itzalan",
+    "espanol": "entre; en medio de"
+  },
+  {
+    "nahuatl": "cenca",
+    "espanol": "muy; mucho; bastante"
+  },
+  {
+    "nahuatl": "achi",
+    "espanol": "un poco; algo"
+  },
+  {
+    "nahuatl": "zan",
+    "espanol": "solo; solamente; apenas"
+  },
+  {
+    "nahuatl": "no ihqui",
+    "espanol": "también; igualmente"
+  },
+  {
+    "nahuatl": "cuix",
+    "espanol": "acaso; ¿...?"
+  },
+  {
+    "nahuatl": "nelli",
+    "espanol": "verdaderamente; ciertamente"
+  },
+  {
+    "nahuatl": "yuhqui",
+    "espanol": "así; de este modo"
+  },
+  {
+    "nahuatl": "ihqui",
+    "espanol": "así; de esta manera"
+  },
+  {
+    "nahuatl": "ca",
+    "espanol": "pues; porque; es"
+  },
+  {
+    "nahuatl": "auh",
+    "espanol": "y; pero; entonces"
+  },
+  {
+    "nahuatl": "nozo",
+    "espanol": "o; o bien"
+  },
+  {
+    "nahuatl": "manel",
+    "espanol": "aunque; a pesar de que"
+  },
+  {
+    "nahuatl": "intla",
+    "espanol": "si; en caso de que"
+  },
+  {
+    "nahuatl": "ma",
+    "espanol": "que (imperativo); ojalá"
+  },
+  {
+    "nahuatl": "tla",
+    "espanol": "por favor; que; si"
+  },
+  {
+    "nahuatl": "quen",
+    "espanol": "cómo; de qué manera"
+  },
+  {
+    "nahuatl": "canin",
+    "espanol": "dónde; en qué lugar"
+  },
+  {
+    "nahuatl": "tlein",
+    "espanol": "qué; qué cosa"
+  },
+  {
+    "nahuatl": "aquin",
+    "espanol": "quién; el que"
+  },
+  {
+    "nahuatl": "quenmanian",
+    "espanol": "cuándo; alguna vez"
+  },
+  {
+    "nahuatl": "quezqui",
+    "espanol": "cuánto; cuántos"
+  },
+  {
+    "nahuatl": "ipampa",
+    "espanol": "por qué; por causa de"
+  },
+  {
+    "nahuatl": "inic",
+    "espanol": "para que; con el fin de"
+  },
+  {
+    "nahuatl": "yehica",
+    "espanol": "porque; por eso"
+  },
+  {
+    "nahuatl": "oc",
+    "espanol": "todavía; más; aún"
+  },
+  {
+    "nahuatl": "nochipa",
+    "espanol": "siempre; para siempre"
+  },
+  {
+    "nahuatl": "quemmanian",
+    "espanol": "a veces; alguna vez"
+  },
+  {
+    "nahuatl": "amo quemmanian",
+    "espanol": "nunca; jamás"
+  },
+  {
+    "nahuatl": "niman",
+    "espanol": "inmediatamente; enseguida"
+  },
+  {
+    "nahuatl": "oc ceppa",
+    "espanol": "otra vez; de nuevo"
+  },
+  {
+    "nahuatl": "ceppa",
+    "espanol": "una vez; por primera vez"
+  },
+  {
+    "nahuatl": "oppa",
+    "espanol": "dos veces; segunda vez"
+  },
+  {
+    "nahuatl": "yepa",
+    "espanol": "tres veces"
+  },
+  {
+    "nahuatl": "miecpa",
+    "espanol": "muchas veces; frecuentemente"
+  },
+  {
+    "nahuatl": "in",
+    "espanol": "el; la; los; las; que (partícula)"
+  },
+  {
+    "nahuatl": "ca",
+    "espanol": "es; está; pues"
+  },
+  {
+    "nahuatl": "tla",
+    "espanol": "si; aunque; que (condicional)"
+  },
+  {
+    "nahuatl": "ic",
+    "espanol": "con; por medio de; entonces"
+  },
+  {
+    "nahuatl": "pan",
+    "espanol": "en; sobre; encima (sufijo)"
+  },
+  {
+    "nahuatl": "co",
+    "espanol": "en; lugar de (sufijo locativo)"
+  },
+  {
+    "nahuatl": "tzinco",
+    "espanol": "sufijo de reverencia locativa"
+  },
+  {
+    "nahuatl": "huic",
+    "espanol": "hacia; en dirección a"
+  },
+  {
+    "nahuatl": "pa",
+    "espanol": "hacia; en dirección (sufijo)"
+  },
+  {
+    "nahuatl": "copa",
+    "espanol": "hacia; desde el lado de"
+  },
+  {
+    "nahuatl": "tech",
+    "espanol": "de; perteneciente a (sufijo)"
+  },
+  {
+    "nahuatl": "nahuac",
+    "espanol": "cerca de; junto a; al lado de"
+  },
+  {
+    "nahuatl": "tlan",
+    "espanol": "junto a; entre; lugar de (sufijo)"
+  },
+  {
+    "nahuatl": "titlan",
+    "espanol": "entre; en medio de"
+  },
+  {
+    "nahuatl": "ixpan",
+    "espanol": "delante de; en presencia de"
+  },
+  {
+    "nahuatl": "ihuicpa",
+    "espanol": "hacia; en dirección de"
+  },
+  {
+    "nahuatl": "icampa",
+    "espanol": "detrás de"
+  },
+  {
+    "nahuatl": "itlan",
+    "espanol": "junto a; cerca de"
+  },
+  {
+    "nahuatl": "ipampa",
+    "espanol": "por causa de; por motivo de"
+  },
+  {
+    "nahuatl": "itech",
+    "espanol": "en; sobre; contra"
+  },
+  {
+    "nahuatl": "nehhuatl",
+    "espanol": "yo"
+  },
+  {
+    "nahuatl": "tehhuatl",
+    "espanol": "tú"
+  },
+  {
+    "nahuatl": "yehuatl",
+    "espanol": "él; ella; eso"
+  },
+  {
+    "nahuatl": "tehhuantin",
+    "espanol": "ustedes; vosotros"
+  },
+  {
+    "nahuatl": "yehuantin",
+    "espanol": "ellos; ellas"
+  },
+  {
+    "nahuatl": "tehhuantin",
+    "espanol": "nosotros (incluyente)"
+  },
+  {
+    "nahuatl": "inin",
+    "espanol": "este; esta; esto"
+  },
+  {
+    "nahuatl": "inon",
+    "espanol": "ese; esa; eso"
+  },
+  {
+    "nahuatl": "ayac",
+    "espanol": "nadie"
+  },
+  {
+    "nahuatl": "moch",
+    "espanol": "todo; todos"
+  },
+  {
+    "nahuatl": "ixquich",
+    "espanol": "todo; cuanto; tanto"
+  },
+  {
+    "nahuatl": "ceme",
+    "espanol": "alguno; uno de ellos"
+  },
+  {
+    "nahuatl": "occe",
+    "espanol": "otro; otra cosa"
+  },
+  {
+    "nahuatl": "aquin",
+    "espanol": "quién"
+  },
+  {
+    "nahuatl": "tlein",
+    "espanol": "qué"
+  },
+  {
+    "nahuatl": "tlen",
+    "espanol": "qué; de qué"
+  },
+  {
+    "nahuatl": "canin",
+    "espanol": "dónde"
+  },
+  {
+    "nahuatl": "quezqui",
+    "espanol": "cuánto"
+  },
+  {
+    "nahuatl": "atl",
+    "espanol": "agua"
+  },
+  {
+    "nahuatl": "tletl",
+    "espanol": "fuego"
+  },
+  {
+    "nahuatl": "ehecatl",
+    "espanol": "viento; aire"
+  },
+  {
+    "nahuatl": "tlalli",
+    "espanol": "tierra; suelo"
+  },
+  {
+    "nahuatl": "tonatiuh",
+    "espanol": "sol"
+  },
+  {
+    "nahuatl": "metztli",
+    "espanol": "luna"
+  },
+  {
+    "nahuatl": "citlalin",
+    "espanol": "estrella"
+  },
+  {
+    "nahuatl": "ilhuicatl",
+    "espanol": "cielo"
+  },
+  {
+    "nahuatl": "mixtli",
+    "espanol": "nube"
+  },
+  {
+    "nahuatl": "quiahuitl",
+    "espanol": "lluvia"
+  },
+  {
+    "nahuatl": "ceyahuitl",
+    "espanol": "granizo"
+  },
+  {
+    "nahuatl": "cetl",
+    "espanol": "hielo; nieve"
+  },
+  {
+    "nahuatl": "ayauitl",
+    "espanol": "niebla; neblina"
+  },
+  {
+    "nahuatl": "ahuachtli",
+    "espanol": "rocío"
+  },
+  {
+    "nahuatl": "tlapetlani",
+    "espanol": "relámpago; rayo"
+  },
+  {
+    "nahuatl": "quiyahuiztli",
+    "espanol": "tormenta; aguacero"
+  },
+  {
+    "nahuatl": "tepetl",
+    "espanol": "cerro; montaña"
+  },
+  {
+    "nahuatl": "atoyatl",
+    "espanol": "río; arroyo"
+  },
+  {
+    "nahuatl": "atezcatl",
+    "espanol": "lago; laguna"
+  },
+  {
+    "nahuatl": "teoatl",
+    "espanol": "mar; océano"
+  },
+  {
+    "nahuatl": "oztotl",
+    "espanol": "cueva; caverna"
+  },
+  {
+    "nahuatl": "ixtlahuatl",
+    "espanol": "llanura; planicie"
+  },
+  {
+    "nahuatl": "quauhtla",
+    "espanol": "bosque; selva"
+  },
+  {
+    "nahuatl": "milli",
+    "espanol": "milpa; campo cultivado"
+  },
+  {
+    "nahuatl": "ameyalli",
+    "espanol": "manantial; fuente"
+  },
+  {
+    "nahuatl": "apantli",
+    "espanol": "canal; acequia"
+  },
+  {
+    "nahuatl": "teoatl icpac",
+    "espanol": "superficie del mar"
+  },
+  {
+    "nahuatl": "quauhtitlan",
+    "espanol": "entre los árboles; en el bosque"
+  },
+  {
+    "nahuatl": "xochimilpa",
+    "espanol": "jardín florido; milpa de flores"
+  },
+  {
+    "nahuatl": "tocatlan",
+    "espanol": "lugar de arañas; barranca"
+  },
+  {
+    "nahuatl": "xalhuacan",
+    "espanol": "en el arenal; en la arena"
+  },
+  {
+    "nahuatl": "xalli",
+    "espanol": "arena; grava"
+  },
+  {
+    "nahuatl": "zoquitl",
+    "espanol": "barro; lodo"
+  },
+  {
+    "nahuatl": "tetl",
+    "espanol": "piedra; peña"
+  },
+  {
+    "nahuatl": "tezcatl",
+    "espanol": "espejo; superficie brillante"
+  },
+  {
+    "nahuatl": "tezontli",
+    "espanol": "piedra volcánica; tezontle"
+  },
+  {
+    "nahuatl": "itztli",
+    "espanol": "obsidiana; pedernal"
+  },
+  {
+    "nahuatl": "teocuitlatl",
+    "espanol": "oro"
+  },
+  {
+    "nahuatl": "iztac teocuitlatl",
+    "espanol": "plata"
+  },
+  {
+    "nahuatl": "chalchihuitl",
+    "espanol": "jade; esmeralda"
+  },
+  {
+    "nahuatl": "ocelotl",
+    "espanol": "jaguar; ocelote"
+  },
+  {
+    "nahuatl": "cuauhtli",
+    "espanol": "águila"
+  },
+  {
+    "nahuatl": "coatl",
+    "espanol": "serpiente"
+  },
+  {
+    "nahuatl": "mazatl",
+    "espanol": "venado"
+  },
+  {
+    "nahuatl": "tochtli",
+    "espanol": "conejo"
+  },
+  {
+    "nahuatl": "tototl",
+    "espanol": "ave; pájaro"
+  },
+  {
+    "nahuatl": "michin",
+    "espanol": "pez"
+  },
+  {
+    "nahuatl": "itzcuintli",
+    "espanol": "perro"
+  },
+  {
+    "nahuatl": "coyotl",
+    "espanol": "coyote"
+  },
+  {
+    "nahuatl": "ayotl",
+    "espanol": "tortuga"
+  },
+  {
+    "nahuatl": "atepocatl",
+    "espanol": "renacuajo"
+  },
+  {
+    "nahuatl": "xolotl",
+    "espanol": "ajolote; perro sin pelo"
+  },
+  {
+    "nahuatl": "zolin",
+    "espanol": "codorniz"
+  },
+  {
+    "nahuatl": "aztatl",
+    "espanol": "garza blanca"
+  },
+  {
+    "nahuatl": "quetzaltototl",
+    "espanol": "quetzal"
+  },
+  {
+    "nahuatl": "huitzitzilin",
+    "espanol": "colibrí"
+  },
+  {
+    "nahuatl": "moyotl",
+    "espanol": "mosquito"
+  },
+  {
+    "nahuatl": "chapolin",
+    "espanol": "chapulín; saltamontes"
+  },
+  {
+    "nahuatl": "colotl",
+    "espanol": "alacrán; escorpión"
+  },
+  {
+    "nahuatl": "tocatl",
+    "espanol": "araña"
+  },
+  {
+    "nahuatl": "zayolin",
+    "espanol": "mosca"
+  },
+  {
+    "nahuatl": "pipiyolin",
+    "espanol": "abeja"
+  },
+  {
+    "nahuatl": "xicotli",
+    "espanol": "abejorro; avispa"
+  },
+  {
+    "nahuatl": "tzinacan",
+    "espanol": "murciélago"
+  },
+  {
+    "nahuatl": "totolin",
+    "espanol": "guajolote; pavo"
+  },
+  {
+    "nahuatl": "canauhtli",
+    "espanol": "pato"
+  },
+  {
+    "nahuatl": "ichcatl",
+    "espanol": "oveja; borrego"
+  },
+  {
+    "nahuatl": "tlamacazqui mazatl",
+    "espanol": "cabra"
+  },
+  {
+    "nahuatl": "pitzotl",
+    "espanol": "cerdo; cochino"
+  },
+  {
+    "nahuatl": "cahuayo",
+    "espanol": "caballo"
+  },
+  {
+    "nahuatl": "tototl tlazohtic",
+    "espanol": "loro; perico"
+  },
+  {
+    "nahuatl": "tecolotl",
+    "espanol": "búho; tecolote"
+  },
+  {
+    "nahuatl": "cuicuitzcatl",
+    "espanol": "golondrina"
+  },
+  {
+    "nahuatl": "zentzontli",
+    "espanol": "cenzontle"
+  },
+  {
+    "nahuatl": "quimichin",
+    "espanol": "ratón"
+  },
+  {
+    "nahuatl": "tozan",
+    "espanol": "tuza; topo"
+  },
+  {
+    "nahuatl": "tlacuatzin",
+    "espanol": "tlacuache; zarigüeya"
+  },
+  {
+    "nahuatl": "epatl",
+    "espanol": "zorrillo"
+  },
+  {
+    "nahuatl": "mazacoatl",
+    "espanol": "boa; serpiente grande"
+  },
+  {
+    "nahuatl": "papalotl",
+    "espanol": "mariposa"
+  },
+  {
+    "nahuatl": "tecuani",
+    "espanol": "fiera; animal peligroso"
+  },
+  {
+    "nahuatl": "centli",
+    "espanol": "maíz; mazorca"
+  },
+  {
+    "nahuatl": "tonacayotl",
+    "espanol": "maíz; sustento de vida"
+  },
+  {
+    "nahuatl": "etl",
+    "espanol": "frijol"
+  },
+  {
+    "nahuatl": "ayotli",
+    "espanol": "calabaza; ayote"
+  },
+  {
+    "nahuatl": "chilli",
+    "espanol": "chile"
+  },
+  {
+    "nahuatl": "tomatl",
+    "espanol": "tomate; jitomate"
+  },
+  {
+    "nahuatl": "camotl",
+    "espanol": "camote; batata"
+  },
+  {
+    "nahuatl": "cacahuatl",
+    "espanol": "cacao; cacao en grano"
+  },
+  {
+    "nahuatl": "chocolatl",
+    "espanol": "chocolate; bebida de cacao"
+  },
+  {
+    "nahuatl": "metl",
+    "espanol": "maguey; agave"
+  },
+  {
+    "nahuatl": "octli",
+    "espanol": "pulque; bebida del maguey"
+  },
+  {
+    "nahuatl": "tlaxcalli",
+    "espanol": "tortilla"
+  },
+  {
+    "nahuatl": "tamalli",
+    "espanol": "tamal"
+  },
+  {
+    "nahuatl": "atolli",
+    "espanol": "atole"
+  },
+  {
+    "nahuatl": "pozolotl",
+    "espanol": "pozole"
+  },
+  {
+    "nahuatl": "quilitl",
+    "espanol": "quelite; verdura silvestre"
+  },
+  {
+    "nahuatl": "xochitl",
+    "espanol": "flor"
+  },
+  {
+    "nahuatl": "cuahuitl",
+    "espanol": "árbol; palo; madera"
+  },
+  {
+    "nahuatl": "xihuitl",
+    "espanol": "hierba; planta; turquesa"
+  },
+  {
+    "nahuatl": "acatl",
+    "espanol": "carrizo; caña"
+  },
+  {
+    "nahuatl": "tollin",
+    "espanol": "tule; junco"
+  },
+  {
+    "nahuatl": "huauhtli",
+    "espanol": "amaranto; huauzontle"
+  },
+  {
+    "nahuatl": "chiantli",
+    "espanol": "chía"
+  },
+  {
+    "nahuatl": "nochtli",
+    "espanol": "tuna; fruto del nopal"
+  },
+  {
+    "nahuatl": "nohpalli",
+    "espanol": "nopal"
+  },
+  {
+    "nahuatl": "xocotl",
+    "espanol": "fruta agria; tejocote"
+  },
+  {
+    "nahuatl": "capolin",
+    "espanol": "capulín"
+  },
+  {
+    "nahuatl": "mizquitl",
+    "espanol": "mezquite"
+  },
+  {
+    "nahuatl": "ahuatl",
+    "espanol": "encino; roble"
+  },
+  {
+    "nahuatl": "pochotl",
+    "espanol": "ceiba; árbol sagrado"
+  },
+  {
+    "nahuatl": "epazotl",
+    "espanol": "epazote"
+  },
+  {
+    "nahuatl": "pahtli",
+    "espanol": "medicina; hierba medicinal"
+  },
+  {
+    "nahuatl": "copalli",
+    "espanol": "copal; resina"
+  },
+  {
+    "nahuatl": "elotl",
+    "espanol": "elote; maíz tierno"
+  },
+  {
+    "nahuatl": "xilotl",
+    "espanol": "jilote; mazorca tierna"
+  },
+  {
+    "nahuatl": "tlacualli",
+    "espanol": "comida; alimento"
+  },
+  {
+    "nahuatl": "iztahtli",
+    "espanol": "sal"
+  },
+  {
+    "nahuatl": "chiyanatl",
+    "espanol": "agua de chía"
+  },
+  {
+    "nahuatl": "pinoli",
+    "espanol": "pinole"
+  },
+  {
+    "nahuatl": "textatl",
+    "espanol": "masa de maíz"
+  },
+  {
+    "nahuatl": "calli",
+    "espanol": "casa; hogar"
+  },
+  {
+    "nahuatl": "chantli",
+    "espanol": "hogar; domicilio"
+  },
+  {
+    "nahuatl": "ithualli",
+    "espanol": "patio interior"
+  },
+  {
+    "nahuatl": "tlecuilli",
+    "espanol": "fogón; hogar del fuego"
+  },
+  {
+    "nahuatl": "comalli",
+    "espanol": "comal"
+  },
+  {
+    "nahuatl": "comitl",
+    "espanol": "olla; vasija"
+  },
+  {
+    "nahuatl": "caxitl",
+    "espanol": "plato; tazón"
+  },
+  {
+    "nahuatl": "tecomatl",
+    "espanol": "jícara; vasija pequeña"
+  },
+  {
+    "nahuatl": "apaztli",
+    "espanol": "barreño; vasija de agua"
+  },
+  {
+    "nahuatl": "petlatl",
+    "espanol": "petate; estera"
+  },
+  {
+    "nahuatl": "tilmatli",
+    "espanol": "manta; capa; tilma"
+  },
+  {
+    "nahuatl": "cueitl",
+    "espanol": "falda"
+  },
+  {
+    "nahuatl": "huipilli",
+    "espanol": "huipil; blusa tradicional"
+  },
+  {
+    "nahuatl": "cactli",
+    "espanol": "sandalia; huarache"
+  },
+  {
+    "nahuatl": "maxtlatl",
+    "espanol": "taparrabos; braguero"
+  },
+  {
+    "nahuatl": "tlaquetztli",
+    "espanol": "ropa; vestimenta"
+  },
+  {
+    "nahuatl": "cuachtli",
+    "espanol": "manta de algodón"
+  },
+  {
+    "nahuatl": "ichcatl",
+    "espanol": "algodón; lana"
+  },
+  {
+    "nahuatl": "mecatl",
+    "espanol": "cuerda; soga; lazo"
+  },
+  {
+    "nahuatl": "amatl",
+    "espanol": "papel; libro; amate"
+  },
+  {
+    "nahuatl": "tlilli",
+    "espanol": "tinta negra; pintura negra"
+  },
+  {
+    "nahuatl": "tlapalli",
+    "espanol": "color; tinte; pintura"
+  },
+  {
+    "nahuatl": "topilli",
+    "espanol": "bastón; vara de mando"
+  },
+  {
+    "nahuatl": "chimalli",
+    "espanol": "escudo"
+  },
+  {
+    "nahuatl": "mitl",
+    "espanol": "flecha; dardo"
+  },
+  {
+    "nahuatl": "macuahuitl",
+    "espanol": "macana; espada de obsidiana"
+  },
+  {
+    "nahuatl": "ohtli",
+    "espanol": "camino; sendero"
+  },
+  {
+    "nahuatl": "acalli",
+    "espanol": "canoa; embarcación"
+  },
+  {
+    "nahuatl": "huehuetl",
+    "espanol": "tambor; huehuetl"
+  },
+  {
+    "nahuatl": "teponaztli",
+    "espanol": "teponaztle; tambor de madera"
+  },
+  {
+    "nahuatl": "tlapitzalli",
+    "espanol": "flauta"
+  },
+  {
+    "nahuatl": "ayacachtli",
+    "espanol": "sonaja; maracas"
+  },
+  {
+    "nahuatl": "quiquiztli",
+    "espanol": "caracol; trompeta"
+  },
+  {
+    "nahuatl": "malacatl",
+    "espanol": "huso; malacate"
+  },
+  {
+    "nahuatl": "tlemaitl",
+    "espanol": "incensario; brasero"
+  },
+  {
+    "nahuatl": "temachtilcalli",
+    "espanol": "escuela; lugar de enseñanza"
+  },
+  {
+    "nahuatl": "tianquiztli",
+    "espanol": "mercado; tianguis"
+  },
+  {
+    "nahuatl": "tecpan",
+    "espanol": "palacio; residencia de señores"
+  },
+  {
+    "nahuatl": "teocalli",
+    "espanol": "templo; casa de dios"
+  },
+  {
+    "nahuatl": "momoztli",
+    "espanol": "altar; adoratorio"
+  },
+  {
+    "nahuatl": "teyolia",
+    "espanol": "alma; energía vital del corazón"
+  },
+  {
+    "nahuatl": "tonalli",
+    "espanol": "destino; alma solar; calor"
+  },
+  {
+    "nahuatl": "ihiyotl",
+    "espanol": "aliento vital; ánima"
+  },
+  {
+    "nahuatl": "neyolnonotzaliztli",
+    "espanol": "meditación; reflexión interior"
+  },
+  {
+    "nahuatl": "in xochitl in cuicatl",
+    "espanol": "flor y canto; arte y poesía"
+  },
+  {
+    "nahuatl": "tlamatiliztli",
+    "espanol": "sabiduría; conocimiento profundo"
+  },
+  {
+    "nahuatl": "neltiliztli",
+    "espanol": "verdad; realidad"
+  },
+  {
+    "nahuatl": "tlazohtlaliztli",
+    "espanol": "amor; afecto"
+  },
+  {
+    "nahuatl": "netlazotlaliztli",
+    "espanol": "amor mutuo; amor recíproco"
+  },
+  {
+    "nahuatl": "yolcehuiliztli",
+    "espanol": "paz del corazón; serenidad"
+  },
+  {
+    "nahuatl": "yolchicahualiztli",
+    "espanol": "fortaleza del corazón"
+  },
+  {
+    "nahuatl": "cuicatl",
+    "espanol": "canto; poema; poesía"
+  },
+  {
+    "nahuatl": "tlahtolli",
+    "espanol": "palabra; discurso; lengua"
+  },
+  {
+    "nahuatl": "huehuetlahtolli",
+    "espanol": "antigua palabra; discurso sabio"
+  },
+  {
+    "nahuatl": "toltecayotl",
+    "espanol": "arte; excelencia artística; creatividad"
+  },
+  {
+    "nahuatl": "nemiliztli",
+    "espanol": "vida; modo de vivir"
+  },
+  {
+    "nahuatl": "yoliliztli",
+    "espanol": "vida; vitalidad"
+  },
+  {
+    "nahuatl": "miquiztli",
+    "espanol": "muerte"
+  },
+  {
+    "nahuatl": "tlacatiliztli",
+    "espanol": "nacimiento"
+  },
+  {
+    "nahuatl": "tlalticpac",
+    "espanol": "la tierra; el mundo; la vida terrenal"
+  },
+  {
+    "nahuatl": "mictlan",
+    "espanol": "inframundo; mundo de los muertos"
+  },
+  {
+    "nahuatl": "ilhuicatl",
+    "espanol": "cielo; supramundo"
+  },
+  {
+    "nahuatl": "omeyocan",
+    "espanol": "lugar de la dualidad; paraíso supremo"
+  },
+  {
+    "nahuatl": "teotl",
+    "espanol": "dios; energía divina; fuerza sagrada"
+  },
+  {
+    "nahuatl": "ixiptla",
+    "espanol": "imagen; representante; avatar"
+  },
+  {
+    "nahuatl": "tlahtlacoa",
+    "espanol": "pecar; dañar; ofender"
+  },
+  {
+    "nahuatl": "tlahtlacolli",
+    "espanol": "pecado; error; daño"
+  },
+  {
+    "nahuatl": "mahuiztli",
+    "espanol": "honor; reverencia; respeto"
+  },
+  {
+    "nahuatl": "teyotl",
+    "espanol": "fama; reputación; nombradía"
+  },
+  {
+    "nahuatl": "mecayotl",
+    "espanol": "linaje; genealogía; herencia"
+  },
+  {
+    "nahuatl": "nelhuayotl",
+    "espanol": "raíz; fundamento; origen"
+  },
+  {
+    "nahuatl": "altepetl",
+    "espanol": "pueblo; ciudad; nación"
+  },
+  {
+    "nahuatl": "tlatocayotl",
+    "espanol": "gobierno; señorío; reinado"
+  },
+  {
+    "nahuatl": "tequitl",
+    "espanol": "trabajo; tributo; deber"
+  },
+  {
+    "nahuatl": "yaoyotl",
+    "espanol": "guerra"
+  },
+  {
+    "nahuatl": "xochiyaoyotl",
+    "espanol": "guerra florida; guerra ritual"
+  },
+  {
+    "nahuatl": "tlacotl",
+    "espanol": "esclavitud; servidumbre"
+  },
+  {
+    "nahuatl": "piliyotl",
+    "espanol": "nobleza; dignidad noble"
+  },
+  {
+    "nahuatl": "macehualyotl",
+    "espanol": "condición de gente común; pueblo"
+  },
+  {
+    "nahuatl": "paquiliz",
+    "espanol": "felicidad; alegría"
+  },
+  {
+    "nahuatl": "tlaocoyaliztli",
+    "espanol": "tristeza; aflicción; pena"
+  },
+  {
+    "nahuatl": "cualancayotl",
+    "espanol": "enojo; ira; cólera"
+  },
+  {
+    "nahuatl": "mauhcayotl",
+    "espanol": "miedo; temor; pavor"
+  },
+  {
+    "nahuatl": "mauiztiliztli",
+    "espanol": "admiración; asombro"
+  },
+  {
+    "nahuatl": "pinauhcayotl",
+    "espanol": "vergüenza; pena"
+  },
+  {
+    "nahuatl": "cocoliztli",
+    "espanol": "enfermedad; odio; rencor"
+  },
+  {
+    "nahuatl": "yolpactiztli",
+    "espanol": "contento del corazón"
+  },
+  {
+    "nahuatl": "yolpoxahualiztli",
+    "espanol": "corazón roto; tristeza profunda"
+  },
+  {
+    "nahuatl": "neyolnonotzaliztli",
+    "espanol": "reflexión; meditación"
+  },
+  {
+    "nahuatl": "ahuiliztli",
+    "espanol": "placer; gozo; deleite"
+  },
+  {
+    "nahuatl": "tonehualiztli",
+    "espanol": "dolor; sufrimiento"
+  },
+  {
+    "nahuatl": "choquiztli",
+    "espanol": "llanto; lloro"
+  },
+  {
+    "nahuatl": "huetzcaliztli",
+    "espanol": "risa; carcajada"
+  },
+  {
+    "nahuatl": "tzahtziztli",
+    "espanol": "grito; clamor"
+  },
+  {
+    "nahuatl": "iciuhcayotl",
+    "espanol": "prisa; urgencia"
+  },
+  {
+    "nahuatl": "yocoxcayotl",
+    "espanol": "tranquilidad; calma; paz"
+  },
+  {
+    "nahuatl": "neltocaliztli",
+    "espanol": "fe; confianza; creencia"
+  },
+  {
+    "nahuatl": "tlazohcamatiztli",
+    "espanol": "gratitud; agradecimiento"
+  },
+  {
+    "nahuatl": "cocoliztli",
+    "espanol": "enfermedad; padecimiento"
+  },
+  {
+    "nahuatl": "pahtiliztli",
+    "espanol": "curación; sanación"
+  },
+  {
+    "nahuatl": "quen timoyolia",
+    "espanol": "¿cómo te sientes?; ¿cómo está tu alma?"
+  },
+  {
+    "nahuatl": "cuix tipaqui",
+    "espanol": "¿estás feliz?; ¿eres feliz?"
+  },
+  {
+    "nahuatl": "tlen mococoa",
+    "espanol": "¿qué te duele?"
+  },
+  {
+    "nahuatl": "canin timochihua",
+    "espanol": "¿de dónde eres?; ¿dónde naciste?"
+  },
+  {
+    "nahuatl": "quezquixihuitl titlacatique",
+    "espanol": "¿cuántos años tienes?"
+  },
+  {
+    "nahuatl": "quezquixihuitl nicah",
+    "espanol": "tengo ... años"
+  },
+  {
+    "nahuatl": "tlen motequiuh",
+    "espanol": "¿cuál es tu oficio?; ¿a qué te dedicas?"
+  },
+  {
+    "nahuatl": "nimomachtia",
+    "espanol": "soy estudiante; estudio"
+  },
+  {
+    "nahuatl": "nitlamachtiani",
+    "espanol": "soy maestro; enseño"
+  },
+  {
+    "nahuatl": "nipochtecatl",
+    "espanol": "soy mercader; comercio"
+  },
+  {
+    "nahuatl": "nitequitqui",
+    "espanol": "soy trabajador; trabajo"
+  },
+  {
+    "nahuatl": "nimaloa",
+    "espanol": "pinto; soy pintor/a"
+  },
+  {
+    "nahuatl": "nicuica",
+    "espanol": "canto; soy cantante"
+  },
+  {
+    "nahuatl": "titlahtoa nahuatl",
+    "espanol": "¿hablas náhuatl?"
+  },
+  {
+    "nahuatl": "zan achi nitlahtoa nahuatl",
+    "espanol": "hablo un poco de náhuatl"
+  },
+  {
+    "nahuatl": "cenca cualli titlahtoa nahuatl",
+    "espanol": "hablas muy bien el náhuatl"
+  },
+  {
+    "nahuatl": "amo nicmati in nahuatl",
+    "espanol": "no entiendo el náhuatl"
+  },
+  {
+    "nahuatl": "xictlachiyacan",
+    "espanol": "miren; observen"
+  },
+  {
+    "nahuatl": "xiccaquican",
+    "espanol": "escuchen todos"
+  },
+  {
+    "nahuatl": "xitechnonotzacan",
+    "espanol": "háblennos; dígannes"
+  },
+  {
+    "nahuatl": "tequiti",
+    "espanol": "trabajar; tributar"
+  },
+  {
+    "nahuatl": "motequitia",
+    "espanol": "estar trabajando; dedicarse a"
+  },
+  {
+    "nahuatl": "nimomachti",
+    "espanol": "aprender; estudiar (yo)"
+  },
+  {
+    "nahuatl": "titomachti",
+    "espanol": "aprender (tú)"
+  },
+  {
+    "nahuatl": "momachti",
+    "espanol": "aprende (él/ella); que aprenda"
+  },
+  {
+    "nahuatl": "tinetotiah",
+    "espanol": "vamos a bailar"
+  },
+  {
+    "nahuatl": "ticuicah",
+    "espanol": "cantamos; vamos a cantar"
+  },
+  {
+    "nahuatl": "titlahtoan",
+    "espanol": "hablamos; conversamos"
+  },
+  {
+    "nahuatl": "nitlapaloa",
+    "espanol": "saludo (yo)"
+  },
+  {
+    "nahuatl": "titlapaloa",
+    "espanol": "saludas (tú)"
+  },
+  {
+    "nahuatl": "tlapaloa",
+    "espanol": "saluda (él/ella)"
+  },
+  {
+    "nahuatl": "titlapaloah",
+    "espanol": "saludamos (nosotros)"
+  },
+  {
+    "nahuatl": "tlapaloh",
+    "espanol": "saludan; se saludan"
+  },
+  {
+    "nahuatl": "niyauh in tianquiztli",
+    "espanol": "voy al mercado"
+  },
+  {
+    "nahuatl": "nictemoa atl",
+    "espanol": "busco agua; necesito agua"
+  },
+  {
+    "nahuatl": "niccua tlaxcalli",
+    "espanol": "como tortilla"
+  },
+  {
+    "nahuatl": "niqui octli",
+    "espanol": "bebo pulque"
+  },
+  {
+    "nahuatl": "nicochi xopantla",
+    "espanol": "duermo en verano"
+  },
+  {
+    "nahuatl": "nimitz itta in cualli",
+    "espanol": "te veo bien; te ves bien"
+  },
+  {
+    "nahuatl": "tlapoalli",
+    "espanol": "número; cuenta; cálculo"
+  },
+  {
+    "nahuatl": "centetl",
+    "espanol": "una unidad; un objeto"
+  },
+  {
+    "nahuatl": "ometetl",
+    "espanol": "dos objetos; dualidad"
+  },
+  {
+    "nahuatl": "miec tlapoalli",
+    "espanol": "número grande; muchos"
+  },
+  {
+    "nahuatl": "zan achitzin",
+    "espanol": "muy poco; un poquito"
+  },
+  {
+    "nahuatl": "nohuian",
+    "espanol": "por todas partes; en todo lugar"
+  },
+  {
+    "nahuatl": "cenquizqui",
+    "espanol": "todo; completo; entero"
+  },
+  {
+    "nahuatl": "mochtin",
+    "espanol": "todos; todo el mundo"
+  },
+  {
+    "nahuatl": "ayac",
+    "espanol": "nadie; ninguno"
+  },
+  {
+    "nahuatl": "atle",
+    "espanol": "nada; ninguna cosa"
+  },
+  {
+    "nahuatl": "quezqui",
+    "espanol": "cuánto; cuántos; varios"
+  },
+  {
+    "nahuatl": "iztatl ipan miec",
+    "espanol": "más de; en exceso"
+  },
+  {
+    "nahuatl": "tlapatlaliztli",
+    "espanol": "intercambio; trueque"
+  },
+  {
+    "nahuatl": "tlaxtlahualiztli",
+    "espanol": "pago; recompensa"
+  },
+  {
+    "nahuatl": "tetlaxtilahuia",
+    "espanol": "pagar a alguien"
+  },
+  {
+    "nahuatl": "tlahtlacolli",
+    "espanol": "error; falta; transgresión"
+  },
+  {
+    "nahuatl": "tonatiuh iquizayan",
+    "espanol": "oriente; este (donde sale el sol)"
+  },
+  {
+    "nahuatl": "tonatiuh icalaquia",
+    "espanol": "poniente; oeste (donde entra el sol)"
+  },
+  {
+    "nahuatl": "mictlampa",
+    "espanol": "norte; rumbo del inframundo"
+  },
+  {
+    "nahuatl": "huitztlampa",
+    "espanol": "sur; rumbo de las espinas"
+  },
+  {
+    "nahuatl": "nahuhcampa",
+    "espanol": "los cuatro rumbos; los cuatro puntos"
+  },
+  {
+    "nahuatl": "tlalticpac",
+    "espanol": "abajo; en la tierra"
+  },
+  {
+    "nahuatl": "topan",
+    "espanol": "arriba; sobre nosotros; el cielo"
+  },
+  {
+    "nahuatl": "ihuicpa",
+    "espanol": "hacia arriba; al cielo"
+  },
+  {
+    "nahuatl": "tlalpa",
+    "espanol": "hacia abajo; hacia la tierra"
+  },
+  {
+    "nahuatl": "nelpan",
+    "espanol": "al centro; en el centro"
+  },
+  {
+    "nahuatl": "tonalpohualli",
+    "espanol": "calendario ritual de 260 días"
+  },
+  {
+    "nahuatl": "xiuhpohualli",
+    "espanol": "calendario solar de 365 días"
+  },
+  {
+    "nahuatl": "nemontemi",
+    "espanol": "días aciagos; días sin nombre"
+  },
+  {
+    "nahuatl": "xiuhmolpilli",
+    "espanol": "atadura de años; ciclo de 52 años"
+  },
+  {
+    "nahuatl": "toxiuhmolpiya",
+    "espanol": "atamos nuestros años; ceremonia del fuego nuevo"
+  },
+  {
+    "nahuatl": "tlapallihuiztli",
+    "espanol": "valentía; coraje"
+  },
+  {
+    "nahuatl": "cuauhtli ocelo",
+    "espanol": "guerreros águila y jaguar; orden guerrera"
+  },
+  {
+    "nahuatl": "pochtecayotl",
+    "espanol": "comercio; actividad de mercaderes"
+  },
+  {
+    "nahuatl": "tlahtocayotl",
+    "espanol": "señorío; gobierno; reino"
+  },
+  {
+    "nahuatl": "calmecac",
+    "espanol": "escuela de nobles y sacerdotes"
+  },
+  {
+    "nahuatl": "telpochcalli",
+    "espanol": "escuela para jóvenes del pueblo"
+  },
+  {
+    "nahuatl": "temazcalli",
+    "espanol": "baño de vapor; temascal"
+  },
+  {
+    "nahuatl": "chinampa",
+    "espanol": "jardín flotante; isla artificial"
+  },
+  {
+    "nahuatl": "tlachtli",
+    "espanol": "juego de pelota; cancha"
+  },
+  {
+    "nahuatl": "ollamaloni",
+    "espanol": "pelota del juego"
+  },
+  {
+    "nahuatl": "tzonpantli",
+    "espanol": "tzompantli; altar de cráneos"
+  },
+  {
+    "nahuatl": "netotiliztli",
+    "espanol": "danza; baile ceremonial"
+  },
+  {
+    "nahuatl": "cuicacalli",
+    "espanol": "casa del canto; casa de los danzantes"
+  },
+  {
+    "nahuatl": "amoxcalli",
+    "espanol": "biblioteca; casa de libros"
+  },
+  {
+    "nahuatl": "tlahtoaniyotl",
+    "espanol": "cargo de gobernante; mandato"
+  },
+  {
+    "nahuatl": "auh",
+    "espanol": "y; pero; entonces; pues"
+  },
+  {
+    "nahuatl": "nozo",
+    "espanol": "o; o bien; ya sea"
+  },
+  {
+    "nahuatl": "manel",
+    "espanol": "aunque; a pesar de que; aun cuando"
+  },
+  {
+    "nahuatl": "intla",
+    "espanol": "si; en caso de que"
+  },
+  {
+    "nahuatl": "intlacamo",
+    "espanol": "si no; a menos que"
+  },
+  {
+    "nahuatl": "yehica",
+    "espanol": "porque; por eso; por lo que"
+  },
+  {
+    "nahuatl": "inic",
+    "espanol": "para que; a fin de que"
+  },
+  {
+    "nahuatl": "in",
+    "espanol": "que (conjunción relativa)"
+  },
+  {
+    "nahuatl": "ic",
+    "espanol": "con eso; entonces; por eso"
+  },
+  {
+    "nahuatl": "ca zan",
+    "espanol": "sino que; sino también"
+  },
+  {
+    "nahuatl": "oc",
+    "espanol": "además; también; todavía"
+  },
+  {
+    "nahuatl": "no ihqui",
+    "espanol": "también; igualmente; así también"
+  },
+  {
+    "nahuatl": "zan no",
+    "espanol": "también; de igual manera"
+  },
+  {
+    "nahuatl": "yuh",
+    "espanol": "así; de ese modo; por eso"
+  },
+  {
+    "nahuatl": "ipampa in",
+    "espanol": "por eso; por lo que; por tanto"
+  },
+  {
+    "nahuatl": "auh in",
+    "espanol": "y entonces; y así que"
+  },
+  {
+    "nahuatl": "niman ic",
+    "espanol": "enseguida; entonces; inmediatamente"
+  },
+  {
+    "nahuatl": "ihcuac",
+    "espanol": "cuando; en el momento en que"
+  },
+  {
+    "nahuatl": "in ye ihcuac",
+    "espanol": "cuando ya; cuando entonces"
+  },
+  {
+    "nahuatl": "in oc",
+    "espanol": "mientras; en tanto que; aún cuando"
+  },
+  {
+    "nahuatl": "ca ye",
+    "espanol": "ya está; ya es; en efecto"
+  },
+  {
+    "nahuatl": "ma xiquimacaci",
+    "espanol": "salúdalos; dales la bienvenida"
+  },
+  {
+    "nahuatl": "tizatl ihuicpa tonatiuh",
+    "espanol": "buenas tardes (lit. polvo hacia el sol)"
+  },
+  {
+    "nahuatl": "paqui noyolo ica nimitzittac",
+    "espanol": "me alegra verte; me alegra el corazón verte"
+  },
+  {
+    "nahuatl": "cenca nipaqui axcan",
+    "espanol": "estoy muy feliz hoy"
+  },
+  {
+    "nahuatl": "huei tlahtli",
+    "espanol": "con respeto; con mucho respeto"
+  },
+  {
+    "nahuatl": "ma ximoixtlapalohti",
+    "espanol": "muéstrate; preséntate"
+  },
+  {
+    "nahuatl": "nixnahuatia",
+    "espanol": "me presento; me doy a conocer"
+  },
+  {
+    "nahuatl": "tlen otiquitoh notechcopa",
+    "espanol": "¿qué dijiste acerca de mí?"
+  },
+  {
+    "nahuatl": "amo nimitzmocahuiliz",
+    "espanol": "no te dejaré; no te abandonaré"
+  },
+  {
+    "nahuatl": "nimitzmocahuiliz amo",
+    "espanol": "no te dejaré ir; te retendré"
+  },
+  {
+    "nahuatl": "ximocahua nican notechcopa",
+    "espanol": "quédate aquí conmigo"
+  },
+  {
+    "nahuatl": "titotlazotlah in nochi cahuitl",
+    "espanol": "nos amaremos todo el tiempo"
+  },
+  {
+    "nahuatl": "nochipa nimitzilnami",
+    "espanol": "siempre te recuerdo; te llevo en mi mente"
+  },
+  {
+    "nahuatl": "cuix tinechtlazohtla",
+    "espanol": "¿me amas?; ¿me quieres?"
+  },
+  {
+    "nahuatl": "cuix nimitztlazohtla",
+    "espanol": "¿te amo?; ¿debo amarte?"
+  },
+  {
+    "nahuatl": "nimitztlazohtla zan nohmatca",
+    "espanol": "te amo yo mismo; te amo de verdad"
+  },
+  {
+    "nahuatl": "xicmocuitlahui momettzin",
+    "espanol": "cuídate (formal)"
+  },
+  {
+    "nahuatl": "ma cualcan ximopiya",
+    "espanol": "guárdate bien; consérvate bien"
+  },
+  {
+    "nahuatl": "amo nipaqui in",
+    "espanol": "no me agrada eso; no me gusta"
+  },
+  {
+    "nahuatl": "cenca nechpaqui",
+    "espanol": "me agrada mucho; me gusta mucho"
+  },
+  {
+    "nahuatl": "ninotequitia cemilhuitl",
+    "espanol": "trabajo todo el día"
+  },
+  {
+    "nahuatl": "nicochinequi",
+    "espanol": "tengo sueño; quiero dormir"
+  },
+  {
+    "nahuatl": "oniixeuh",
+    "espanol": "me desperté; ya me levanté"
+  },
+  {
+    "nahuatl": "nimaltia",
+    "espanol": "me baño; me estoy bañando"
+  },
+  {
+    "nahuatl": "nicchihua in notlaquen",
+    "espanol": "me visto; hago mi ropa"
+  },
+  {
+    "nahuatl": "niquitlaza notlaquen",
+    "espanol": "me quito la ropa"
+  },
+  {
+    "nahuatl": "nictzacua nocamac",
+    "espanol": "cierro la boca; me callo"
+  },
+  {
+    "nahuatl": "nicpoa in amoxtli",
+    "espanol": "leo el libro"
+  },
+  {
+    "nahuatl": "niccuiloa",
+    "espanol": "escribo; estoy escribiendo"
+  },
+  {
+    "nahuatl": "nitlahtoa itech in amatl",
+    "espanol": "escribo en el papel"
+  },
+  {
+    "nahuatl": "nictemoa in notlatqui",
+    "espanol": "busco mis cosas; busco mis pertenencias"
+  },
+  {
+    "nahuatl": "niccua nopalehui",
+    "espanol": "tomo mi medicina"
+  },
+  {
+    "nahuatl": "nitlahtlauhtia in teotl",
+    "espanol": "rezo al dios; hago oración"
+  },
+  {
+    "nahuatl": "ninetotia ic cuicatl",
+    "espanol": "bailo con música; danzo al canto"
+  },
+  {
+    "nahuatl": "nitlacuiloa in amatl",
+    "espanol": "pinto el papel; escribo el papel"
+  },
+  {
+    "nahuatl": "niquittatia nocal",
+    "espanol": "cuido mi casa; vigilo mi hogar"
+  },
+  {
+    "nahuatl": "titlahpaloah",
+    "espanol": "nos saludamos"
+  },
+  {
+    "nahuatl": "titonamiquia",
+    "espanol": "nos encontramos"
+  },
+  {
+    "nahuatl": "titononotzah",
+    "espanol": "conversamos; platicamos"
+  },
+  {
+    "nahuatl": "titonenontlahtoah",
+    "espanol": "discutimos; debatimos juntos"
+  },
+  {
+    "nahuatl": "titopalehui",
+    "espanol": "nos ayudamos mutuamente"
+  },
+  {
+    "nahuatl": "titonotzah",
+    "espanol": "nos llamamos; nos convocamos"
+  },
+  {
+    "nahuatl": "titotlazohtlah",
+    "espanol": "nos amamos"
+  },
+  {
+    "nahuatl": "titoneiximachiah",
+    "espanol": "nos conocemos; nos reconocemos"
+  },
+  {
+    "nahuatl": "titocentlaliah",
+    "espanol": "nos reunimos; nos juntamos"
+  },
+  {
+    "nahuatl": "titonahuatiah",
+    "espanol": "nos mandamos; nos ordenamos"
+  },
+  {
+    "nahuatl": "titomachtiah",
+    "espanol": "nos enseñamos mutuamente"
+  },
+  {
+    "nahuatl": "titonelhuayotiah",
+    "espanol": "nos arraigamos; nos enraizamos juntos"
+  },
+  {
+    "nahuatl": "tlamachtiani",
+    "espanol": "maestro; el que enseña"
+  },
+  {
+    "nahuatl": "tlamatini",
+    "espanol": "sabio; filósofo; el que sabe"
+  },
+  {
+    "nahuatl": "pochtecatl",
+    "espanol": "mercader; comerciante"
+  },
+  {
+    "nahuatl": "toltecatl",
+    "espanol": "artesano; artista hábil"
+  },
+  {
+    "nahuatl": "amantecatl",
+    "espanol": "plumajero; artesano de plumas"
+  },
+  {
+    "nahuatl": "teopixqui",
+    "espanol": "sacerdote; guardián de dios"
+  },
+  {
+    "nahuatl": "tlahtoani",
+    "espanol": "gobernante; el que habla con autoridad"
+  },
+  {
+    "nahuatl": "pilli",
+    "espanol": "noble; hijo de noble"
+  },
+  {
+    "nahuatl": "macehual",
+    "espanol": "gente del pueblo; campesino"
+  },
+  {
+    "nahuatl": "tlacohtli",
+    "espanol": "esclavo; siervo"
+  },
+  {
+    "nahuatl": "yaotl",
+    "espanol": "guerrero; enemigo"
+  },
+  {
+    "nahuatl": "pahtiani",
+    "espanol": "curandero; médico"
+  },
+  {
+    "nahuatl": "ticitl",
+    "espanol": "médico; curandero"
+  },
+  {
+    "nahuatl": "tonalpouhqui",
+    "espanol": "adivino del calendario; intérprete del destino"
+  },
+  {
+    "nahuatl": "nahualli",
+    "espanol": "brujo; nagual; chamán"
+  },
+  {
+    "nahuatl": "calpixqui",
+    "espanol": "recaudador de tributos; mayordomo"
+  },
+  {
+    "nahuatl": "titlantli",
+    "espanol": "mensajero; enviado"
+  },
+  {
+    "nahuatl": "paini",
+    "espanol": "corredor; mensajero veloz"
+  },
+  {
+    "nahuatl": "cuicani",
+    "espanol": "cantante; cantor"
+  },
+  {
+    "nahuatl": "cuiloanqui",
+    "espanol": "pintor; escritor"
+  },
+  {
+    "nahuatl": "tlachixtli",
+    "espanol": "vigilante; centinela"
+  },
+  {
+    "nahuatl": "tequihuah",
+    "espanol": "guerrero experimentado; jefe"
+  },
+  {
+    "nahuatl": "aye",
+    "espanol": "ay; expresión de dolor o sorpresa"
+  },
+  {
+    "nahuatl": "tla",
+    "espanol": "vamos; anda; por favor"
+  },
+  {
+    "nahuatl": "ma ic",
+    "espanol": "que así sea; así pues"
+  },
+  {
+    "nahuatl": "quema",
+    "espanol": "sí; así es; de acuerdo"
+  },
+  {
+    "nahuatl": "ahmo",
+    "espanol": "no; negación"
+  },
+  {
+    "nahuatl": "aocmo",
+    "espanol": "ya no; nunca más"
+  },
+  {
+    "nahuatl": "ca nelli",
+    "espanol": "en efecto; es verdad; ciertamente"
+  },
+  {
+    "nahuatl": "manoce",
+    "espanol": "o quizás; acaso; tal vez"
+  },
+  {
+    "nahuatl": "tlacazo",
+    "espanol": "claro; ciertamente; seguro"
+  },
+  {
+    "nahuatl": "ahzo",
+    "espanol": "quizás; tal vez; puede que"
+  },
+  {
+    "nahuatl": "aic",
+    "espanol": "nunca; jamás; en ningún tiempo"
+  },
+  {
+    "nahuatl": "maca",
+    "espanol": "que no; no sea que"
+  },
+  {
+    "nahuatl": "macamo",
+    "espanol": "que no; no lo hagas"
+  },
+  {
+    "nahuatl": "ma xiyauh",
+    "espanol": "ándale; vete ya; vamos"
+  },
+  {
+    "nahuatl": "epa",
+    "espanol": "pronto; deprisa; rápido"
+  },
+  {
+    "nahuatl": "in tlalticpac zan achitzin",
+    "espanol": "en la tierra solo un momento (vivimos)"
+  },
+  {
+    "nahuatl": "xochitl in cuicatl amo polihui",
+    "espanol": "la flor y el canto no perecen"
+  },
+  {
+    "nahuatl": "nelli ticitl yoliz",
+    "espanol": "el verdadero médico vivirá; la verdad sana"
+  },
+  {
+    "nahuatl": "zan yuhqui xochitl tonemi",
+    "espanol": "como flor vivimos; vida efímera"
+  },
+  {
+    "nahuatl": "in tlahtoli amo polihui",
+    "espanol": "las palabras no perecen"
+  },
+  {
+    "nahuatl": "ipalnemoani",
+    "espanol": "aquel por quien se vive; dios supremo"
+  },
+  {
+    "nahuatl": "yectenehualoyan",
+    "espanol": "lugar digno de alabanza; lo sublime"
+  },
+  {
+    "nahuatl": "in nelli iximati nohuian",
+    "espanol": "el que verdaderamente conoce en todas partes"
+  },
+  {
+    "nahuatl": "mo yolia mo teyolia",
+    "espanol": "tu alma, la energía que te da vida"
+  },
+  {
+    "nahuatl": "tla xicmati in tlen tic chihua",
+    "espanol": "entiende lo que haces; actúa con conciencia"
+  },
+  { "nahuatl": "amoxtli", "espanol": "libro" },
+  { "nahuatl": "atl", "espanol": "agua" },
+  { "nahuatl": "atlacatl", "espanol": "hombre del agua" },
+  { "nahuatl": "atlachinolli", "espanol": "agua quemada (guerra)" },
+  { "nahuatl": "atlapalteotl", "espanol": "dios del agua azul" },
+  { "nahuatl": "atlapalli", "espanol": "ala" },
   { "nahuatl": "atlayoh", "espanol": "lleno de agua" },
   { "nahuatl": "atocpan", "espanol": "tierra aluvial" },
   { "nahuatl": "atotonilco", "espanol": "lugar de aguas calientes" },
   { "nahuatl": "axayacatl", "espanol": "cara de agua" },
   { "nahuatl": "pialli", "espanol": "hola" },
   { "nahuatl": "cualli tonalli", "espanol": "buen día" },
+  { "nahuatl": "quemanian", "espanol": "a veces" },
+  { "nahuatl": "tonalli", "espanol": "día" },
+  { "nahuatl": "in", "espanol": "mi; el; la" },
+  { "nahuatl": "ca", "espanol": "es; estar" },
+  { "nahuatl": "no", "espanol": "yo; mi" },
   { "nahuatl": "ayotl", "espanol": "tortuga" },
   { "nahuatl": "ayotzin", "espanol": "tortuga pequeña" },
   { "nahuatl": "aztlan", "espanol": "lugar de garzas" },
